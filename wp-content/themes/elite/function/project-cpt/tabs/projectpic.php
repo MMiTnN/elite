@@ -55,7 +55,7 @@ class Projectpic_tab {
                 padding: 0px 0px !important;
             }
         </style>
-        <button type="button" class="button" onclick="add_new_network();">Add New</button>
+        <button type="button" class="button" onclick="add_new_pic();">Add New</button>
         <div class="form-table" id="projectpic-container" width="100%"  data-inputrows="<?php echo empty($projectpic) ? 0 : count($projectpic) ?>">
             <?php if (!empty($projectpic)): ?>
                 <?php foreach ($projectpic as $_idx => $_p): ?>
@@ -69,7 +69,8 @@ class Projectpic_tab {
              ?>
         </div>
         <script type="text/javascript">
-            function add_new_network() {
+            function add_new_pic() {
+                console.log('mint');
                // var html = jQuery('#projectpic_inputs .projectpic-group').clone();
                 var ccContainer = $('#projectpic-container');
                 var idx = jQuery('#projectpic-container').data('inputrows');
@@ -77,7 +78,7 @@ class Projectpic_tab {
                 jQuery('#projectpic-container').data('inputrows', (idx + 1));
                 $.ajax({
                     url: '<?php echo admin_url('admin-ajax.php'); ?>',
-                    data: {action: 'projectpic_new_hos', idx: idx},
+                    data: {action: 'projectpic_new_pic', idx: idx},
                     type: 'post',
                     success: function (html) {
                         var temp_text = "__temp__";
@@ -95,7 +96,7 @@ class Projectpic_tab {
                     },
                 }).done(function() { //use this
                     var imgpro_upload = $('.upload-img-pro');
-                    var delopro_img = $('.delete-img-pro');
+                    var delpro_img = $('.delete-img-pro');
                     add_pro_item(imgpro_upload, delpro_img);
                  });
         
@@ -206,10 +207,9 @@ class Projectpic_tab {
             $_p = $_POST['projectpic'];
             unset($_p['temp']);
             foreach ($_p as $p) {
-                 if(!empty($p['title']) && !empty($p['content']) ){
+                 if(!empty($p['title']) && !empty($p['img']) ){
                     $projectpic[] = array(
                         'title' => sanitize_text_field($p['title']),
-                        'content' => sanitize_text_field($p['content']),
                         'img' => intval($p['img']),
                         'position' => intval($p['position']),
                     );
@@ -224,7 +224,6 @@ class Projectpic_tab {
         ob_start();
         $defaults = array(
             'title' => '',
-            'content' => '',
             'img' => '',
             'position' => ''
         );
@@ -236,7 +235,7 @@ class Projectpic_tab {
                 <a href="#" onclick="remove_tr_projectpic(this);return false;" class="remove"><span class="dashicons dashicons-trash"></span></a>
                 <button class="nav-toggle" type="button" onclick="toggle_content(this);"><span class="toggle_btn collapsed"></span></button>
             </div>
-             <div class="collapsable" style="display:none;">
+             <div class="collapsable" >
                 <div class="t-table">
                     <input type="hidden" name="projectpic[<?php echo $_idx ?>][position]" class="widefat position" value="<?php echo $data['position'] ?>">
                    <div class="t-row">

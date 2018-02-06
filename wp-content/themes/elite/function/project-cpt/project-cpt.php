@@ -22,7 +22,7 @@ class Project_Functions {
 
         add_action('add_meta_boxes', array($this, 'add_meta_box'));
         add_action('save_post', array($this, 'save_meta_box'));
-        add_action('wp_ajax_ournetwork_new_hos', array($this->pic_tab, 'load_new_item_callback'));
+        add_action('wp_ajax_projectpic_new_pic', array($this->pic_tab, 'load_new_item_callback'));
         
     }
 

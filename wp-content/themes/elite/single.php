@@ -9,7 +9,7 @@ if (have_posts()) {
     the_post();
 
     
-    <?php if ($post->post_content != "") { ?>
+    if ($post->post_content != "") { ?>
         <section class="padding-t-35 padding-b-35 bg-white" >
             <div class="container">
                 <div class="row">

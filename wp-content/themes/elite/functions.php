@@ -12,10 +12,10 @@ require_once FUNC_DIR.'/condition-cpt/condition-cpt.php';
 require_once FUNC_DIR.'/age-taxonomy/age-taxonomy.php';
 require_once FUNC_DIR.'/project-cpt/project-cpt.php';
 
-add_action('after_setup_theme', 'sunbear_setup');
+add_action('after_setup_theme', 'elite_setup');
 
-function sunbear_setup() {
-    load_theme_textdomain('sunbear', get_template_directory() . '/languages');
+function elite_setup() {
+    load_theme_textdomain('elite', get_template_directory() . '/languages');
     add_theme_support('post-thumbnails');
 
 // Image size
