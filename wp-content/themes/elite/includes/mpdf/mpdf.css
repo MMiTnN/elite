@@ -1,0 +1,48 @@
+/*
+   This is a secondary default stylesheet for mPDF
+   It will only parse element-level CSS here 
+   Remove the comment marks below and edit as required
+*/
+
+
+
+/* 
+   These values used to be the default prior to mPDF 4.2
+   Altered to make appearance closer to that of browsers
+   Uncomment these lines to return to behaviour prior to v4.2  
+*/
+
+
+/*
+img { margin: 0.83em 0; vertical-align: bottom; }
+table { margin: 0.5em; }
+textarea { vertical-align: top; }
+*/
+
+.header-title{
+	font-size: 34px;
+	text-align: center;
+}
+
+.trigger-overlay, .nav-tabs{
+	display: none;
+}
+
+img{
+	max-width: 120px;
+	max-height: 120px;
+	margin-right: 20px;
+}
+
+.gen-pdf{
+	padding: 0px 60px 60px 60px;
+}
+
+.text-around{
+    width: 100%;
+    display: -webkit-box;
+}
+
+.block.column{
+	width: 33%;
+}
