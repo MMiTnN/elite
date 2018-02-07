@@ -70,7 +70,6 @@ class Projectpic_tab {
         </div>
         <script type="text/javascript">
             function add_new_pic() {
-                console.log('mint');
                // var html = jQuery('#projectpic_inputs .projectpic-group').clone();
                 var ccContainer = $('#projectpic-container');
                 var idx = jQuery('#projectpic-container').data('inputrows');
@@ -235,7 +234,7 @@ class Projectpic_tab {
                 <a href="#" onclick="remove_tr_projectpic(this);return false;" class="remove"><span class="dashicons dashicons-trash"></span></a>
                 <button class="nav-toggle" type="button" onclick="toggle_content(this);"><span class="toggle_btn collapsed"></span></button>
             </div>
-             <div class="collapsable" >
+             <div class="collapsable" style="display:none;">
                 <div class="t-table">
                     <input type="hidden" name="projectpic[<?php echo $_idx ?>][position]" class="widefat position" value="<?php echo $data['position'] ?>">
                    <div class="t-row">

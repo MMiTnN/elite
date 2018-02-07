@@ -78,6 +78,8 @@ class Project_Functions {
         ?>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui.js"></script>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery-ui.css">
+        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp_editor_custom.js"></script>
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
         <div id="tabs">
             <ul> 
                 <li><a href="#tab-pic">Project picture</a></li>
