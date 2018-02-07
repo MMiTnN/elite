@@ -8,7 +8,7 @@ class Project_Functions {
 
     function __construct() {
         $this->type_name = 'projects';
-        $this->flush_option = $this->type_name . '_flush_1.0.3';
+        $this->flush_option = $this->type_name . '_flush_1.0.4';
         $this->postSlug = 'projects';
         $this->domain = '';
         add_action('init', array($this, 'custom_post_type'));
@@ -39,7 +39,7 @@ class Project_Functions {
             'show_in_admin_bar' => true,
             'menu_position' => 23,
             'can_export' => true,
-            'has_archive' => false,
+            'has_archive' => true,
             'exclude_from_search' => false,
             'publicly_queryable' => true,
             'rewrite' => array('slug' => $this->postSlug),
@@ -79,7 +79,7 @@ class Project_Functions {
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui.js"></script>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery-ui.css">
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp_editor_custom.js"></script>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/admin.css">
         <div id="tabs">
             <ul> 
                 <li><a href="#tab-pic">Project picture</a></li>

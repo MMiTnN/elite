@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: projects
+*/
 get_header();
 
 ?>

@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 7, 2018, 10:38:14 AM
+    Author     : Mint
+*/
+
+.toggle_btn.collapsed:before {
+    content: "\f140";
+}
+.toggle_btn:before {
+    margin-top: 4px;
+    width: 20px;
+    content: "\f142";
+    display: inline-block;
+    font: 400 20px/1 dashicons;
+}
+.toggle_btn {
+    cursor: pointer;
+}
+button.nav-toggle {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.editor_header {
+    position: relative;
+    padding: 0 10px;
+}
+
+.dashicons-post-trash:before, .dashicons-trash:before {
+    content: "\f182";
+}
+
+a.remove {
+    position: absolute;
+    right: 30px;
+    top: 7px;
+    text-decoration: none;
+}
+
+.editor_header h3 {
+    margin: 0;
+    padding: 8px 0;
+    cursor: move;
+}
