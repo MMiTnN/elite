@@ -8,7 +8,7 @@ class Project_Functions {
 
     function __construct() {
         $this->type_name = 'projects';
-        $this->flush_option = $this->type_name . '_flush_1.0.4';
+        $this->flush_option = $this->type_name . '_flush_1.0.5';
         $this->postSlug = 'projects';
         $this->domain = '';
         add_action('init', array($this, 'custom_post_type'));
@@ -75,11 +75,30 @@ class Project_Functions {
     function meta_box_content($post) {
         /* Create nonce */
         wp_nonce_field(plugin_basename(__FILE__), $this->metabox_id . '_nonce');
+        $post_id = $post->ID;
+        $_pjt = get_post_meta($post_id, '_pjt', true);
+        $pjt = get_taxonomy_list('pjtype_taxonomy');
         ?>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui.js"></script>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery-ui.css">
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp_editor_custom.js"></script>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/admin.css">
+        <table class="form-table">
+            <tr>
+                <th scope="row">
+                    <label ><?php _e('Project Type', $elite); ?></label>
+                </th>
+
+                <td>
+                     <select name="filter_pjt" id="filter_pjt" class="select-box">
+                        <?php foreach ($pjt as $key => $value) { ?>
+                            <option value="<?php echo $value->name; ?>" <?php if($_pjt == $value->name) echo selected; ?> ><?php echo $value->name; ?></option>
+                        <?php } ?> 
+                    </select>
+                </td>
+            </tr>
+        </table>
+
         <div id="tabs">
             <ul> 
                 <li><a href="#tab-pic">Project picture</a></li>
@@ -121,6 +140,8 @@ class Project_Functions {
                 return;
         }
 
+        $_pjt = sanitize_text_field($_POST['filter_pjt']);
+        update_post_meta($post_id, '_pjt', $_pjt);
        
         $this->pic_tab->save($post_id);
     }

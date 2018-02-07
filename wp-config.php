@@ -55,13 +55,13 @@ define('SECURE_AUTH_SALT', '{obEN&@Iw4PQnxQ9f{n3L`_|c)RxP(&bLCne@gU@QM;WQl2LDaiP
 define('LOGGED_IN_SALT',   'o!@?KLDVxYBhKL/M)LtUg_ P(<*=lHd,4&3~kjgMWG7yx(7bvl,u8]xvNh1DDo}m');
 define('NONCE_SALT',       './q.qX.HAW>hvZxv)`!vVCU/,}fa1B/XI PnC-L8PUN.:uXsd`5uEi):ei:p&=`[');
 
-/**#@-*/
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', false);
-define('DOMAIN_CURRENT_SITE', 'localhost');
-define('PATH_CURRENT_SITE', '/elite/');
+define('DOMAIN_CURRENT_SITE', 'elite.test');
+define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
+
 
 /**
  * WordPress Database Table prefix.

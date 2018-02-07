@@ -11,6 +11,7 @@ require_once FUNC_DIR.'/testimonials-cpt/testimonials-cpt.php';
 require_once FUNC_DIR.'/condition-cpt/condition-cpt.php';
 require_once FUNC_DIR.'/age-taxonomy/age-taxonomy.php';
 require_once FUNC_DIR.'/project-cpt/project-cpt.php';
+require_once FUNC_DIR.'/project-type-taxonomy/project-type-taxonomy.php';
 
 add_action('after_setup_theme', 'elite_setup');
 

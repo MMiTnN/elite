@@ -3,12 +3,28 @@
 Template Name: projects
 */
 get_header();
+
 $args = array(
     'post_type' => 'projects',
     'post_status' => 'publish',
     'posts_per_page' => -1,
     'order' => 'DESC',
 );
+
+$get_pjt = '';
+
+if (isset($_GET['pjt'])) {
+    $get_pjt = $_GET['pjt'];    
+}
+if (!empty($get_pjt)) {
+     $args['meta_query'] = array(
+        array(
+            'key' => '_pjt',
+            'value' => $get_pjt,
+            'compare' => '=',
+        ),
+    );
+}
 
 /*
  * Query

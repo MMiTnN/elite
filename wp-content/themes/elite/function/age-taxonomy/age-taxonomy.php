@@ -17,7 +17,7 @@ Class AGE_TAXONOMY {
         $this->domain = 'age_taxonomy';
         $this->type_name = 'age_taxonomy';
         $this->item_per_page = 3;
-        $this->app_version = '1.0';
+        $this->app_version = '1.1';
 
         add_action('init', array($this, 'create_age_taxonomy'));
         
@@ -51,8 +51,8 @@ Class AGE_TAXONOMY {
                 'show_in_nav_menus' => false,
                 'query_var' => FALSE,
                 'update_count_callback' => '_update_post_term_count',
-                'show_in_quick_edit'         => false,
-                'meta_box_cb'                => false,
+                'show_in_quick_edit'         => true,
+                'meta_box_cb'                => true,
             ));
 	}
 }
