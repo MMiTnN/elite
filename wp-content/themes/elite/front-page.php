@@ -2,17 +2,17 @@
 get_header();
 ?>
 
-<section class="header">
-    <div class='home-section' style="background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(
-    <?php echo get_template_directory_uri() ?>/images/homepage.jpg)">
+<section class="header-section"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(<?php echo get_template_directory_uri() ?>/images/homepage2.png)">);">
+    <div>
+        <p class='text-white header-title text-center'><?php echo 'Elite Engineer'; ?></p>
     </div>
 </section>
- <div>
+ <!-- <div>
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
       <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
-    </div>
+    </div> -->
 <section id="featured" class="padding-t-50">
     <div class="container-fluid">
         <div class="row padding-b-30">
@@ -34,45 +34,6 @@ get_header();
                   <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/bkk101.png" alt="">
             </div>
         </div>
-    </div>
-</section>
-
-<section id="date">
-    <div class="container-fluid">
-        <div class="row">
-            <h1 class="col-md-12 col-sm-12 col-xs-12 padding-b-20">2018 dates</h1>
-                <?php $count = 1;
-                foreach ($list_date as $date): 
-                    if($count < 4):
-                    ?>
-                        <div class="col-lg-4 col-sm-6 col-xs-12">
-                            <div class="block gold">
-                            <?php if(!empty($date['monthend'])){
-                                    $monthshow = $date['monthstart'].' & '.$date['monthend']; 
-                                }
-                                else{
-                                    $monthshow = $date['monthstart']; 
-                                }
-                             ?> 
-                            <h3><?php echo $monthshow;  ?></h3>
-                                <ul>
-                                <?php foreach ($date as $key => $value):
-                                    if(is_numeric($key)): ?>
-                                        <li>
-                                            <?php echo $value; ?>
-                                        </li>
-                                     
-                                <?php endif;
-                                endforeach; ?>
-                                </ul>
-                            </div>
-                        </div> 
-                        <?php 
-                        $count++;
-                    endif;
-                endforeach; 
-                ?>
-            </div>
     </div>
 </section>
 
@@ -155,12 +116,11 @@ get_header();
             window.location.href = url+'filter_age='+age+'&filter_activity='+act+'&filter_date='+date;
         });
          $('.chosen').chosen();
-         $('.example-imag').lightbox();
     });
 
     
 </script>
-<?php download_brochure(); ?>
+<?php contact_form(); ?>
 
 
 <?php video_popup(); ?>

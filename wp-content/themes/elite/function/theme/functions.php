@@ -149,20 +149,20 @@ function video_popup(){ ?>
 <?php 
 }
 
-function download_brochure(){
+function contact_form(){
     ?>
-    <section class="brochure">
+    <section class="contact">
         <div class="container">
             <div class="wrapper-download">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <form id="frmDownload" class="frmDownload" name="frmDownload" action="#" method="post">
-                         <h1 class="text-center"> Download our brochure </h1>
+                         <h1 class="text-center"> <?php _e('ติดต่อ', $eilte); ?> </h1>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download">
-                                        <input type="text" placeholder="First name" id="txtFirstName" name="txtFirstName" class="searchbox-input name-client" required>
+                                        <input type="text" placeholder="<?php _e('ชื่อจริง', $eilte); ?>" id="txtFirstName" name="txtFirstName" class="searchbox-input name-client" required>
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -170,7 +170,7 @@ function download_brochure(){
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download">
-                                        <input type="text" placeholder="Last name" id="txtLastName" name="txtLastName" class="searchbox-input name-client" required>
+                                        <input type="text" placeholder="<?php _e('นามสกุล', $eilte); ?>" id="txtLastName" name="txtLastName" class="searchbox-input name-client" required>
                                     </p> 
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -180,27 +180,25 @@ function download_brochure(){
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download" >
-                                        <input type="text" placeholder="Email address" id="txtEmail" name="txtEmail" class="searchbox-input email-client" required> 
+                                        <input type="text" placeholder="<?php _e('อีเมลล์', $eilte); ?>" id="txtEmail" name="txtEmail" class="searchbox-input email-client" required> 
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
-                                    <p class="color-white download select-box" >
-                                        <select name="campSelected" id="campSelected" class="select-box">
-                                           <?php $query = new WP_Query( array( 
-                                                'post_type' => 'camp' ,
-                                                'posts_per_page'  => -1,
-                                                'post_status' => 'publish',
-                                                'orderby' => 'rand'
-                                             )); 
-                                            $camps_list = $query->posts; ?>
-                                            <option value="" >Select camp</option>
-                                            <?php foreach ($camps_list as $key => $value) { ?>
-                                                <option value="<?php echo $value->ID ?>" ><?php echo $value->post_title ?></option>
-                                           <?php } ?>
-                                        </select>
+                                    <p class="color-white download" >
+                                        <input type="text" placeholder="<?php _e('เบอร์โทรศัพท์', $eilte); ?>" id="txtPhone" name="txtPhone" class="searchbox-input phone-client" required> 
+                                    </p>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <p class="color-white textqa">
+                                        <textarea placeholder="<?php _e('ข้อความ', $eilte); ?>" id="txtQA" name="txtQA" class="searchbox-input qa-client" required></textarea> 
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -208,7 +206,7 @@ function download_brochure(){
                         </div>
                         <div class="form-group">
                             <div class="items-push text-center margin-t-30">
-                                <button class="btn btn-primary submit-question" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending"><?php echo _e('Download now', $domain) ?></button>
+                                <button class="btn btn-primary submit-question" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending"><?php echo _e('ส่ง', $elite) ?></button>
                             </div>
                         </div>
                     </form>
@@ -219,22 +217,6 @@ function download_brochure(){
             </div>
         </div>
     </section>
-    <!-- Confirm Modal -->
-    <div id="confirmModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <h5 class="modal-title"><?php echo 'Brochure has been sent to your email' ?></h5>
-                </div>
-                <div class="modal-body">
-                    <p><?php echo 'Thank you for your download our brochure.' ?></p>
-                </div>
-            </div>
-        </div>
-    </div>
- 
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.validate.js"></script>
     <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -244,7 +226,8 @@ function download_brochure(){
                 txtFirstName: {required: true},
                 txtLastName: {required: true},
                 txtEmail: {required: true, email: true},
-                campSelected: {required: true}
+                txtPhone: {required: true},
+                txtQA: {required: true}
             },
             highlight: function (element) {
                 $(element).closest('.form-group').addClass('has-error');
@@ -256,7 +239,8 @@ function download_brochure(){
                 txtFirstName: 'Please enter your first name',
                 txtLastName: 'Please enter your last name',
                 txtEmail: 'Please enter a valid email address',
-                campSelected: 'Please select a camp'
+                txtPhone: 'Please enter your phone number',
+                txtQA: 'Please enter your question'
             },
             errorElement: 'span',
             errorClass: 'help-block',
@@ -267,11 +251,13 @@ function download_brochure(){
                     element.parents(".form-group").find(".help-block").append(error);
                 } else if (element.prop("id") === 'txtEmail') {
                     element.parents(".form-group").find(".help-block").append(error);
-                }  else if (element.prop("id") === 'campSelected') {
+                }  else if (element.prop("id") === 'txtPhone') {
+                    element.parents(".form-group").find(".help-block").append(error);
+                }   else if (element.prop("id") === 'txtQA') {
                     element.parents(".form-group").find(".help-block").append(error);
                 }  
             },
-              submitHandler: function (frm) {
+              /*submitHandler: function (frm) {
                     var data = $(frm).serialize();
                     data += "&action=send_brochure&_ajax_nonce=<?php echo wp_create_nonce( "send-contact-nonce" ); ?>"
                     var submitButton = $(frm).find(".submit-question");
@@ -286,10 +272,10 @@ function download_brochure(){
                            $('#txtFirstName').val('');
                            $('#txtLastName').val('');
                            $('#txtEmail').val('');
-                           $('#campSelected').val('');
+                           $('#txtPhone').val('');
                         }
                     });
-                }
+                }*/
             });
         });
     });
@@ -699,3 +685,5 @@ function get_ajax_camps($_activity='', $_age='', $_date='') {
     }
 
  }
+
+
