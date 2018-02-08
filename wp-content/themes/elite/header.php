@@ -15,27 +15,9 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?> >
-        <div class="camp-nav">
-            <img onclick="location.href='<?php echo get_site_url() ?>'" class="img-responsive camp-logo" src="<?php echo get_template_directory_uri() ?>/images/icon/CAMP_logo.png" alt="">
+        <div class="elite-nav">
+            <img onclick="location.href='<?php echo get_site_url() ?>'" class="img-responsive elite-logo" src="<?php echo get_template_directory_uri() ?>/images/icon/logo.png" alt="">
             <div class="nav-header">
-                 <div class="dropdown">
-                   <button class="btn btn-border-gold dropdown-toggle" type="button" data-toggle="dropdown"><strong>Info </strong> menu</button>
-                   <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'dropdown-menu' ) ); ?>
-                   <!-- <ul class="dropdown-menu">
-                     <li class="dropdown-header">Dropdown header 1</li>
-                     <li><a href="#">HTML</a></li>
-                     <li><a href="#">CSS</a></li>
-                     <li><a href="#">JavaScript</a></li>
-                     <li class="divider"></li>
-                     <li class="dropdown-header">Dropdown header 2</li>
-                     <li><a href="#">About Us</a></li>
-                   </ul>  -->
-                   <!-- <div class="select-box">
-                        <select name="filter_date" id="filter_date" class="select-box">
-                            <option value=""> <strong>Info for</strong> Parents </option>
-                        </select>
-                    </div> -->
-                  </div>
-                <a href="<?php echo get_site_url().'/find-a-camp' ?>" class="btn btn-border-gold margin-b-15">find a camp</a>
+                   <?php wp_nav_menu( array( 'theme_location' => 'header-menu',) ); ?>
             </div>
        </div>

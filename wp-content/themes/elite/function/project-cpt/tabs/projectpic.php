@@ -206,9 +206,8 @@ class Projectpic_tab {
             $_p = $_POST['projectpic'];
             unset($_p['temp']);
             foreach ($_p as $p) {
-                 if(!empty($p['title']) && !empty($p['img']) ){
+                 if(!empty($p['img']) ){
                     $projectpic[] = array(
-                        'title' => sanitize_text_field($p['title']),
                         'img' => intval($p['img']),
                         'position' => intval($p['position']),
                     );
@@ -222,7 +221,6 @@ class Projectpic_tab {
         $full_id = 'projectpic_content_' . $_idx;
         ob_start();
         $defaults = array(
-            'title' => '',
             'img' => '',
             'position' => ''
         );
@@ -237,12 +235,6 @@ class Projectpic_tab {
              <div class="collapsable" style="display:none;">
                 <div class="t-table">
                     <input type="hidden" name="projectpic[<?php echo $_idx ?>][position]" class="widefat position" value="<?php echo $data['position'] ?>">
-                   <div class="t-row">
-                       <div class="t-cell font-bold">Title</div>
-                       <div class="t-cell">
-                          <input type="text" name='projectpic[<?php echo $_idx; ?>][title]' class="widefat" value="<?php echo $data['title'] ?>">
-                       </div>
-                   </div>
                     <div class="t-row">
                        <div class="t-cell font-bold">Image</div>
                        <div class="t-cell">
@@ -291,3 +283,4 @@ class Projectpic_tab {
     }
 
 }
+

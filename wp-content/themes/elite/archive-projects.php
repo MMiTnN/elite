@@ -34,7 +34,7 @@ $projects = $posts->posts;
 ?>
 <section class="header-section">
     <div>
-        <p class='text-white header-title text-center'><?php echo get_the_title(); ?></p>
+        <p class='text-white header-title text-center'><?php echo empty($get_pjt)? _e('โครงการทั้งหมด'): $get_pjt; ?></p>
     </div>
 </section>
 
@@ -56,8 +56,8 @@ $projects = $posts->posts;
                     }
                     ?>
                      <a href="<?php echo get_permalink($post_id); ?>">
-                        <div class="col-md-3 col-sm-4 col-xs-12">
-
+                        <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                            
                             <div class="block black"  style="background-image: url(<?php echo $image ?>); background-size: cover;
                                                                                                           background-repeat: no-repeat;
                                                                                                           background-position: 55% 55%;" >
