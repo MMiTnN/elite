@@ -158,12 +158,14 @@ $projects_past = $posts_past->posts;
                     }
                     if($key == 3): ?>
                         <div class="columns no-margin-bot">
+                    <?php endif; ?>
                             <div class="column  has-text-centered box-content blog-img slide no-padding">
                                  <img src="<?php echo $image ?>" >
                                  <article class="tile is-child is-dark block-content has-text-centered">
                                     <p class="title"><?php echo $pro->post_title; ?></p>
                                   </article>
                              </div>
+                    <?php if($key == 3): ?>
                         </div>
                     <?php endif; 
                     endforeach; 
@@ -182,6 +184,31 @@ $projects_past = $posts_past->posts;
               <h1 class="title-content"><?php _e('โครงการปัจจุบัน', $domain) ?></h1>
           </div>
       </div>
+<!--        <div class="columns ">
+         <div class="column is-12 ">
+            <div class="columns no-margin-bot">
+                <?php if(!empty($projects_now)): 
+                   foreach($projects_now as $key => $pro): 
+                    $post_id = $pro->ID;
+                    /* Get post thumnail */
+                    $image_id = get_post_thumbnail_id($post_id);
+                    $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+                    if (empty($image_arr)) {
+                        $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+                    } else {
+                        $image = $image_arr[0];
+                    }?>
+                        <div class="column  has-text-centered box-content blog-img slide no-padding">
+                             <img src="<?php echo $image ?>" >
+                             <article class="tile is-child is-dark block-content has-text-centered">
+                                <p class="title"><?php echo $pro->post_title; ?></p>
+                              </article>
+                         </div>
+                   <?php endforeach; 
+                endif; ?>
+            </div>
+          </div>
+      </div>-->
       <div class="columns ">
          <div class="column is-12 ">
             <div class="columns no-margin-bot">
