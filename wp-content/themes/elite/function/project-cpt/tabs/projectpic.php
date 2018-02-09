@@ -71,7 +71,7 @@ class Projectpic_tab {
                             new wp.media.controller.Library({
                                 title: $el.data('choose'),
                                 filterable: 'all',
-                                multiple: false,
+                                multiple: true,
                             })
                         ]
                     });

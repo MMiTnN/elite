@@ -25,7 +25,7 @@ if (have_posts()) :
                 <div class="row">
                     <?php foreach ($projectpic as $_idx => $data):
                         ?>
-                         <a class="example-image-link" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="<?php echo wp_get_attachment_url($data) ?>">
+                         <a class="example-image-link img-pro" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="<?php echo wp_get_attachment_url($data) ?>">
                             <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
                                 
                                 <div class="block black" class="example-image"  style="background-image: url(<?php echo wp_get_attachment_url($data) ?>); background-size: cover;

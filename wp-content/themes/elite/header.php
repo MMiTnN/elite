@@ -15,9 +15,6 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?> >
-        <div class="elite-nav">
-            <img onclick="location.href='<?php echo get_site_url() ?>'" class="img-responsive elite-logo" src="<?php echo get_template_directory_uri() ?>/images/icon/logo.png" alt="">
-            <div class="nav-header">
-                   <?php wp_nav_menu( array( 'theme_location' => 'header-menu',) ); ?>
+        <div class="nav-header">
+                  <?php include('layouts/nav.php'); ?>
             </div>
-       </div>

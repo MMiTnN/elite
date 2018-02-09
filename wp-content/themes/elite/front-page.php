@@ -1,125 +1,226 @@
 <?php
 get_header();
+
+$args_now = array(
+    'post_type' => 'projects',
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
+    'order' => 'DESC',
+    'meta_query' => array(
+        array(
+            'key' => '_pjt',
+            'value' => 'โครงการปัจจุบัน',
+            'compare' => '=',
+        ),
+    )
+);
+/*
+ * Query
+ */
+$posts_now = new WP_Query($args_now);
+$projects_now = $posts_now->posts;
+
+$args_past = array(
+    'post_type' => 'projects',
+    'post_status' => 'publish',
+    'posts_per_page' => 8,
+    'order' => 'DESC',
+    'meta_query' => array(
+        array(
+            'key' => '_pjt',
+            'value' => 'โครงการที่ผ่านมา',
+            'compare' => '=',
+        ),
+    )
+);
+/*
+ * Query
+ */
+$posts_past = new WP_Query($args_past);
+$projects_past = $posts_past->posts;
 ?>
 
-<section class="header-section"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(<?php echo get_template_directory_uri() ?>/images/homepage2.png)">);">
-    <div>
-        <p class='text-white header-title text-center'><?php echo 'Elite Engineer'; ?></p>
+<style>
+    .hero-body.main-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url("<?php echo get_template_directory_uri(); ?>/images/header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 55% 55%;
+    }
+</style>
+ <!-- Hero content: will be in the middle -->
+  <div class="hero-body main-header" >
+    <div class="container has-text-centered">
+      <h1 class="title">
+        MAC'N MOTION
+      </h1>
+      <h2 class="subtitle">
+        IN AN INNOVATIVE ENVIRONMENT
+      </h2>
     </div>
-</section>
- <!-- <div>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
-    </div> -->
-<section id="featured" class="padding-t-50">
-    <div class="container-fluid">
-        <div class="row padding-b-30">
-            <div class="col-xs-12">
-                <h1 class="intro">As featured in</h1>
+  </div>
+ <section class="hero is-content section-box is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+          <div class="column  has-text-centered">
+              <h1 class="title-content"><?php _e('ABOUT US') ?></h1>
+          </div>
+      </div>
+      <div class="columns ">
+         <div class="column is-three-fifths is-offset-one-fifth">
+            <div class="columns ">
+                <div class="column  has-text-centered box-content">
+                    <article class="tile is-child notification is-primary block-content has-text-centered">
+                       <p class="title"><?php _e('7 years', $domain); ?></p>
+                       <div class="line-solid"></div>
+                       <p class="subtitle"><?php _e('Creating for more than 7 years', $domain); ?></p>
+                     </article>
+                </div>
+                <div class="column  has-text-centered">
+                  <article class="tile is-child notification is-primary block-content has-text-centered">
+                    <p class="title"><?php _e('Thai & Foreign', $domain); ?></p>
+                    <div class="line-solid"></div>
+                    <p class="subtitle"><?php _e('Professional team of Thai and Foreign nationals', $domain); ?></p>
+                  </article>
+                </div>
+                <div class="column  has-text-centered">
+                     <article class="tile is-child notification is-primary block-content has-text-centered">
+                       <p class="title"><?php _e('Data analysis', $domain); ?></p>
+                       <div class="line-solid"></div>
+                       <p class="subtitle"><?php _e('Connecting business strategy, data analysis and digital development; Under this: Registered with DBD statement', $domain); ?></p>
+                     </article>
+                </div>
             </div>
-        </div>
-       <div class="row">
-            <div class="col-xs-6 col-sm-3 padding-b-35">
-                  <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/bkk101.png" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-3 padding-b-35">
-                  <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/bkk101.png" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-3 padding-b-35">
-                  <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/bkk101.png" alt="">
-            </div>
-            <div class="col-xs-6 col-sm-3 padding-b-35">
-                  <img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/bkk101.png" alt="">
-            </div>
-        </div>
+          </div>
+      </div>
     </div>
+  </div>
 </section>
-
-<?php get_camps(8); ?>
-
-<section class="block-about padding-t-60">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 col-xs-12 img-about" style="<?php echo trim($image2) ? "background-image:url($image2)" : "" ?>">
-                <span  data-embed='Sm6bdSKR5XA' class="play-video trigger-overlay"></span>
-            </div>
-            <div class="col-sm-6 col-xs-12">
-                <div class="block-about-content">
-                    <div class="title-about">
-                        <h2>About us</h2>
-                    </div>
-                    <div class="content-about">
-                       <p> Camp Sunbear (previously known as Thailand Summer Camps) was founded by Merritt and Kat Gurley, American sisters who were raised in Thailand. Merritt moved to Bangkok with her parents in 1990 and her younger sister Kat was born here in 1993. </p>
-                        <p>Merritt attended ISB, RIS and NIST, and Kat graduated from NIST in 2011, so they know all the ins and outs of being international-school kids living in Bangkok. They both loved growing up in a big city but they missed the outdoors, especially on school breaks. </p>
-
-                    </div>
-                     <a href="javascript:void(0)" data-embed='Sm6bdSKR5XA' class="btn btn-border-gold margin-b-15 trigger-overlay">watch our video <span class="glyphicon glyphicon-triangle-right"></span></a>
+ 
+ 
+ 
+ <section class="hero is-content section-box is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+          <div class="column  has-text-centered">
+              <h1 class="title-content"><?php _e('Top Main Area', $domain) ?></h1>
+          </div>
+      </div>
+      <div class="columns ">
+         <div class="column is-three-fifths is-offset-one-fifth">
+            <div class="columns ">
+                <div class="column  has-text-centered box-content blog-img no-padding margin-075em">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" >
+                    <article class="tile is-child notification is-dark block-content has-text-centered">
+                       <p class="title"><?php _e('App Development &Web Design', $domain); ?></p>
+                     </article>
+                </div>
+                <div class="column  has-text-centered blog-img no-padding margin-075em">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" >
+                  <article class="tile is-child notification is-dark block-content has-text-centered">
+                    <p class="title"><?php _e('Break the Norm', $domain); ?></p>
+                  </article>
+                </div>
+                <div class="column  has-text-centered blog-img no-padding margin-075em">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" >
+                     <article class="tile is-child notification is-dark block-content has-text-centered">
+                       <p class="title"><?php _e('Build the Tale', $domain); ?></p>
+                     </article>
                 </div>
             </div>
-        </div>
+          </div>
+      </div>
     </div>
-    
+  </div>
 </section>
-
-<?php get_tesimonials(); ?>
-
-<section class="about-camp">
-    <div class="container-fluid">
-         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3 padding-b-35">
-                <div class="block">
-                  <img width="100" class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/map.png" alt="">
+ <section class="hero is-content section-box is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+          <div class="column  has-text-centered">
+              <h1 class="title-content"><?php _e('โครงการที่ผ่านมา', $domain) ?></h1>
+          </div>
+      </div>
+      <div class="columns ">
+         <div class="column is-10 is-offset-1">
+             <?php if(!empty($projects_past)): 
+                   foreach($projects_past as $key => $pro): 
+                    $post_id = $pro->ID;
+                    /* Get post thumnail */
+                    $image_id = get_post_thumbnail_id($post_id);
+                    $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+                    if (empty($image_arr)) {
+                        $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+                    } else {
+                        $image = $image_arr[0];
+                    }
+                    if($key == 3): ?>
+                        <div class="columns no-margin-bot">
+                            <div class="column  has-text-centered box-content blog-img slide no-padding">
+                                 <img src="<?php echo $image ?>" >
+                                 <article class="tile is-child is-dark block-content has-text-centered">
+                                    <p class="title"><?php echo $pro->post_title; ?></p>
+                                  </article>
+                             </div>
+                        </div>
+                    <?php endif; 
+                    endforeach; 
+                endif; ?>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+ <section class="hero section-box is-primary">
+  <div class="hero-body no-padding">
+    <div class="container-fluid  no-padding">
+      <div class="columns">
+          <div class="column  has-text-centered">
+              <h1 class="title-content"><?php _e('โครงการปัจจุบัน', $domain) ?></h1>
+          </div>
+      </div>
+      <div class="columns ">
+         <div class="column is-12 ">
+            <div class="columns no-margin-bot">
+                <div class="column  has-text-centered box-content blog-img slide no-padding">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" >
+                    <article class="tile is-child is-dark block-content has-text-centered">
+                       <p class="title"><?php _e('App Development &Web Design', $domain); ?></p>
+                     </article>
                 </div>
-                <div class="about-camp-content">
-                    Wide range of outdoor activity programs throughout Thailand 
+                <div class="column  has-text-centered blog-img slide no-padding">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" >
+                  <article class="tile is-child is-dark block-content has-text-centered">
+                    <p class="title"><?php _e('Break the Norm', $domain); ?></p>
+                  </article>
+                </div>
+                <div class="column  has-text-centered blog-img slide no-padding">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" >
+                     <article class="tile is-child  is-dark block-content has-text-centered">
+                       <p class="title"><?php _e('Build the Tale', $domain); ?></p>
+                     </article>
+                </div>
+                <div class="column  has-text-centered box-content blog-img slide no-padding">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" >
+                    <article class="tile is-child is-dark block-content has-text-centered">
+                       <p class="title"><?php _e('App Development &Web Design', $domain); ?></p>
+                     </article>
+                </div>
+                 <div class="column  has-text-centered blog-img slide no-padding">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" >
+                     <article class="tile is-child  is-dark block-content has-text-centered">
+                       <p class="title"><?php _e('Build the Tale', $domain); ?></p>
+                     </article>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 padding-b-35">
-                <div class="block">
-                  <img width="200" class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/assessed.png" alt="">
-                </div>
-                <div class="about-camp-content">
-                    Our activity provider has an outstanding safety record  
-                </div>
-            </div>
-            <div class="clearfix visible-sm"></div>
-            <div class="col-xs-12 col-sm-6 col-md-3 padding-b-35">
-                <div class="block">
-                  <img width="150" class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/family.png" alt="">
-                </div>
-                <div class="about-camp-content">
-                    Camp Sunbear is a family run business   
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3 padding-b-35">
-                <div class="block">
-                  <img width="150" class="img-responsive" src="<?php echo get_template_directory_uri() ?>/images/icon/camp.png" alt="">
-                </div>
-                <div class="about-camp-content">
-                    Wide range of outdoor activities and skills 
-                </div>
-            </div>
-
-        </div>
-    </div>    
-</section><!--  -->
-<script type="text/javascript">
-
-    jQuery(document).ready(function ($) {
-        $('#search-camp').on('click', function(){
-            var age = $('#filter_age').val();
-            var act = $('#filter_act').val();
-            var date = $('#filter_date').val();
-            var url = "<?php echo get_site_url().'/find-a-camp?'?>";
-            window.location.href = url+'filter_age='+age+'&filter_activity='+act+'&filter_date='+date;
-        });
-         $('.chosen').chosen();
-    });
-
-    
-</script>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 <?php contact_form(); ?>
 
 
