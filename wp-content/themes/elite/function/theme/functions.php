@@ -156,7 +156,7 @@ function contact_form(){
             <div class="wrapper-download">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <form id="frmDownload" class="frmDownload" name="frmDownload" action="#" method="post">
+                    <form id="frmContact" class="frmContact" name="frmContact" action="#" method="post">
                          <h1 class="text-center"> <?php _e('ติดต่อ', $eilte); ?> </h1>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
@@ -221,7 +221,7 @@ function contact_form(){
     <script type="text/javascript">
     jQuery(document).ready(function($) {
        $(function () {
-            var formbro = $('#frmDownload').validate({
+            var formbro = $('#frmContact').validate({
             rules: {
                 txtFirstName: {required: true},
                 txtLastName: {required: true},

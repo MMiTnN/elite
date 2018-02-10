@@ -32,11 +32,15 @@ if (!empty($get_pjt)) {
 $posts = new WP_Query($args);
 $projects = $posts->posts;
 ?>
-<section class="header-section">
-    <div>
-        <p class='text-white header-title text-center'><?php echo empty($get_pjt)? _e('โครงการทั้งหมด'): $get_pjt; ?></p>
+<div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower8.jpeg" >
+    <div class="container has-text-centered">
+      <div class="font-main-header white">
+        <h1 class="title">
+          <?php echo empty($get_pjt)? _e('โครงการทั้งหมด'): $get_pjt; ?>
+        </h1>
+      </div>
     </div>
-</section>
+  </div>
 
 
 <?php

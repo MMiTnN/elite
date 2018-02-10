@@ -33,68 +33,49 @@ function elite_setup() {
 add_action('wp_enqueue_scripts', 'elite_load_scripts');
 
 function elite_load_scripts() {
-    wp_register_style('bootstrap-style', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
-    wp_register_style('main-css', get_stylesheet_directory_uri() . '/css/main.css',array('bootstrap-style'),filemtime(get_stylesheet_directory()."/css/main.css"));
-    wp_register_style('chosen-css', get_stylesheet_directory_uri() . '/lib/chosen/chosen.min.css');
+    wp_enqueue_style('bootstrap-style', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
     wp_enqueue_style('bulma-css', get_stylesheet_directory_uri() . "/css/bulma.css", array());
-
-    wp_enqueue_style('bootstrap-style');
-    wp_enqueue_style('main-css');
-    wp_enqueue_style('chosen-css');
+     wp_enqueue_style('font-awesome-css', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
+    wp_enqueue_style('chosen-css', get_stylesheet_directory_uri() . '/lib/chosen/chosen.min.css');
 
 
-    wp_register_script('jquery-js', get_stylesheet_directory_uri() . '/js/jquery-1.12.2.min.js');
-    wp_enqueue_script('jquery-js');
+
+    wp_enqueue_style('bootstrap-dropdownhover-css', get_stylesheet_directory_uri() . '/css/bootstrap-dropdownhover.min.css');
+    wp_enqueue_style('bootstrap-datetimepicker-css', get_stylesheet_directory_uri() . '/css/bootstrap-datetimepicker.min.css');
+    wp_enqueue_style('bootstrap-select-css', get_stylesheet_directory_uri() . '/css/bootstrap-select.min.css');
+    wp_enqueue_style('owlcarousel-css', get_stylesheet_directory_uri() . '/lib/owlcarousel/owl.carousel.min.css');
+    wp_enqueue_style('owlcarousel-default-css', get_stylesheet_directory_uri() . '/lib/owlcarousel/owl.theme.default.min.css');
+    wp_enqueue_style('lightbox-css', get_stylesheet_directory_uri() . '/lib/lightbox/lightbox2-master/dist/css/lightbox.min.css');
+
+    wp_enqueue_style('main-css', get_stylesheet_directory_uri() . '/css/main.css',array('bootstrap-style'),filemtime(get_stylesheet_directory()."/css/main.css"));
+
+
+// JS
+    // wp_enqueue_script('jquery-js', get_stylesheet_directory_uri() . '/js/jquery-1.12.2.min.js');
+    wp_deregister_script('jquery');
+    wp_enqueue_script('jquery', get_stylesheet_directory_uri() .'/js/jquery-2.2.4.min.js', array(), null);
+
+    wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js',array('jquery'),null,true);
+    wp_enqueue_script('moment-js', get_stylesheet_directory_uri() . '/js/moment.min.js',array('jquery'),null,true);
+    wp_enqueue_script('classie-js', get_stylesheet_directory_uri() . '/js/classie.js',array('jquery'),null,true);
+    wp_enqueue_script('modernizr.custom-js', get_stylesheet_directory_uri() . '/js/modernizr.custom.js',array('jquery'),null,true);
+    wp_enqueue_script('bootstrap-dropdownhover-js', get_stylesheet_directory_uri() . '/js/bootstrap-dropdownhover.min.js',array('jquery'),null,true);
+    wp_enqueue_script('bootstrap-datetimepicker-js', get_stylesheet_directory_uri() . '/js/bootstrap-datetimepicker.min.js',array('jquery'),null,true);
+    wp_enqueue_script('bootstrap-formhelpers-js', get_stylesheet_directory_uri() . '/js/bootstrap-formhelpers.min.js',array('jquery'),null,true);
+    wp_enqueue_script('intlTelInput-js', get_stylesheet_directory_uri() . '/js/intlTelInput.min.js',array('jquery'),null,true);
+    wp_enqueue_script('bootstrap-select-js', get_stylesheet_directory_uri() . '/js/bootstrap-select.min.js',array('jquery'),null,true);
+    wp_enqueue_script('validator-js', get_stylesheet_directory_uri() . '/js/validator.min.js',array('jquery'),null,true);
+    wp_enqueue_script('owlcarousel-js', get_stylesheet_directory_uri() . '/lib/owlcarousel/owl.carousel.min.js',array('jquery'),null,true);
+    wp_enqueue_script('set-height-block-js', get_stylesheet_directory_uri() . '/js/set-height-block.js',array('jquery'),null,true);
+    wp_enqueue_script('chosen-js', get_stylesheet_directory_uri() . '/lib/chosen/chosen.jquery.js',array('jquery'),null,true);
+    wp_enqueue_script('lightbox-js', get_stylesheet_directory_uri() . '/lib/lightbox/lightbox2-master/dist/js/lightbox.min.js',array('jquery'),null,true);
+    wp_enqueue_script('nav-js', get_stylesheet_directory_uri() . '/js/nav.js');
+    wp_enqueue_script('parallax-js', get_stylesheet_directory_uri() . '/js/parallax.min.js',array('jquery'),null,true);
+
 }
 
 function add_footer_styles_js() {
-    wp_register_style('font-awesome-css', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
-    wp_register_style('bootstrap-dropdownhover-css', get_stylesheet_directory_uri() . '/css/bootstrap-dropdownhover.min.css');
-    wp_register_style('bootstrap-datetimepicker-css', get_stylesheet_directory_uri() . '/css/bootstrap-datetimepicker.min.css');
-    wp_register_style('bootstrap-select-css', get_stylesheet_directory_uri() . '/css/bootstrap-select.min.css');
-    wp_register_style('owlcarousel-css', get_stylesheet_directory_uri() . '/lib/owlcarousel/owl.carousel.min.css');
-    wp_register_style('owlcarousel-default-css', get_stylesheet_directory_uri() . '/lib/owlcarousel/owl.theme.default.min.css');
-    wp_register_style('lightbox-css', get_stylesheet_directory_uri() . '/lib/lightbox/lightbox2-master/dist/css/lightbox.min.css');
 
-    wp_enqueue_style('font-awesome-css');
-    wp_enqueue_style('bootstrap-select-css');
-    wp_enqueue_style('owlcarousel-css');
-    wp_enqueue_style('owlcarousel-default-css');
-    wp_enqueue_style('lightbox-css');
-
-// JS
-
-    wp_register_script('bootstrap-js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js');
-    wp_register_script('moment-js', get_stylesheet_directory_uri() . '/js/moment.min.js');
-    wp_register_script('classie-js', get_stylesheet_directory_uri() . '/js/classie.js');
-    wp_register_script('modernizr.custom-js', get_stylesheet_directory_uri() . '/js/modernizr.custom.js');
-    wp_register_script('bootstrap-dropdownhover-js', get_stylesheet_directory_uri() . '/js/bootstrap-dropdownhover.min.js');
-    wp_register_script('bootstrap-datetimepicker-js', get_stylesheet_directory_uri() . '/js/bootstrap-datetimepicker.min.js');
-    wp_register_script('bootstrap-formhelpers-js', get_stylesheet_directory_uri() . '/js/bootstrap-formhelpers.min.js');
-    wp_register_script('intlTelInput-js', get_stylesheet_directory_uri() . '/js/intlTelInput.min.js');
-    wp_register_script('bootstrap-select-js', get_stylesheet_directory_uri() . '/js/bootstrap-select.min.js');
-    wp_register_script('validator-js', get_stylesheet_directory_uri() . '/js/validator.min.js');
-    wp_register_script('owlcarousel-js', get_stylesheet_directory_uri() . '/lib/owlcarousel/owl.carousel.min.js');
-    wp_register_script('set-height-block-js', get_stylesheet_directory_uri() . '/js/set-height-block.js');
-    wp_register_script('chosen-js', get_stylesheet_directory_uri() . '/lib/chosen/chosen.jquery.js');
-    wp_register_script('lightbox-js', get_stylesheet_directory_uri() . '/lib/lightbox/lightbox2-master/dist/js/lightbox-plus-jquery.min.js"');
-    
-
-
-    wp_enqueue_script('bootstrap-js');
-    wp_enqueue_script('moment-js');
-    wp_enqueue_script('classie-js');
-    wp_enqueue_script('modernizr.custom-js');
-    wp_enqueue_script('bootstrap-dropdownhover-js');
-    wp_enqueue_script('bootstrap-datetimepicker-js');
-    wp_enqueue_script('bootstrap-formhelpers-js');
-    wp_enqueue_script('intlTelInput-js');
-    wp_enqueue_script('bootstrap-select-js');
-    wp_enqueue_script('validator-js');
-    wp_enqueue_script('owlcarousel-js');
-    wp_enqueue_script('set-height-block-js');
-    wp_enqueue_script('chosen-js');
-    wp_enqueue_script('lightbox-js');
    
 }
 
@@ -142,4 +123,29 @@ function get_taxonomy_list($taxonomy_name){
         $term_table = $wpdb->prefix . "terms";
         $sql_string = "SELECT * FROM {$term_tax_table} JOIN {$term_table} ON {$term_tax_table}.`term_id` = {$term_table}.`term_id` WHERE {$term_tax_table}.`taxonomy` = '{$taxonomy_name}'";
     return $wpdb->get_results($sql_string, OBJECT);
+}
+
+function wp_get_menu_array($current_menu) {
+    $array_menu = wp_get_nav_menu_items($current_menu);
+    $menu = array();
+    foreach ($array_menu as $m) {
+        if (empty($m->menu_item_parent)) {
+            $menu[$m->ID] = array();
+            $menu[$m->ID]['ID']      =   $m->ID;
+            $menu[$m->ID]['title']       =   $m->title;
+            $menu[$m->ID]['url']         =   $m->url;
+            $menu[$m->ID]['children']    =   array();
+        }
+    }
+    $submenu = array();
+    foreach ($array_menu as $m) {
+        if ($m->menu_item_parent) {
+            $submenu[$m->ID] = array();
+            $submenu[$m->ID]['ID']       =   $m->ID;
+            $submenu[$m->ID]['title']    =   $m->title;
+            $submenu[$m->ID]['url']  =   $m->url;
+            $menu[$m->menu_item_parent]['children'][$m->ID] = $submenu[$m->ID];
+        }
+    }
+    return $menu;
 }

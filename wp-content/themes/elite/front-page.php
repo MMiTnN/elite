@@ -50,24 +50,17 @@ if(!empty($profile[0])){
     $profile_img_src = wp_get_attachment_image_src($profile_img, 'full');
 }
 ?>
-
-<style>
-    .hero-body.main-header{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url("<?php echo get_template_directory_uri(); ?>/images/main-location.gif");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 55% 55%;
-    }
-</style>
  <!-- Hero content: will be in the middle -->
-  <div class="hero-body main-header" >
+  <div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg" >
     <div class="container has-text-centered">
-      <h1 class="title">
-        ELITE
-      </h1>
-      <h2 class="subtitle">
-        ENGINEER
-      </h2>
+      <div class="font-main-header white">
+        <h1 class="title">
+          ELITE
+        </h1>
+        <h2 class="subtitle">
+          ENGINEER
+        </h2>
+      </div>
     </div>
   </div>
  <section class="hero is-content section-box is-dark">
@@ -245,8 +238,6 @@ if(!empty($profile[0])){
 
 
 <?php video_popup(); ?>
-
-
 <?php
 get_footer();
 ?>

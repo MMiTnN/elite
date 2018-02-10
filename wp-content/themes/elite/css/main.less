@@ -646,7 +646,7 @@ span.play-video{
 
 
 
-.frmDownload{
+.frmContact{
     max-width: 900px;
     margin: 0 auto;
     .submit-question{
@@ -673,6 +673,18 @@ span.play-video{
                 height: 150px;
                 border: none;
                 background: transparent;
+                &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                  padding: 10px;
+                }
+                &::-moz-placeholder { /* Firefox 19+ */
+                  padding: 10px;
+                }
+                &:-ms-input-placeholder { /* IE 10+ */
+                  padding: 10px;
+                }
+                &:-moz-placeholder { /* Firefox 18- */
+                  padding: 10px;
+                }
             }
         }
         &.download{
@@ -764,7 +776,6 @@ span.play-video{
     background-size: cover;
     height: 80vh;
     position: relative;
-    padding-top: 100px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -1461,7 +1472,14 @@ ul.chosen-results{
 
 
 .projects-list{
-    padding: 30px;
+    padding: 60px 30px 50px 30px;
+    .block{
+        height: 300px;
+    }
+}
+
+.projects-pic-list{
+    padding: 60px 30px 20px 30px;
     .block{
         height: 300px;
     }
@@ -1485,8 +1503,8 @@ ul.chosen-results{
 }
 
 .main-header {
-    padding-bottom: 20rem;
-    padding-top: 20rem;
+    padding-bottom: 12rem;
+    padding-top: 12rem;
     background-color: #2C69C1;
     .title{
         color: #fff;
@@ -1604,7 +1622,7 @@ ul.chosen-results{
 }
 
 .navbar-brand{
-    min-height: 9.25rem;
+    height: 6.25rem;
 }
 
 .hero .navbar {
@@ -1642,4 +1660,40 @@ ul.chosen-results{
 
 .menu-footer .footer-list ul.menu li a{
     font-size: 16px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.navbar-item{
+    font-size: 16px;
+}
+
+.navbar-dropdown{
+    padding: 30px 10px;
+    margin-top: 4px;
+    .navbar-item{
+        padding: 10px;
+    }
+}
+
+body{
+    background: transparent;
+}
+
+.parallax-window{
+    background: transparent;
+    .font-main-header.white{
+        .title, .subtitle{
+            color: white;
+            font-weight: bolder;
+        }
+    }
+    .font-main-header.black{
+        .title, .subtitle{
+            color: black;
+            font-weight: bolder;
+        }
+    }
 }

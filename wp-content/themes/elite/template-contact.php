@@ -13,12 +13,15 @@ $image = '';
         $image = $image_arr[0];
     } 
 ?>
-
-<section class="header-section"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url(<?php echo $image ?>);">
-    <div>
-        <p class='text-white header-title text-center'><?php echo get_the_title(); ?></p>
+<div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower6.jpeg" >
+    <div class="container has-text-centered">
+      <div class="font-main-header white">
+        <h1 class="title">
+          <?php echo get_the_title(); ?>
+        </h1>
+      </div>
     </div>
-</section>
+  </div>
 <section class="map">
     <div class="container">
         <div class="row">

@@ -12,26 +12,32 @@
             <span></span>
           </span>
         </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
+         <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end">
-            <a class="navbar-item is-active">
-              Home
-            </a>
-            <a class="navbar-item">
-              About
-            </a>
-            <a class="navbar-item">
-              Our work
-            </a>
-            <a class="navbar-item">
-              Corperation Clients
-            </a>
-            <a class="navbar-item">
-              Contact
-            </a>
+            <?php $header_menu = wp_get_menu_array('Header Menu');?>
+            <?php foreach ($header_menu as $menu): 
+                if(!empty($menu['children'])): ?>
+                <div class="navbar-item has-dropdown">
+                  <a class="navbar-link" href="<?php echo $menu['url']?>" >
+                    <?php echo $menu['title']?>
+                  </a>
+
+                  <div class="navbar-dropdown is-boxed">
+                    <?php foreach ($menu['children'] as $key => $value): ?>
+                      <a class="navbar-item" href="<?php echo $value['url'] ?>">
+                        <?php echo $value['title'] ?>
+                      </a>     
+                     <?php endforeach; ?>  
+                  </div>
+                </div>
+            <?php else: ?>
+              <a class="navbar-item" href="<?php echo $menu['url']?>">
+                <?php echo $menu['title']; ?>
+              </a>
+            <?php endif; 
+            endforeach; ?>
           </div>
         </div>
-      </div>
     </nav>
   </div>
 </section>
