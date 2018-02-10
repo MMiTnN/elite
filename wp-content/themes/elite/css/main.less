@@ -1565,6 +1565,7 @@ ul.chosen-results{
         padding: 20px 10px;
         .title{
             margin-bottom: 0px;
+            color: white;
         }
     }
     &.slide{
@@ -1575,10 +1576,13 @@ ul.chosen-results{
         .block-content{
             bottom: -100%;
         }
-        &:hover .block-content
-        {
-          bottom: 0%;
+        &:hover{
+            cursor: pointer;
+            .block-content{
+              bottom: 0%;              
+            }
         }
+        
     }
     
 }
@@ -1618,4 +1622,24 @@ ul.chosen-results{
 
 .projects-list .img-pro:hover{
     opacity: 0.8;
+}
+
+.margin-t-8{
+    margin-top: 8px;
+}
+
+.box-center-text{
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 25px;
+    }
+}
+
+.navbar-brand:hover{
+    cursor: pointer;
+}
+
+.menu-footer .footer-list ul.menu li a{
+    font-size: 16px;
 }

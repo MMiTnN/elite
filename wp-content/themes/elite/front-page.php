@@ -23,8 +23,8 @@ $projects_now = $posts_now->posts;
 $args_past = array(
     'post_type' => 'projects',
     'post_status' => 'publish',
-    'posts_per_page' => 8,
-    'order' => 'DESC',
+    'posts_per_page' => 7,
+    'orderby' => 'rand',
     'meta_query' => array(
         array(
             'key' => '_pjt',
@@ -38,11 +38,22 @@ $args_past = array(
  */
 $posts_past = new WP_Query($args_past);
 $projects_past = $posts_past->posts;
+$homepage = get_page_by_title('Homepage');
+$profile = get_post_meta($homepage->ID, 'profile', $single);
+$profile_title = '';
+$profile_content = '';
+$profile_img =  '';
+if(!empty($profile[0])){
+    $profile_title = $profile[0]['profile_title'];
+    $profile_content = $profile[0]['profile_content'];
+    $profile_img =  $profile[0]['profile_img'];
+    $profile_img_src = wp_get_attachment_image_src($profile_img, 'full');
+}
 ?>
 
 <style>
     .hero-body.main-header{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url("<?php echo get_template_directory_uri(); ?>/images/header.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), url("<?php echo get_template_directory_uri(); ?>/images/main-location.gif");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 55% 55%;
@@ -52,10 +63,10 @@ $projects_past = $posts_past->posts;
   <div class="hero-body main-header" >
     <div class="container has-text-centered">
       <h1 class="title">
-        MAC'N MOTION
+        ELITE
       </h1>
       <h2 class="subtitle">
-        IN AN INNOVATIVE ENVIRONMENT
+        ENGINEER
       </h2>
     </div>
   </div>
@@ -64,7 +75,7 @@ $projects_past = $posts_past->posts;
     <div class="container">
       <div class="columns">
           <div class="column  has-text-centered">
-              <h1 class="title-content"><?php _e('ABOUT US') ?></h1>
+              <h1 class="title-content"><?php _e('เกี่ยวกับเรา', $elite) ?></h1>
           </div>
       </div>
       <div class="columns ">
@@ -72,23 +83,23 @@ $projects_past = $posts_past->posts;
             <div class="columns ">
                 <div class="column  has-text-centered box-content">
                     <article class="tile is-child notification is-primary block-content has-text-centered">
-                       <p class="title"><?php _e('7 years', $domain); ?></p>
+                       <p class="title"><?php _e('High Capability', $eilte); ?></p>
                        <div class="line-solid"></div>
-                       <p class="subtitle"><?php _e('Creating for more than 7 years', $domain); ?></p>
+                       <p class="subtitle"><?php _e('Our management team consist of engineers with high capability.', $eilte); ?></p>
                      </article>
                 </div>
                 <div class="column  has-text-centered">
                   <article class="tile is-child notification is-primary block-content has-text-centered">
-                    <p class="title"><?php _e('Thai & Foreign', $domain); ?></p>
+                    <p class="title"><?php _e('Business Nature', $eilte); ?></p>
                     <div class="line-solid"></div>
-                    <p class="subtitle"><?php _e('Professional team of Thai and Foreign nationals', $domain); ?></p>
+                    <p class="subtitle"><?php _e('Construction,  Mechanical, Electrical', $eilte); ?></p>
                   </article>
                 </div>
                 <div class="column  has-text-centered">
                      <article class="tile is-child notification is-primary block-content has-text-centered">
-                       <p class="title"><?php _e('Data analysis', $domain); ?></p>
+                       <p class="title"><?php _e('Specialize', $eilte); ?></p>
                        <div class="line-solid"></div>
-                       <p class="subtitle"><?php _e('Connecting business strategy, data analysis and digital development; Under this: Registered with DBD statement', $domain); ?></p>
+                       <p class="subtitle"><?php _e('We  specialize  in  Mechanical  &  Electrical  turnkey  project', $eilte); ?></p>
                      </article>
                 </div>
             </div>
@@ -97,15 +108,32 @@ $projects_past = $posts_past->posts;
     </div>
   </div>
 </section>
+  <section class="block-about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 img-about" style="<?php echo trim($profile_img_src[0]) ? "background-image:url($profile_img_src[0])" : "" ?>">
+                </div>
+                <div class="col-sm-6 col-xs-12 <?php echo $css_pull; ?> ">
+                    <div class="block-about-content">
+                        <div class="title-about">
+                            <h3><?php echo $profile_title; ?></h3>
+                        </div>
+                        <div class="content-about">
+                           <p> <?php echo $profile_content; ?> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
  
  
- 
- <section class="hero is-content section-box is-primary">
+ <!-- <section class="hero is-content section-box is-primary">
   <div class="hero-body">
     <div class="container">
       <div class="columns">
           <div class="column  has-text-centered">
-              <h1 class="title-content"><?php _e('Top Main Area', $domain) ?></h1>
+              <h1 class="title-content"><?php _e('160+ พนักงาน', $eilte) ?></h1>
           </div>
       </div>
       <div class="columns ">
@@ -114,19 +142,19 @@ $projects_past = $posts_past->posts;
                 <div class="column  has-text-centered box-content blog-img no-padding margin-075em">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" >
                     <article class="tile is-child notification is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('App Development &Web Design', $domain); ?></p>
+                       <p class="title"><?php _e('Enginerr : 50', $eilte); ?></p>
                      </article>
                 </div>
                 <div class="column  has-text-centered blog-img no-padding margin-075em">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" >
                   <article class="tile is-child notification is-dark block-content has-text-centered">
-                    <p class="title"><?php _e('Break the Norm', $domain); ?></p>
+                    <p class="title"><?php _e('Forman: 88', $eilte); ?></p>
                   </article>
                 </div>
                 <div class="column  has-text-centered blog-img no-padding margin-075em">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" >
                      <article class="tile is-child notification is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('Build the Tale', $domain); ?></p>
+                       <p class="title"><?php _e('Admin : 40', $eilte); ?></p>
                      </article>
                 </div>
             </div>
@@ -134,116 +162,81 @@ $projects_past = $posts_past->posts;
       </div>
     </div>
   </div>
-</section>
- <section class="hero is-content section-box is-dark">
+ </section> -->
+ <section class="hero is-content section-box is-primary">
   <div class="hero-body">
     <div class="container">
       <div class="columns">
           <div class="column  has-text-centered">
-              <h1 class="title-content"><?php _e('โครงการที่ผ่านมา', $domain) ?></h1>
+              <h1 class="title-content"><?php _e('โครงการปัจจุบัน', $eilte) ?></h1>
           </div>
       </div>
-      <div class="columns ">
-         <div class="column is-10 is-offset-1">
-             <?php if(!empty($projects_past)): 
-                   foreach($projects_past as $key => $pro): 
-                    $post_id = $pro->ID;
-                    /* Get post thumnail */
-                    $image_id = get_post_thumbnail_id($post_id);
-                    $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
-                    if (empty($image_arr)) {
-                        $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
-                    } else {
-                        $image = $image_arr[0];
-                    }
-                    if($key == 3): ?>
-                        <div class="columns no-margin-bot">
-                    <?php endif; ?>
-                            <div class="column  has-text-centered box-content blog-img slide no-padding">
-                                 <img src="<?php echo $image ?>" >
-                                 <article class="tile is-child is-dark block-content has-text-centered">
-                                    <p class="title"><?php echo $pro->post_title; ?></p>
-                                  </article>
-                             </div>
-                    <?php if($key == 3): ?>
-                        </div>
-                    <?php endif; 
-                    endforeach; 
-                endif; ?>
-          </div>
+      <div class="columns is-12">
+         <?php if(!empty($projects_now)): 
+               foreach($projects_now as $key => $pro): 
+                $post_id = $pro->ID;
+                /* Get post thumnail */
+                $image_id = get_post_thumbnail_id($post_id);
+                $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+                if (empty($image_arr)) {
+                    $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+                } else {
+                    $image = $image_arr[0];
+                }?>
+                  <div class="column has-text-centered box-content blog-img slide no-padding">
+                      <a href="<?php echo get_permalink($post_id); ?>">
+                         <img src="<?php echo $image ?>" >
+                         <article class="tile is-child is-dark block-content has-text-centered">
+                            <p class="title"><?php echo $pro->post_title; ?></p>
+                          </article>
+                      </a>
+                  </div>
+                <?php 
+                endforeach; 
+            endif; ?>
       </div>
     </div>
   </div>
 </section>
  
- <section class="hero section-box is-primary">
+ <section class="hero section-box is-light margin-t-8">
   <div class="hero-body no-padding">
-    <div class="container-fluid  no-padding">
-      <div class="columns">
-          <div class="column  has-text-centered">
-              <h1 class="title-content"><?php _e('โครงการปัจจุบัน', $domain) ?></h1>
-          </div>
-      </div>
-<!--        <div class="columns ">
-         <div class="column is-12 ">
-            <div class="columns no-margin-bot">
-                <?php if(!empty($projects_now)): 
-                   foreach($projects_now as $key => $pro): 
-                    $post_id = $pro->ID;
-                    /* Get post thumnail */
-                    $image_id = get_post_thumbnail_id($post_id);
-                    $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
-                    if (empty($image_arr)) {
-                        $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
-                    } else {
-                        $image = $image_arr[0];
-                    }?>
-                        <div class="column  has-text-centered box-content blog-img slide no-padding">
-                             <img src="<?php echo $image ?>" >
-                             <article class="tile is-child is-dark block-content has-text-centered">
-                                <p class="title"><?php echo $pro->post_title; ?></p>
-                              </article>
-                         </div>
-                   <?php endforeach; 
-                endif; ?>
-            </div>
-          </div>
-      </div>-->
-      <div class="columns ">
-         <div class="column is-12 ">
-            <div class="columns no-margin-bot">
-                <div class="column  has-text-centered box-content blog-img slide no-padding">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" >
-                    <article class="tile is-child is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('App Development &Web Design', $domain); ?></p>
-                     </article>
-                </div>
-                <div class="column  has-text-centered blog-img slide no-padding">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" >
-                  <article class="tile is-child is-dark block-content has-text-centered">
-                    <p class="title"><?php _e('Break the Norm', $domain); ?></p>
+    <div class="container-fluid no-padding">
+      <div class="columns is-multiline is-12">
+          <?php if(!empty($projects_past)): ?>
+             <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text"> 
+                 <article class="tile is-child is-dark has-text-centered">
+                    <p class="title"><?php _e('โครงการที่ผ่านมา',$elite); ?></p>
                   </article>
-                </div>
-                <div class="column  has-text-centered blog-img slide no-padding">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" >
-                     <article class="tile is-child  is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('Build the Tale', $domain); ?></p>
-                     </article>
-                </div>
-                <div class="column  has-text-centered box-content blog-img slide no-padding">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" >
-                    <article class="tile is-child is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('App Development &Web Design', $domain); ?></p>
-                     </article>
-                </div>
-                 <div class="column  has-text-centered blog-img slide no-padding">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" >
-                     <article class="tile is-child  is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('Build the Tale', $domain); ?></p>
-                     </article>
-                </div>
-            </div>
-          </div>
+             </div>
+             <?php foreach($projects_past as $key => $pro): 
+              $post_id = $pro->ID;
+              /* Get post thumnail */
+              $image_id = get_post_thumbnail_id($post_id);
+              $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+              if (empty($image_arr)) {
+                  $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+              } else {
+                  $image = $image_arr[0];
+              }?>
+              <?php if($key == 0 || $key == 4){
+                 $css_column = 'is-4';
+              }else if($key == 6) {
+                $css_column = 'is-2';
+              }else{
+                $css_column = 'is-3';
+              }
+               ?>
+                <div class="column <?php echo $css_column;  ?> has-text-centered box-content blog-img slide no-padding">
+                   <a href="<?php echo get_permalink($post_id); ?>">
+                     <img  src="<?php echo $image ?>" >
+                     <article class="tile is-child is-dark block-content has-text-centered">
+                        <p class="title"><?php echo $pro->post_title; ?></p>
+                      </article>
+                    </a>
+                 </div>
+             <?php endforeach; 
+          endif; ?>
       </div>
     </div>
   </div>

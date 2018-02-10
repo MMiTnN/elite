@@ -12,6 +12,8 @@ require_once FUNC_DIR.'/condition-cpt/condition-cpt.php';
 require_once FUNC_DIR.'/age-taxonomy/age-taxonomy.php';
 require_once FUNC_DIR.'/project-cpt/project-cpt.php';
 require_once FUNC_DIR.'/project-type-taxonomy/project-type-taxonomy.php';
+require_once FUNC_DIR.'/front-page/front-page.php';
+
 
 add_action('after_setup_theme', 'elite_setup');
 
@@ -34,7 +36,7 @@ function elite_load_scripts() {
     wp_register_style('bootstrap-style', get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
     wp_register_style('main-css', get_stylesheet_directory_uri() . '/css/main.css',array('bootstrap-style'),filemtime(get_stylesheet_directory()."/css/main.css"));
     wp_register_style('chosen-css', get_stylesheet_directory_uri() . '/lib/chosen/chosen.min.css');
-    wp_enqueue_style('bulma-css', TEMPLATE_URI . "/css/bulma.css", array());
+    wp_enqueue_style('bulma-css', get_stylesheet_directory_uri() . "/css/bulma.css", array());
 
     wp_enqueue_style('bootstrap-style');
     wp_enqueue_style('main-css');
