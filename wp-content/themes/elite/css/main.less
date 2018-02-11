@@ -1709,3 +1709,39 @@ body{
         padding: 13px;
     }
 }
+
+.navbar-burger{
+    margin-top: 24px;
+    span {
+        color: @main-color;
+    }
+}
+ 
+ .hero.is-primary .navbar-menu {
+    background-color: #fff;
+}
+
+.navbar-burger.burger.is-active{
+    margin-top: 0px;
+    
+}
+
+.navbar-menu.is-active{
+    .navbar-dropdown{
+        padding: 0px 5px;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    #navbarMenuHeroA{
+        margin-top: 100px;
+        box-shadow: none;
+    }
+    .line-solid{
+        width: 91%;
+        margin: 0 auto;
+        border-bottom: 2px solid @main-color;
+        padding-top: 10px;
+         margin-bottom: 10px;
+    }
+}
