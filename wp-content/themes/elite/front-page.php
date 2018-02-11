@@ -55,7 +55,7 @@ if(!empty($profile[0])){
     <div class="container has-text-centered">
       <div class="font-main-header white">
         <h1 class="title">
-          ELITE
+          ELITE 
         </h1>
         <h2 class="subtitle">
           ENGINEER
@@ -68,7 +68,7 @@ if(!empty($profile[0])){
     <div class="container">
       <div class="columns">
           <div class="column  has-text-centered">
-              <h1 class="title-content"><?php _e('เกี่ยวกับเรา', $elite) ?></h1>
+              <h1 class="title-content"><?php _e('เกี่ยวกับเรา', 'elite') ?></h1>
           </div>
       </div>
       <div class="columns ">
@@ -76,23 +76,23 @@ if(!empty($profile[0])){
             <div class="columns ">
                 <div class="column  has-text-centered box-content">
                     <article class="tile is-child notification is-primary block-content has-text-centered">
-                       <p class="title"><?php _e('High Capability', $eilte); ?></p>
+                       <p class="title"><?php _e('ความสามารถสูง', 'elite'); ?></p>
                        <div class="line-solid"></div>
-                       <p class="subtitle"><?php _e('Our management team consist of engineers with high capability.', $eilte); ?></p>
+                       <p class="subtitle"><?php _e('ทีมงานวิศวกรของเรามีความสามารถสูง', 'elite'); ?></p>
                      </article>
                 </div>
                 <div class="column  has-text-centered">
                   <article class="tile is-child notification is-primary block-content has-text-centered">
-                    <p class="title"><?php _e('Business Nature', $eilte); ?></p>
+                    <p class="title"><?php _e('ประเภทธุรกิจ', 'elite'); ?></p>
                     <div class="line-solid"></div>
-                    <p class="subtitle"><?php _e('Construction,  Mechanical, Electrical', $eilte); ?></p>
+                    <p class="subtitle"><?php _e('การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า', 'elite'); ?></p>
                   </article>
                 </div>
                 <div class="column  has-text-centered">
                      <article class="tile is-child notification is-primary block-content has-text-centered">
-                       <p class="title"><?php _e('Specialize', $eilte); ?></p>
+                       <p class="title"><?php _e('ความเชี่ยวชาญ', 'elite'); ?></p>
                        <div class="line-solid"></div>
-                       <p class="subtitle"><?php _e('We  specialize  in  Mechanical  &  Electrical  turnkey  project', $eilte); ?></p>
+                       <p class="subtitle"><?php _e('เรามีความเชี่ยวชาญในโครงการแบบครบวงจร', 'elite'); ?></p>
                      </article>
                 </div>
             </div>
@@ -126,7 +126,7 @@ if(!empty($profile[0])){
     <div class="container">
       <div class="columns">
           <div class="column  has-text-centered">
-              <h1 class="title-content"><?php _e('160+ พนักงาน', $eilte) ?></h1>
+              <h1 class="title-content"><?php _e('160+ พนักงาน', 'elite') ?></h1>
           </div>
       </div>
       <div class="columns ">
@@ -135,19 +135,19 @@ if(!empty($profile[0])){
                 <div class="column  has-text-centered box-content blog-img no-padding margin-075em">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" >
                     <article class="tile is-child notification is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('Enginerr : 50', $eilte); ?></p>
+                       <p class="title"><?php _e('Enginerr : 50', 'elite'); ?></p>
                      </article>
                 </div>
                 <div class="column  has-text-centered blog-img no-padding margin-075em">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" >
                   <article class="tile is-child notification is-dark block-content has-text-centered">
-                    <p class="title"><?php _e('Forman: 88', $eilte); ?></p>
+                    <p class="title"><?php _e('Forman: 88', 'elite'); ?></p>
                   </article>
                 </div>
                 <div class="column  has-text-centered blog-img no-padding margin-075em">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" >
                      <article class="tile is-child notification is-dark block-content has-text-centered">
-                       <p class="title"><?php _e('Admin : 40', $eilte); ?></p>
+                       <p class="title"><?php _e('Admin : 40', 'elite'); ?></p>
                      </article>
                 </div>
             </div>
@@ -162,7 +162,7 @@ if(!empty($profile[0])){
     <div class="container">
       <div class="columns">
           <div class="column  has-text-centered">
-              <h1 class="title-content"><?php _e('โครงการปัจจุบัน', $eilte) ?></h1>
+              <h1 class="title-content"><?php _e('โครงการปัจจุบัน', 'elite') ?></h1>
           </div>
       </div>
       <div class="columns is-12">
@@ -202,7 +202,7 @@ if(!empty($profile[0])){
              <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text"> 
                <a href="<?php echo get_site_url().'/prejects/?pjt=โครงการที่ผ่านมา' ?>">
                  <article class="tile is-child is-dark has-text-centered">
-                    <p class="title"><?php _e('โครงการที่ผ่านมา',$elite); ?></p>
+                    <p class="title"><?php _e('โครงการที่ผ่านมา','elite'); ?></p>
                   </article>
                 </a>
              </div>
