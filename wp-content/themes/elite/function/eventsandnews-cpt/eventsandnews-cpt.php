@@ -1,19 +1,19 @@
 <?php
-define("FUNC_DIR_FRONT", get_template_directory() . "/function/project-cpt");
-
-class Project_Functions {
-
-    var $metabox_id = "projec_metabox";
+Class Events_Post_type {
+    var $type_name;
+    var $flush_option;
+    var $postSlug;
+    var $domain;
+    var $metabox_id = "events_metabox";
     var $pic_tab;
 
     function __construct() {
-        $this->type_name = 'projects';
-        $this->flush_option = $this->type_name . '_flush_1.0.5';
-        $this->postSlug = 'projects';
-        $this->domain = '';
+        $this->type_name = 'events';
+        $this->flush_option = $this->type_name . '_flush_1.0.16';
+        $this->postSlug = 'events';
+        $this->domain = 'elite';
         add_action('init', array($this, 'custom_post_type'));
         add_action('init', array($this, 'application_check'));
-
         if (is_admin()) {            
             require_once FUNC_DIR_FRONT . '/tabs/projectpic.php';
             
@@ -26,8 +26,8 @@ class Project_Functions {
 
     function custom_post_type() {
         $args = array(
-            'label' => __('Projects', $this->domain),
-            'description' => __('Projects', $this->domain),
+            'label' => __('Events and News', $this->domain),
+            'description' => __('Evnts and News', $this->domain),
             'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
             'hierarchical' => false,
             'public' => true,
@@ -35,7 +35,7 @@ class Project_Functions {
             'show_in_menu' => true,
             'show_in_nav_menus' => true,
             'show_in_admin_bar' => true,
-            'menu_position' => 23,
+            'menu_position' => 25,
             'can_export' => true,
             'has_archive' => true,
             'exclude_from_search' => false,
@@ -51,7 +51,6 @@ class Project_Functions {
             update_option($this->flush_option, true);
         }
     }
-
     /**
      * Add metabox to specific template
      */
@@ -73,33 +72,15 @@ class Project_Functions {
     function meta_box_content($post) {
         /* Create nonce */
         wp_nonce_field(plugin_basename(__FILE__), $this->metabox_id . '_nonce');
-        $post_id = $post->ID;
-        $_pjt = get_post_meta($post_id, '_pjt', true);
-        $pjt = get_taxonomy_list('pjtype_taxonomy');
         ?>
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-ui.js"></script>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery-ui.css">
         <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wp_editor_custom.js"></script>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/admin.css">
-        <table class="form-table">
-            <tr>
-                <th scope="row">
-                    <label ><?php _e('Project Type', $elite); ?></label>
-                </th>
-
-                <td>
-                     <select name="filter_pjt" id="filter_pjt" class="select-box">
-                        <?php foreach ($pjt as $key => $value) { ?>
-                            <option value="<?php echo $value->name; ?>" <?php if($_pjt == $value->name) echo selected; ?> ><?php echo $value->name; ?></option>
-                        <?php } ?> 
-                    </select>
-                </td>
-            </tr>
-        </table>
 
         <div id="tabs">
             <ul> 
-                <li><a href="#tab-pic">Project picture</a></li>
+                <li><a href="#tab-pic">Events or News picture</a></li>
             </ul>
             
             <div id="tab-pic">
@@ -137,14 +118,9 @@ class Project_Functions {
             if (!current_user_can('edit_post', $post_id))
                 return;
         }
-
-        $_pjt = sanitize_text_field($_POST['filter_pjt']);
-        update_post_meta($post_id, '_pjt', $_pjt);
        
         $this->pic_tab->save($post_id);
     }
 
-
 }
-
-new Project_Functions();
+$eventsObj = new Events_Post_type();

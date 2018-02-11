@@ -5,16 +5,10 @@ define("THEME_DIR", FUNC_DIR . "/theme");
 define("TEMPLATE_URI",  get_template_directory_uri());
 define("TEMPLATE_DIR",  get_template_directory());
 require_once THEME_DIR . "/functions.php";
-require_once FUNC_DIR.'/camp-cpt/camp-cpt.php';
-require_once FUNC_DIR.'/activities-taxonomy/activities-taxonomy.php';
-require_once FUNC_DIR.'/testimonials-cpt/testimonials-cpt.php';
-require_once FUNC_DIR.'/condition-cpt/condition-cpt.php';
-require_once FUNC_DIR.'/age-taxonomy/age-taxonomy.php';
 require_once FUNC_DIR.'/project-cpt/project-cpt.php';
 require_once FUNC_DIR.'/project-type-taxonomy/project-type-taxonomy.php';
 require_once FUNC_DIR.'/front-page/front-page.php';
-
-
+require_once FUNC_DIR.'/eventsandnews-cpt/eventsandnews-cpt.php';
 add_action('after_setup_theme', 'elite_setup');
 
 function elite_setup() {

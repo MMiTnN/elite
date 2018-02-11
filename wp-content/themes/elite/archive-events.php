@@ -2,38 +2,22 @@
 get_header();
 
 $args = array(
-    'post_type' => 'projects',
+    'post_type' => 'events',
     'post_status' => 'publish',
     'posts_per_page' => -1,
     'order' => 'DESC',
 );
-
-$get_pjt = '';
-
-if (isset($_GET['pjt'])) {
-    $get_pjt = $_GET['pjt'];    
-}
-if (!empty($get_pjt)) {
-     $args['meta_query'] = array(
-        array(
-            'key' => '_pjt',
-            'value' => $get_pjt,
-            'compare' => '=',
-        ),
-    );
-}
-
 /*
  * Query
  */
 $posts = new WP_Query($args);
-$projects = $posts->posts;
+$events = $posts->posts;
 ?>
 <div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower8.jpeg" >
     <div class="container has-text-centered">
       <div class="font-main-header white">
         <h1 class="title">
-          <?php echo empty($get_pjt)? _e('โครงการทั้งหมด'): $get_pjt; ?>
+          <?php _e('ข่าวสารและกิจกรรม', $elite); ?>
         </h1>
       </div>
     </div>
@@ -41,11 +25,11 @@ $projects = $posts->posts;
 
 
 <?php
-     if(!empty($projects)): ?>
+     if(!empty($events)): ?>
         <section class="projects-list">
             <div class="container-fluid">
                 <div class="row">
-                    <?php foreach($projects as $pro): 
+                    <?php foreach($events as $pro): 
                     $post_id = $pro->ID;
                     /* Get post thumnail */
                     $image_id = get_post_thumbnail_id($post_id);
@@ -77,4 +61,5 @@ $projects = $posts->posts;
 <?php
 get_footer();
 ?>
+
 
