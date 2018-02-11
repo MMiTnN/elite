@@ -32,10 +32,4 @@ get_header();
         </div>
     </div>
 
-    <footer class="bg-white">
-        <div class='container-fluid no-padding bg-light-gray'>
-        </div>
-<?php get_template_part("pagefooter"); ?>
-    </footer>
-
 <?php get_footer(); ?>
