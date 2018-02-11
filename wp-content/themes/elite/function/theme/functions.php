@@ -180,7 +180,7 @@ function contact_form(){
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download" >
-                                        <input type="text" placeholder="<?php _e('อีเมลล์', $eilte); ?>" id="txtEmail" name="txtEmail" class="searchbox-input email-client" required> 
+                                        <input type="text" placeholder="<?php _e('อีเมล', $eilte); ?>" id="txtEmail" name="txtEmail" class="searchbox-input email-client" required> 
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -217,6 +217,21 @@ function contact_form(){
             </div>
         </div>
     </section>
+         <!-- Confirm Modal -->
+    <div id="confirmModal" class="modal fade" tabindex="-1" role="dialog" style="z-index: 99999">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title"><?php  _e('Your messages has been sent.', $elite) ?></h5>
+                </div>
+                <div class="modal-body">
+                    <p><?php _e('Thank you for messages us', $elite) ?></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery.validate.js"></script>
     <script type="text/javascript">
     jQuery(document).ready(function($) {
@@ -257,9 +272,9 @@ function contact_form(){
                     element.parents(".form-group").find(".help-block").append(error);
                 }  
             },
-              /*submitHandler: function (frm) {
+              submitHandler: function (frm) {
                     var data = $(frm).serialize();
-                    data += "&action=send_brochure&_ajax_nonce=<?php echo wp_create_nonce( "send-contact-nonce" ); ?>"
+                    data += "&action=send_contact&_ajax_nonce=<?php echo wp_create_nonce( "send-contact-nonce" ); ?>"
                     var submitButton = $(frm).find(".submit-question");
                     submitButton.button('loading');
                     $.ajax({
@@ -273,9 +288,10 @@ function contact_form(){
                            $('#txtLastName').val('');
                            $('#txtEmail').val('');
                            $('#txtPhone').val('');
+                           $('#txtQA').val('');
                         }
                     });
-                }*/
+                }
             });
         });
     });
@@ -500,55 +516,53 @@ function get_camps($limit=-1){
 <?php endif; 
 }
 
-/* Send brochure to into */
-add_action('wp_ajax_nopriv_send_brochure', 'send_brochure');
-add_action('wp_ajax_send_brochure', 'send_brochure');
+/* Send contact to into */
+add_action('wp_ajax_nopriv_send_contact', 'send_contact');
+add_action('wp_ajax_send_contact', 'send_contact');
 
-function send_brochure() {
+function send_contact() {
    global $wpdb;
-        $table = $wpdb->prefix . 'brochure';
+        $table = $wpdb->prefix . 'contact';
         //check_ajax_referer('send-brochure-nonce', '_ajax_nonce');
         $data = array_map('sanitize_text_field', $_POST);
         $data_list = array(
             'firstname' => $data['txtFirstName'],
             'lastname' => $data['txtLastName'],
             'email' => $data['txtEmail'],
-            'camp_id' => $data['campSelected'],
+            'phone' => $data['txtPhone'],
+            'message' => $data['txtQA'],
             'created_at' => date('Y-m-d H:i:s')
         );
-
+        print_r( $data_list);
         if ($wpdb->insert($table, $data_list)) {
-            $data_list['_id']= $wpdb->insert_id;
-            send_mail_brochure_form( $data_list);
+            send_mail_contact_form( $data_list);
             echo 'SUCCESS';
         } else {
             echo 'FAIL';
         }
 }
 
-// Function send mail brochure form
-function send_mail_brochure_form($data) {
-    $reciepients = get_option('brochure_register_settings');
-    $bcc = $reciepients['main_email'];
-    $site_name = get_bloginfo('name');
-    $to[] = $data['email'];
-    $post = get_post( $data['camp_id'] );                     
-    $subject = 'Brochure of '.$post->post_title;
+// Function send mail contact form
+function send_mail_contact_form($data) {
+    $reciepients = get_option('contact_register_settings');
+    $to = $reciepients['main_email'];
+    $site_name = get_bloginfo('name');                     
+    $subject = 'Contact from Elite Website';
     ob_start();
     ?>
-    <h1>Brochure</h1>
+    <h1>Contact</h1>
     <br>
     <p>First name : <?php echo $data['firstname'] ?></p><br/>
     <p>Last name : <?php echo $data['lastname'] ?></p><br/>
     <p>Email : <?php echo $data['email'] ?></p><br/>
-    <p>Link Brochure : <?php echo get_site_url().'/download-pdf?post='.$data['camp_id']  ?></p><br/><br/><br/>
+    <p>Phone : <?php echo $data['phone'] ?></p><br/>
+    <p>Message : <?php echo $data['message'] ?></p><br/>
     <?php
     $html = ob_get_clean();
     $body = $html;
 
     $headers[] = 'Content-Type: text/html; charset=UTF-8';
-    $headers[] = 'From: ' . $site_name . ' <info@sunbear.com>';
-    $headers[] = "Bcc: ". $bcc ;
+    $headers[] = 'From: ' . $site_name . ' <info@elite.com>';
     if (wp_mail($to, $subject, $body, $headers)) {
         echo 'SUCCESS';
     } else {
@@ -687,3 +701,13 @@ function get_ajax_camps($_activity='', $_age='', $_date='') {
  }
 
 
+
+function check_msls() {
+    $language = 'th'; // default
+    if (function_exists('the_msls')) {
+        $blog = MslsBlogCollection::instance()->get_current_blog();
+        $language = $blog->get_language();
+// set_cookie(substr($language, 0, 2));
+    }
+    return substr($language, 0, 2);
+}

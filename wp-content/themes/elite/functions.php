@@ -105,14 +105,14 @@ function genPDF(){
 add_action('phpmailer_init', 'custom_phpmailer_init');
 
 function custom_phpmailer_init(PHPMailer $phpmailer) {
-    $phpmailer->Host = 'smtp.sendgrid.net';
-    $phpmailer->Port = 587; // could be different
-    $phpmailer->Username = 'apikey'; // if required
-    $phpmailer->Password = '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'; // if required
-    $phpmailer->SMTPAuth = true; // if required
-    $phpmailer->SMTPSecure = 'tls'; // enable if required, 'tls' is another possible value
-    $phpmailer->IsSMTP();
-    $phpmailer->IsSMTP();
+    // $phpmailer->Host = 'smtp.sendgrid.net';
+    // $phpmailer->Port = 587; // could be different
+    // $phpmailer->Username = 'apikey'; // if required
+    // $phpmailer->Password = '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'; // if required
+    // $phpmailer->SMTPAuth = true; // if required
+    // $phpmailer->SMTPSecure = 'tls'; // enable if required, 'tls' is another possible value
+    // $phpmailer->IsSMTP();
+    // $phpmailer->IsSMTP();
 
 }
 

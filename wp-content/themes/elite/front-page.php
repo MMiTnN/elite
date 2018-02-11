@@ -156,6 +156,7 @@ if(!empty($profile[0])){
     </div>
   </div>
  </section> -->
+<?php if(!empty($projects_now)): ?>
  <section class="hero is-content section-box is-primary">
   <div class="hero-body">
     <div class="container">
@@ -165,7 +166,7 @@ if(!empty($profile[0])){
           </div>
       </div>
       <div class="columns is-12">
-         <?php if(!empty($projects_now)): 
+         <?php  
                foreach($projects_now as $key => $pro): 
                 $post_id = $pro->ID;
                 /* Get post thumnail */
@@ -186,11 +187,12 @@ if(!empty($profile[0])){
                   </div>
                 <?php 
                 endforeach; 
-            endif; ?>
+           ?>
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
  
  <section class="hero section-box is-light margin-t-8">
   <div class="hero-body no-padding">
@@ -198,9 +200,11 @@ if(!empty($profile[0])){
       <div class="columns is-multiline is-12">
           <?php if(!empty($projects_past)): ?>
              <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text"> 
+               <a href="<?php echo get_site_url().'/prejects/?pjt=โครงการที่ผ่านมา' ?>">
                  <article class="tile is-child is-dark has-text-centered">
                     <p class="title"><?php _e('โครงการที่ผ่านมา',$elite); ?></p>
                   </article>
+                </a>
              </div>
              <?php foreach($projects_past as $key => $pro): 
               $post_id = $pro->ID;
