@@ -143,3 +143,13 @@ function wp_get_menu_array($current_menu) {
     }
     return $menu;
 }
+
+function check_msls() {
+    $language = 'th'; // default
+    if (function_exists('the_msls')) {
+        $blog = MslsBlogCollection::instance()->get_current_blog();
+        $language = $blog->get_language();
+// set_cookie(substr($language, 0, 2));
+    }
+    return substr($language, 0, 2);
+}

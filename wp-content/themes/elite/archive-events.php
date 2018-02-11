@@ -17,7 +17,7 @@ $events = $posts->posts;
     <div class="container has-text-centered">
       <div class="font-main-header white">
         <h1 class="title">
-          <?php _e('ข่าวสารและกิจกรรม', $elite); ?>
+          <?php _e('ข่าวสารและกิจกรรม', 'elite'); ?>
         </h1>
       </div>
     </div>

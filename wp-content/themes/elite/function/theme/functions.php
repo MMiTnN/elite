@@ -157,12 +157,12 @@ function contact_form(){
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <form id="frmContact" class="frmContact" name="frmContact" action="#" method="post">
-                         <h1 class="text-center"> <?php _e('ติดต่อ', $eilte); ?> </h1>
+                         <h1 class="text-center"> <?php _e('ติดต่อ', 'elite'); ?> </h1>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download">
-                                        <input type="text" placeholder="<?php _e('ชื่อจริง', $eilte); ?>" id="txtFirstName" name="txtFirstName" class="searchbox-input name-client" required>
+                                        <input type="text" placeholder="<?php _e('ชื่อจริง', 'elite'); ?>" id="txtFirstName" name="txtFirstName" class="searchbox-input name-client" required>
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -170,7 +170,7 @@ function contact_form(){
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download">
-                                        <input type="text" placeholder="<?php _e('นามสกุล', $eilte); ?>" id="txtLastName" name="txtLastName" class="searchbox-input name-client" required>
+                                        <input type="text" placeholder="<?php _e('นามสกุล', 'elite'); ?>" id="txtLastName" name="txtLastName" class="searchbox-input name-client" required>
                                     </p> 
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -180,7 +180,7 @@ function contact_form(){
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download" >
-                                        <input type="text" placeholder="<?php _e('อีเมล', $eilte); ?>" id="txtEmail" name="txtEmail" class="searchbox-input email-client" required> 
+                                        <input type="text" placeholder="<?php _e('อีเมล', 'elite'); ?>" id="txtEmail" name="txtEmail" class="searchbox-input email-client" required> 
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -188,7 +188,7 @@ function contact_form(){
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <p class="color-white download" >
-                                        <input type="text" placeholder="<?php _e('เบอร์โทรศัพท์', $eilte); ?>" id="txtPhone" name="txtPhone" class="searchbox-input phone-client" required> 
+                                        <input type="text" placeholder="<?php _e('เบอร์โทรศัพท์', 'elite'); ?>" id="txtPhone" name="txtPhone" class="searchbox-input phone-client" required> 
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -198,7 +198,7 @@ function contact_form(){
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <p class="color-white textqa">
-                                        <textarea placeholder="<?php _e('ข้อความ', $eilte); ?>" id="txtQA" name="txtQA" class="searchbox-input qa-client" required></textarea> 
+                                        <textarea placeholder="<?php _e('ข้อความ', 'elite'); ?>" id="txtQA" name="txtQA" class="searchbox-input qa-client" required></textarea> 
                                     </p>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -206,7 +206,7 @@ function contact_form(){
                         </div>
                         <div class="form-group">
                             <div class="items-push text-center margin-t-30">
-                                <button class="btn btn-primary submit-question" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending"><?php echo _e('ส่ง', $elite) ?></button>
+                                <button class="btn btn-primary submit-question" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Sending"><?php echo _e('ส่ง', 'elite') ?></button>
                             </div>
                         </div>
                     </form>
@@ -224,10 +224,10 @@ function contact_form(){
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h5 class="modal-title"><?php  _e('Your messages has been sent.', $elite) ?></h5>
+                    <h5 class="modal-title"><?php  _e('Your messages has been sent.', 'elite') ?></h5>
                 </div>
                 <div class="modal-body">
-                    <p><?php _e('Thank you for messages us', $elite) ?></p>
+                    <p><?php _e('Thank you for messages us', 'elite') ?></p>
                 </div>
             </div>
         </div>
@@ -702,12 +702,4 @@ function get_ajax_camps($_activity='', $_age='', $_date='') {
 
 
 
-function check_msls() {
-    $language = 'th'; // default
-    if (function_exists('the_msls')) {
-        $blog = MslsBlogCollection::instance()->get_current_blog();
-        $language = $blog->get_language();
-// set_cookie(substr($language, 0, 2));
-    }
-    return substr($language, 0, 2);
-}
+

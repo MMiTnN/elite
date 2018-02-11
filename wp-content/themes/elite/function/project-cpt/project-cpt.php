@@ -10,7 +10,7 @@ class Project_Functions {
         $this->type_name = 'projects';
         $this->flush_option = $this->type_name . '_flush_1.0.5';
         $this->postSlug = 'projects';
-        $this->domain = '';
+        $this->domain = 'elite';
         add_action('init', array($this, 'custom_post_type'));
         add_action('init', array($this, 'application_check'));
 
@@ -84,7 +84,7 @@ class Project_Functions {
         <table class="form-table">
             <tr>
                 <th scope="row">
-                    <label ><?php _e('Project Type', $elite); ?></label>
+                    <label ><?php _e('Project Type', 'elite'); ?></label>
                 </th>
 
                 <td>

@@ -2,7 +2,7 @@
 <footer>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="title-footer"><?php _e('บริษัท เอลีท เอ็นจิเนียร์ส จำกัด',$elite); ?></div>
+			<div class="title-footer"><?php _e('บริษัท เอลีท เอ็นจิเนียร์ส จำกัด', 'elite'); ?></div>
 			<div class="col-lg-8 col-sm-7 col-xs-12 no-padding">
 				<div class="menu-footer">
 					<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-list' ) ); ?>
