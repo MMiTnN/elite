@@ -533,9 +533,8 @@ function send_contact() {
             'message' => $data['txtQA'],
             'created_at' => date('Y-m-d H:i:s')
         );
-        print_r( $data_list);
         if ($wpdb->insert($table, $data_list)) {
-            send_mail_contact_form( $data_list);
+           // send_mail_contact_form( $data_list);
             echo 'SUCCESS';
         } else {
             echo 'FAIL';

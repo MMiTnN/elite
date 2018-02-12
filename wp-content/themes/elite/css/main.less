@@ -426,9 +426,9 @@ btn:hover{
          }
     }
     .block-about-content{
-        padding: 60px;
+        padding: 120px 60px;
          @media (max-width:  @screen-md){
-             padding: 30px;
+             padding: 45px 30px;
          }
         .title-about{
             h2{
@@ -1429,7 +1429,18 @@ footer{
 }
 
 .condition{
-    padding: 60px 120px;
+    max-width: 1600px;
+    margin: auto;
+    padding: 90px 90px;
+     @media (max-width: @screen-md) {
+        padding: 60px 30px;
+     }
+      @media (max-width: @screen-sm) {
+        padding: 30px 30px;
+     }
+      @media (max-width: @screen-xs) {
+        padding: 30px 15px;
+     }
     .block.link{
         .title{
             font-weight: 700;
@@ -1438,14 +1449,10 @@ footer{
             font-size: 18px;
         }
     }
-    .block-content{
-        padding-bottom: 30px;
-    }
     .block.content{
         margin-top: -30px;
         .title-block{
             font-size: 60px;
-            padding-bottom: 10px;
             @media (max-width: @screen-md) {
                 font-size: 30px;
             }
@@ -1454,7 +1461,13 @@ footer{
             }
         }
         p{
-            font-size: 16px;
+            font-size: 18px;
+        }
+        em{
+            color: @main-color;
+        }
+        h4{
+            line-height: 1.5;
         }
     }
 }
@@ -1509,6 +1522,15 @@ ul.chosen-results{
     .title{
         color: #fff;
         font-size: 80px;
+        @media screen and (max-width:  @screen-md){
+            font-size: 60px;
+        }
+         @media screen and (max-width:  @screen-sm){
+            font-size: 40px;
+        }
+        @media screen and (max-width:  @screen-xs){
+            font-size: 30px;
+        }
     }
     .subtitle{
         color: #fff;
