@@ -224,7 +224,7 @@ if(!empty($profile[0])){
                 $css_column = 'is-3';
               }
                ?>
-                <div class="column <?php echo $css_column;  ?> has-text-centered box-content blog-img slide no-padding">
+                <div class="column <?php echo $css_column;  ?> is-mobile has-text-centered box-content blog-img slide no-padding">
                    <a href="<?php echo get_permalink($post_id); ?>">
                      <img  src="<?php echo $image ?>" >
                      <article class="tile is-child is-dark block-content has-text-centered">
