@@ -57,7 +57,7 @@ $projects = $posts->posts;
                     }
                     ?>
                      <a class="img-pro" href="<?php echo get_permalink($post_id); ?>">
-                        <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
+                        <div class="col-md-3 col-sm-4 col-xs-12" style="padding-bottom: 50px;">
                             
                             <div class="block black"  style="background-image: url(<?php echo $image ?>); background-size: cover;
                                                                                                           background-repeat: no-repeat;
