@@ -14,7 +14,7 @@ if (have_posts()) :
     }
     $projectpic = get_post_meta($ID, 'projectpic', true);
     ?>
-    <section class="header-section"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url(<?php echo $image ?>);">
+    <section class="header-section"  style="background-image: linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url(<?php echo $image ?>);">
         <div>
             <p class='text-white header-title text-center'><?php echo get_the_title(); ?></p>
         </div>

@@ -764,9 +764,24 @@ span.play-video{
 
 .header-title{ 
     color: #FFFFFF; 
-    font-size: 60px;    
+    font-size: 50px;    
     line-height: 63px;  
     text-align: center;
+    padding: 0px 40px;
+    @media (max-width: @screen-md-max) {
+        padding: 0px 40px;
+        font-size: 40px;
+        line-height: 50px;  
+    }
+    @media (max-width: @screen-sm-max) {
+        padding: 0px 20px;
+        font-size: 30px;
+    }
+    @media (max-width: @screen-xs-max) {
+        padding: 0px 16px;
+        font-size: 24px;
+    }
+    
 }
 
 .header-section{
@@ -1574,7 +1589,7 @@ ul.chosen-results{
     padding: 50px 20px;
     .title{
         margin-bottom: 15px;
-        font-size: 28px;
+        font-size: 20px;
     }
     .subtitle{
         margin-top: 15px;
