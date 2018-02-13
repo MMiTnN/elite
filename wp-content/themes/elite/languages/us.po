@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-11 20:08+0700\n"
-"PO-Revision-Date: 2018-02-11 20:08+0700\n"
+"POT-Creation-Date: 2018-02-13 23:02+0700\n"
+"PO-Revision-Date: 2018-02-13 23:02+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -30,6 +30,14 @@ msgstr "All Projects"
 #: footer.php:5 template-contact.php:31
 msgid "บริษัท เอลีท เอ็นจิเนียร์ส จำกัด"
 msgstr "ELITE  ENGINEERS  "
+
+#: front-page.php:12 front-page.php:165
+msgid "โครงการปัจจุบัน"
+msgstr "Current Projects"
+
+#: front-page.php:31 front-page.php:203 front-page.php:205
+msgid "โครงการที่ผ่านมา"
+msgstr "Completed Projects"
 
 #: front-page.php:71
 msgid "เกี่ยวกับเรา"
@@ -77,14 +85,6 @@ msgstr "รูปแบบ"
 #: front-page.php:150
 msgid "Admin : 40"
 msgstr ""
-
-#: front-page.php:165
-msgid "โครงการปัจจุบัน"
-msgstr "Current Projects"
-
-#: front-page.php:205
-msgid "โครงการที่ผ่านมา"
-msgstr "Completed Projects"
 
 #: function/eventsandnews-cpt/eventsandnews-cpt.php:29
 msgid "Events and News"
@@ -175,12 +175,32 @@ msgid "ส่ง"
 msgstr "Submit"
 
 #: function/theme/functions.php:227
-msgid "Your messages has been sent."
-msgstr "ส่งข้อความของคุณเรียบร้อยแล้ว"
+msgid "ขอขอบคุณที่ติดต่อกับเรา"
+msgstr "Thank you for contact us"
 
 #: function/theme/functions.php:230
-msgid "Thank you for messages us"
-msgstr "ขอขอบคุณที่ติดต่อเรา"
+msgid "ข้อความของคุณถูกส่งเรียบร้อบแล้ว"
+msgstr "Your message was sent."
+
+#: function/theme/functions.php:254
+msgid "กรุณาใส่ชื่อจริงของคุณ"
+msgstr "Please enter your first name"
+
+#: function/theme/functions.php:255
+msgid "กรุณาใส่นามสกุลของคุณ"
+msgstr "Please enter your last name"
+
+#: function/theme/functions.php:256
+msgid "กรุณาใส่อีเมลของคุณ"
+msgstr "Please enter a valid email address"
+
+#: function/theme/functions.php:257
+msgid "กรุณาใส่เบอร์โทรศัพท์ของคุณ"
+msgstr "Please enter your phone number"
+
+#: function/theme/functions.php:258
+msgid "กรุณาใส่ข้อความของคุณ"
+msgstr "Please enter your question"
 
 #: functions.php:82
 #, fuzzy
@@ -223,6 +243,12 @@ msgstr "Fax : 0-2645-3670"
 #: template-contact.php:39
 msgid "อีเมล : eliteength@yahoo.com"
 msgstr "Email : eliteength@yahoo.com"
+
+#~ msgid "Your messages has been sent."
+#~ msgstr "ส่งข้อความของคุณเรียบร้อยแล้ว"
+
+#~ msgid "Thank you for messages us"
+#~ msgstr "ขอขอบคุณที่ติดต่อเรา"
 
 #~ msgid "html_lang_attribute"
 #~ msgstr "th"

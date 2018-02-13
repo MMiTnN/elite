@@ -224,10 +224,10 @@ function contact_form(){
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                             aria-hidden="true">&times;</span></button>
-                    <h5 class="modal-title"><?php  _e('Your messages has been sent.', 'elite') ?></h5>
+                    <h5 class="modal-title"><?php  _e('ขอขอบคุณที่ติดต่อกับเรา', 'elite') ?></h5>
                 </div>
                 <div class="modal-body">
-                    <p><?php _e('Thank you for messages us', 'elite') ?></p>
+                    <p><?php _e('ข้อความของคุณถูกส่งเรียบร้อบแล้ว', 'elite') ?></p>
                 </div>
             </div>
         </div>
@@ -251,11 +251,11 @@ function contact_form(){
                 $(element).closest('.form-group').removeClass('has-error');
             },
             messages: {
-                txtFirstName: 'Please enter your first name',
-                txtLastName: 'Please enter your last name',
-                txtEmail: 'Please enter a valid email address',
-                txtPhone: 'Please enter your phone number',
-                txtQA: 'Please enter your question'
+                txtFirstName: '<?php _e('กรุณาใส่ชื่อจริงของคุณ','elite') ?>',
+                txtLastName: '<?php _e('กรุณาใส่นามสกุลของคุณ','elite') ?>',
+                txtEmail: '<?php _e('กรุณาใส่อีเมลของคุณ','elite') ?>',
+                txtPhone: '<?php _e('กรุณาใส่เบอร์โทรศัพท์ของคุณ','elite') ?>',
+                txtQA: '<?php _e('กรุณาใส่ข้อความของคุณ','elite') ?>'
             },
             errorElement: 'span',
             errorClass: 'help-block',

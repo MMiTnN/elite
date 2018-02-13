@@ -9,7 +9,7 @@ $args_now = array(
     'meta_query' => array(
         array(
             'key' => '_pjt',
-            'value' => 'โครงการปัจจุบัน',
+            'value' => __('โครงการปัจจุบัน','elite'),
             'compare' => '=',
         ),
     )
@@ -28,7 +28,7 @@ $args_past = array(
     'meta_query' => array(
         array(
             'key' => '_pjt',
-            'value' => 'โครงการที่ผ่านมา',
+            'value' => __('โครงการที่ผ่านมา','elite'),
             'compare' => '=',
         ),
     )
@@ -200,7 +200,7 @@ if(!empty($profile[0])){
       <div class="columns is-multiline is-12">
           <?php if(!empty($projects_past)): ?>
              <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text"> 
-               <a href="<?php echo get_site_url().'/projects/?pjt=โครงการที่ผ่านมา' ?>" style="width:100%;">
+               <a href="<?php echo get_site_url().'/projects/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
                  <article class="tile is-child is-dark has-text-centered">
                     <p class="title"><?php _e('โครงการที่ผ่านมา','elite'); ?></p>
                   </article>
