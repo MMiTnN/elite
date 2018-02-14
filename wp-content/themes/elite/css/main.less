@@ -421,14 +421,17 @@ btn:hover{
         background-repeat: no-repeat;
         background-position: 55% 10%;
         background-color: @light-gray;
-        @media (max-width:  @screen-xs){
+        @media (max-width:  767px){
             min-height: 450px;
          }
     }
     .block-about-content{
-        padding: 120px 60px;
-         @media (max-width:  @screen-md){
-             padding: 45px 30px;
+        padding: 120px 60px 90px 60px;
+         @media (max-width:  @screen-md-max){
+             padding: 60px 40px;
+         }
+         @media (max-width:  @screen-sm-max){
+             padding: 35px 20px;
          }
         .title-about{
             h2{
@@ -1192,7 +1195,7 @@ footer{
         padding: 60px 60px 60px 30px;
     }
     @media (max-width: @screen-xs-max) {
-        padding: 30px;
+        padding: 60px 30px 30px 30px;
     }
     .menu-footer{
         display: flex;
@@ -1577,6 +1580,15 @@ ul.chosen-results{
 
 .title-content{
     font-size: 60px;
+     @media (max-width: 1400px){
+        font-size: 50px;
+    }
+     @media (max-width: 996px){
+        font-size: 40px;
+    }
+    @media (max-width: 767px){
+        font-size: 33px;
+    }
 }
 
 .is-content{
@@ -1631,8 +1643,19 @@ ul.chosen-results{
         .title{
             margin-bottom: 0px;
             color: white;
-            padding-left: 25px;
-            padding-right: 25px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+    .block-content-touch{
+        width: 100%;
+        padding: 20px 10px;
+        background: rgba( 0, 0, 0, 0.9 );
+        margin-bottom: 30px;
+        .title{
+            font-size: 24px;
+            font-weight: 400;
+            color: #fff;
         }
     }
     &.slide{
@@ -1789,8 +1812,18 @@ body{
     .line-solid{
         width: 91%;
         margin: 0 auto;
-        border-bottom: 2px solid @main-color;
+        border-bottom: 2px solid #fff;
         padding-top: 10px;
          margin-bottom: 10px;
     }
+}
+
+@media (min-width: 768px){
+    .container {
+        width: auto; 
+    }
+}
+
+.jus-cen{
+    justify-content: center;
 }

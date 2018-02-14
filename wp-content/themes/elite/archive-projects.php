@@ -45,7 +45,9 @@ $projects = $posts->posts;
         <section class="projects-list">
             <div class="container-fluid">
                 <div class="row">
-                    <?php foreach($projects as $pro): 
+                    <?php 
+                    $count = 0;
+                    foreach($projects as $pro): 
                     $post_id = $pro->ID;
                     /* Get post thumnail */
                     $image_id = get_post_thumbnail_id($post_id);
@@ -66,7 +68,10 @@ $projects = $posts->posts;
                             <h5> <?php echo $pro->post_title; ?></h5>
                         </div>
                      </a>
-                    <?php
+                     <?php if(($count%3==0) && ($count!= 0)): ?>
+                      <div class="clearfix visible-xs-block"></div>
+                    <?php endif; ?>
+                    <?php $count++;
                     endforeach; ?>
                 </div>
             </div>

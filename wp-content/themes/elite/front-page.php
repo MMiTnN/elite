@@ -72,7 +72,7 @@ if(!empty($profile[0])){
           </div>
       </div>
       <div class="columns ">
-         <div class="column is-three-fifths is-offset-one-fifth">
+         <div class="column is-12 is-three-fifths-widescreen is-offset-one-fifth-widescreen">
             <div class="columns ">
                 <div class="column  has-text-centered box-content">
                     <article class="tile is-child notification is-primary block-content has-text-centered">
@@ -157,10 +157,10 @@ if(!empty($profile[0])){
   </div>
  </section> -->
 <?php if(!empty($projects_now)): ?>
- <section class="hero is-content section-box is-primary">
+ <section class="hero is-content section-box is-primary is-hidden-touch">
   <div class="hero-body">
     <div class="container">
-      <div class="columns">
+      <div class="columns ">
           <div class="column  has-text-centered">
               <h1 class="title-content"><?php _e('โครงการปัจจุบัน', 'elite') ?></h1>
           </div>
@@ -192,13 +192,49 @@ if(!empty($profile[0])){
     </div>
   </div>
 </section>
+<section class="hero is-content section-box is-primary is-hidden-desktop">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns ">
+          <div class="column  has-text-centered">
+              <h1 class="title-content"><?php _e('โครงการปัจจุบัน', 'elite') ?></h1>
+          </div>
+      </div>
+      <div class="columns is-12 is-tablet is-multiline jus-cen">
+         <?php  
+               foreach($projects_now as $key => $pro): 
+                $post_id = $pro->ID;
+                /* Get post thumnail */
+                $image_id = get_post_thumbnail_id($post_id);
+                $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+                if (empty($image_arr)) {
+                    $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+                } else {
+                    $image = $image_arr[0];
+                }?>
+                  <div class="column is-4-tablet has-text-centered box-content blog-img slide no-padding">
+                      <a href="<?php echo get_permalink($post_id); ?>">
+                         <img src="<?php echo $image ?>" >
+                         <article class="tile is-dark block-content-touch has-text-centered">
+                            <p class="title"><?php echo $pro->post_title; ?></p>
+                          </article>
+                      </a>
+                  </div>
+                <?php 
+                endforeach; 
+           ?>
+      </div>
+    </div>
+  </div>
+</section>
 <?php endif; ?>
- 
- <section class="hero section-box is-light margin-t-8">
+
+ <?php if(!empty($projects_past)): ?>
+ <section class="hero section-box is-light margin-t-8  is-hidden-touch">
   <div class="hero-body no-padding">
     <div class="container-fluid no-padding">
       <div class="columns is-multiline is-12">
-          <?php if(!empty($projects_past)): ?>
+          
              <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text"> 
                <a href="<?php echo get_site_url().'/projects/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
                  <article class="tile is-child is-dark has-text-centered">
@@ -232,12 +268,54 @@ if(!empty($profile[0])){
                       </article>
                     </a>
                  </div>
-             <?php endforeach; 
-          endif; ?>
+             <?php endforeach; ?>
       </div>
     </div>
   </div>
 </section>
+<section class="hero section-box is-light margin-t-8  is-hidden-desktop">
+  <div class="hero-body ">
+    <div class="container">
+      <div class="columns is-multiline is-12">
+             <div class="column is-2 has-text-centered box-content blog-img slide"> 
+               <a href="<?php echo get_site_url().'/projects/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
+                 <article class="tile is-child is-dark has-text-centered">
+                    <p class="title"><?php _e('โครงการที่ผ่านมา','elite'); ?></p>
+                  </article>
+                </a>
+             </div>
+             <?php foreach($projects_past as $key => $pro): 
+              $post_id = $pro->ID;
+              /* Get post thumnail */
+              $image_id = get_post_thumbnail_id($post_id);
+              $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+              if (empty($image_arr)) {
+                  $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+              } else {
+                  $image = $image_arr[0];
+              }?>
+              <?php if($key == 0 || $key == 4){
+                 $css_column = 'is-4';
+              }else if($key == 6) {
+                $css_column = 'is-2';
+              }else{
+                $css_column = 'is-3';
+              }
+               ?>
+                <div class="column <?php echo $css_column;  ?> is-mobile has-text-centered box-content blog-img slide no-padding">
+                   <a href="<?php echo get_permalink($post_id); ?>">
+                     <img  src="<?php echo $image ?>" >
+                     <article class="tile is-dark block-content-touch has-text-centered">
+                        <p class="title"><?php echo $pro->post_title; ?></p>
+                      </article>
+                    </a>
+                 </div>
+             <?php endforeach; ?>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif;  ?>
 <?php contact_form(); ?>
 
 
