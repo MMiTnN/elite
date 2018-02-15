@@ -15,6 +15,16 @@ if (have_posts()) :
     }
 
     ?>
+<style type="text/css">
+    @media (max-width: 1023px){
+      .main-header{
+          background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("<?php echo $image ?>");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 55% 55%;
+      }
+    }
+</style>
 <div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo  $image ?>" >
     <div class="container has-text-centered">
       <div class="font-main-header white">

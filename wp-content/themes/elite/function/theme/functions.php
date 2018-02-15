@@ -151,13 +151,13 @@ function video_popup(){ ?>
 
 function contact_form(){
     ?>
-    <section class="contact">
+    <section class="contact contact-page" >
         <div class="container">
             <div class="wrapper-download">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <form id="frmContact" class="frmContact" name="frmContact" action="#" method="post">
-                         <h1 class="text-center"> <?php _e('ติดต่อ', 'elite'); ?> </h1>
+                         <h1 class="text-center" style="margin-bottom: 30px; color: #fff"> <?php _e('ติดต่อ', 'elite'); ?> </h1>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group">

@@ -50,6 +50,16 @@ if(!empty($profile[0])){
     $profile_img_src = wp_get_attachment_image_src($profile_img, 'full');
 }
 ?>
+<style type="text/css">
+    @media (max-width: 1023px){
+      .main-header{
+          background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 55% 55%;
+      }
+    }
+</style>
  <!-- Hero content: will be in the middle -->
   <div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg" >
     <div class="container has-text-centered">
@@ -157,7 +167,42 @@ if(!empty($profile[0])){
   </div>
  </section> -->
 <?php if(!empty($projects_now)): ?>
- <section class="hero is-content section-box is-primary is-hidden-touch">
+   <section class="hero is-content section-box is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns ">
+          <div class="column  has-text-centered">
+              <h1 class="title"><?php _e('โครงการปัจจุบัน', 'elite') ?></h1>
+          </div>
+      </div>
+      <div class="columns is-12 is-multiline jus-cen">
+         <?php  
+               foreach($projects_now as $key => $pro): 
+                $post_id = $pro->ID;
+                /* Get post thumnail */
+                $image_id = get_post_thumbnail_id($post_id);
+                $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+                if (empty($image_arr)) {
+                    $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+                } else {
+                    $image = $image_arr[0];
+                }?>
+                  <div class="column is-one-third is-12-mobile has-text-centered box-content blog-img slide">
+                      <a href="<?php echo get_permalink($post_id); ?>">
+                         <img src="<?php echo $image ?>" >
+                         <article class="tile is-child is-dark is-nowpro has-text-centered">
+                            <p class="title"><?php echo $pro->post_title; ?></p>
+                          </article>
+                      </a>
+                  </div>
+                <?php 
+                endforeach; 
+           ?>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- <section class="hero is-content section-box is-primary is-hidden-touch">
   <div class="hero-body">
     <div class="container">
       <div class="columns ">
@@ -191,8 +236,8 @@ if(!empty($profile[0])){
       </div>
     </div>
   </div>
-</section>
-<section class="hero is-content section-box is-primary is-hidden-desktop">
+ </section>
+ <section class="hero is-content section-box is-primary is-hidden-desktop">
   <div class="hero-body">
     <div class="container">
       <div class="columns ">
@@ -226,18 +271,18 @@ if(!empty($profile[0])){
       </div>
     </div>
   </div>
-</section>
+ </section> -->
 <?php endif; ?>
 
  <?php if(!empty($projects_past)): ?>
- <section class="hero section-box is-light margin-t-8  is-hidden-touch">
+ <section class="hero section-box is-light margin-t-1point3  is-hidden-touch">
   <div class="hero-body no-padding">
     <div class="container-fluid no-padding">
       <div class="columns is-multiline is-12">
           
              <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text"> 
                <a href="<?php echo get_site_url().'/projects/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
-                 <article class="tile is-child is-dark has-text-centered">
+                 <article class="tile is-child is-dark has-text-centered is-title-past">
                     <p class="title"><?php _e('โครงการที่ผ่านมา','elite'); ?></p>
                   </article>
                 </a>
@@ -316,7 +361,6 @@ if(!empty($profile[0])){
   </div>
 </section>
 <?php endif;  ?>
-<?php contact_form(); ?>
 
 
 <?php video_popup(); ?>

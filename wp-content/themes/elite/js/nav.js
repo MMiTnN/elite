@@ -23,5 +23,6 @@
             $('#navbarMenuHeroA').addClass('is-active');
           }
         });
+
      });
 })(jQuery);
