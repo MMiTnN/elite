@@ -58,9 +58,6 @@
             <?php endif; 
             endforeach; ?>
             <a href="" id="lang-switcher"  style="cursor: pointer; cursor: hand;" class="navbar-item lang hidden-xs hidden-sm"><p><?php echo check_msls() == 'us' ? 'EN' : 'TH'; ?></p></a>
-            <div class="line-solid"></div>
-            <a id="xs-eng-lang" class="visible-xs visible-sm navbar-item" href="">English</a>
-            <a id="xs-th-lang" class="visible-xs visible-sm navbar-item" href="">ภาษาไทย</a>
           </div>
           <div class="navbar-end is-hidden-desktop">
             <?php $header_menu = wp_get_menu_array('Footer Menu');?>
@@ -85,7 +82,6 @@
               </a>
             <?php endif; 
             endforeach; ?>
-            <a href="" id="lang-switcher"  style="cursor: pointer; cursor: hand;" class="navbar-item lang hidden-xs hidden-sm"><p><?php echo check_msls() == 'us' ? 'EN' : 'TH'; ?></p></a>
             <div class="line-solid"></div>
             <a id="xs-eng-lang" class="visible-xs visible-sm navbar-item" href="">English</a>
             <a id="xs-th-lang" class="visible-xs visible-sm navbar-item" href="">ภาษาไทย</a>
