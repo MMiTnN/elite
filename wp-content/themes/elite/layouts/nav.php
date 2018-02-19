@@ -27,8 +27,12 @@
       <div class="container">
         <div class="navbar-brand">
           <img onclick="location.href='<?php echo get_site_url() ?>'" class="img-responsive elite-logo" src="<?php echo get_template_directory_uri() ?>/images/icon/logo1.png" alt="">
-          
         </div>
+         <span class="navbar-burger burger" id='navbar-burger' data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
          <div id="navbarMenuHeroA" class="navbar-menu">
           <div class="navbar-end is-hidden-touch">
             <?php $header_menu = wp_get_menu_array('Header Menu');?>
@@ -87,11 +91,7 @@
             <a id="xs-th-lang" class="visible-xs visible-sm navbar-item" href="">ภาษาไทย</a>
           </div>
         </div>
-        <span class="navbar-burger burger" id='navbar-burger' data-target="navbarMenuHeroA">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+        
     </nav>
   </div>
 </section>
