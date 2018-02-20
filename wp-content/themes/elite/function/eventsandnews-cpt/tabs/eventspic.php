@@ -1,4 +1,3 @@
-
 <?php
 class Eventspic_tab {
     function get_form($post){
