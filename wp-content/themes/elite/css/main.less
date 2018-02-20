@@ -1511,6 +1511,15 @@ ul.chosen-results{
     margin: auto;
     .block{
         height: 250px;
+        @media (max-width: 3000px){
+            height: 320px;
+        }
+        @media (max-width: 1500px){
+            height: 200px;
+        }
+        @media (max-width: 767px){
+            height: 290px;
+        }
         &:hover{
             opacity: 0.8;
         }
@@ -1525,8 +1534,17 @@ ul.chosen-results{
      max-width: 1800px;
     margin: auto;
     .block{
-        height: 219px;
-        &:hover{
+        height: 250px;
+        @media (max-width: 3000px){
+            height: 320px;
+        }
+        @media (max-width: 1500px){
+            height: 200px;
+        }
+        @media (max-width: 767px){
+            height: 290px;
+        }
+    &:hover{
             opacity: 0.8;
         }
     }
