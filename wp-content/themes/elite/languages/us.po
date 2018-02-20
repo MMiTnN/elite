@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-13 23:02+0700\n"
-"PO-Revision-Date: 2018-02-13 23:02+0700\n"
+"POT-Creation-Date: 2018-02-20 22:06+0700\n"
+"PO-Revision-Date: 2018-02-20 22:06+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -19,70 +19,71 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: archive-events.php:20
+#: archive-events.php:30
 msgid "ข่าวสารและกิจกรรม"
 msgstr "Events and News"
 
-#: archive-projects.php:36
+#: archive-projects.php:46
 msgid "โครงการทั้งหมด"
 msgstr "All Projects"
 
-#: footer.php:5 template-contact.php:31
+#: footer.php:5 template-contact.php:47
 msgid "บริษัท เอลีท เอ็นจิเนียร์ส จำกัด"
-msgstr "ELITE  ENGINEERS  "
+msgstr "Elite Engineers Co., Ltd."
 
-#: front-page.php:12 front-page.php:165
+#: front-page.php:12 front-page.php:175 front-page.php:212 front-page.php:247
 msgid "โครงการปัจจุบัน"
 msgstr "Current Projects"
 
-#: front-page.php:31 front-page.php:203 front-page.php:205
+#: front-page.php:31 front-page.php:286 front-page.php:288 front-page.php:326
+#: front-page.php:328
 msgid "โครงการที่ผ่านมา"
 msgstr "Completed Projects"
 
-#: front-page.php:71
+#: front-page.php:81
 msgid "เกี่ยวกับเรา"
 msgstr "About us"
 
-#: front-page.php:79
+#: front-page.php:89
 msgid "ความสามารถสูง"
 msgstr "High Capability"
 
-#: front-page.php:81
+#: front-page.php:91
 msgid "ทีมงานวิศวกรของเรามีความสามารถสูง"
 msgstr "Our management team consist of engineers with high capability"
 
-#: front-page.php:86
+#: front-page.php:96
 msgid "ประเภทธุรกิจ"
 msgstr "Business Nature"
 
-#: front-page.php:88
+#: front-page.php:98
 msgid "การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า"
 msgstr "Construction,  Mechanical, Electrical"
 
-#: front-page.php:93
+#: front-page.php:103
 msgid "ความเชี่ยวชาญ"
 msgstr "Specialize"
 
-#: front-page.php:95
+#: front-page.php:105
 msgid "เรามีความเชี่ยวชาญในโครงการแบบครบวงจร"
 msgstr "We  specialize  in  Mechanical  &  Electrical  turnkey  project"
 
-#: front-page.php:129
+#: front-page.php:139
 msgid "160+ พนักงาน"
 msgstr ""
 
-#: front-page.php:138
+#: front-page.php:148
 msgid "Enginerr : 50"
 msgstr ""
 
-#: front-page.php:144
+#: front-page.php:154
 #, fuzzy
 #| msgctxt "TinyMCE menu"
 #| msgid "Format"
 msgid "Forman: 88"
 msgstr "รูปแบบ"
 
-#: front-page.php:150
+#: front-page.php:160
 msgid "Admin : 40"
 msgstr ""
 
@@ -102,8 +103,8 @@ msgstr "ข่าวสารและกิจกรรม"
 msgid "More Detail"
 msgstr "รายละเอียดธีม"
 
-#: function/eventsandnews-cpt/tabs/eventspic.php:32
-#: function/project-cpt/tabs/projectpic.php:32
+#: function/eventsandnews-cpt/tabs/eventspic.php:31
+#: function/project-cpt/tabs/projectpic.php:31
 #, fuzzy
 #| msgid "Choose Image"
 msgid "Choose or Upload an Image"
@@ -220,27 +221,27 @@ msgstr "ส่วนล่าง"
 msgid "search results for: %s"
 msgstr "ผลลัพท์การค้นหาสำหรับ %s"
 
-#: template-contact.php:33
+#: template-contact.php:49
 msgid "เลขที่ 184/44 อาคารฟอรั่มทาวเวอร์ ชั้น 14"
 msgstr "184/44-45 Forum Tower 14th floor"
 
-#: template-contact.php:34
+#: template-contact.php:50
 msgid " ถนนรัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง"
 msgstr "Ratchadapisek Rd, Huaykwang"
 
-#: template-contact.php:35
+#: template-contact.php:51
 msgid "เกรุงเทพฯ 10310"
 msgstr "Bangkok.  10320"
 
-#: template-contact.php:37
+#: template-contact.php:53
 msgid "โทร : 0-2645-3671-4"
 msgstr "Tel : 0-2645-3671-4"
 
-#: template-contact.php:38
+#: template-contact.php:54
 msgid "แฟกซ์ : 0-2645-3670"
 msgstr "Fax : 0-2645-3670"
 
-#: template-contact.php:39
+#: template-contact.php:55
 msgid "อีเมล : eliteength@yahoo.com"
 msgstr "Email : eliteength@yahoo.com"
 
