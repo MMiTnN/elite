@@ -282,7 +282,7 @@ if(!empty($profile[0])){
     <div class="container-fluid no-padding">
       <div class="columns is-multiline is-12">
           
-          <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text" style="background-color:white"> 
+          <div class="column is-3 has-text-centered box-content blog-img slide no-padding box-center-text" style="background-color:white"> 
                <a href="<?php echo get_site_url().'/projects/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
                  <article class="tile is-child is-dark has-text-centered is-title-past">
                     <p class="title"><?php _e('โครงการที่ผ่านมา','elite'); ?></p>
@@ -299,10 +299,8 @@ if(!empty($profile[0])){
               } else {
                   $image = $image_arr[0];
               }?>
-              <?php if($key == 0 || $key == 4){
-                 $css_column = 'is-4';
-              }else if($key == 6) {
-                $css_column = 'is-2';
+              <?php if($key == 0){
+                 $css_column = 'is-3';
               }else{
                 $css_column = 'is-3';
               }
