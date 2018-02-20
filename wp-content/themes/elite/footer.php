@@ -8,7 +8,7 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'container_class' => 'footer-list' ) ); ?>
 				</div>
 				<div class="footer-bottom">
-					Elite Engineer 2018 &nbsp; |  &nbsp; Forum Tower &nbsp;  
+					Elite Engineers &nbsp; |  &nbsp; Forum Tower &nbsp;  
 				</div>
 			</div>
 			

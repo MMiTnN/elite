@@ -90,7 +90,7 @@ class Project_Functions {
                 <td>
                      <select name="filter_pjt" id="filter_pjt" class="select-box">
                         <?php foreach ($pjt as $key => $value) { ?>
-                            <option value="<?php echo $value->name; ?>" <?php if($_pjt == $value->name) echo selected; ?> ><?php echo $value->name; ?></option>
+                            <option value="<?php echo $value->name; ?>" <?php if($_pjt == $value->name) echo 'selected'; ?> ><?php echo $value->name; ?></option>
                         <?php } ?> 
                     </select>
                 </td>

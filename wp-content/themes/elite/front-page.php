@@ -68,7 +68,7 @@ if(!empty($profile[0])){
           ELITE 
         </h1>
         <h2 class="subtitle">
-          ENGINEER
+          ENGINEERS
         </h2>
       </div>
     </div>
