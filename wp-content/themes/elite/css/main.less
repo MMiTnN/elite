@@ -1669,6 +1669,18 @@ ul.chosen-results{
         img{
             height: 250px;
             width: 100%;
+            @media (max-width: 3000px){
+                height: 350px;
+            }
+            @media (max-width: @screen-lg){
+                height: 320px;
+            }
+            @media (max-width: @screen-xs){
+                height: 300px;
+            }
+            @media (max-width: 350px){
+                height: 250px;
+            }
         }
         .block-content{
             bottom: -100%;
@@ -1843,10 +1855,10 @@ body{
 .link-blog-pro{
     display: inline-block;
     height: 100%;
+    width: 100%;
     background-color: rgba(0,0,0,.5);
 }
 .is-nowpro{
-    background-color: rgba(0,0,0,0.5);
     .title{
         font-size: 20px;
         padding: 35px 20px;
@@ -1907,4 +1919,8 @@ body{
 
 .navbar-end.is-hidden-desktop .line-solid{
     border-bottom: 2px solid @main-color;
+}
+
+.margin-t-12{
+    margin-top: 12px;
 }

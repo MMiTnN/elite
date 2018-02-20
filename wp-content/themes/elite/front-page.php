@@ -190,7 +190,7 @@ if(!empty($profile[0])){
                   <div class="column is-one-third is-12-mobile has-text-centered box-content blog-img slide">
                       <a class="link-blog-pro" href="<?php echo get_permalink($post_id); ?>">
                           <div class="blog-pro">
-                              <img src="<?php echo $image ?>" >
+                              <img class="img-responsive" src="<?php echo $image ?>" >
                                 <article class="tile is-child is-dark is-nowpro has-text-centered">
                                    <p class="title"><?php echo $pro->post_title; ?></p>
                                  </article>
@@ -277,12 +277,12 @@ if(!empty($profile[0])){
 <?php endif; ?>
 
  <?php if(!empty($projects_past)): ?>
- <section class="hero section-box is-light margin-t-1point3  is-hidden-touch">
+ <section class="hero section-box is-light margin-t-12  is-hidden-touch">
   <div class="hero-body no-padding">
     <div class="container-fluid no-padding">
       <div class="columns is-multiline is-12">
           
-             <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text"> 
+          <div class="column is-2 has-text-centered box-content blog-img slide no-padding box-center-text" style="background-color:white"> 
                <a href="<?php echo get_site_url().'/projects/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
                  <article class="tile is-child is-dark has-text-centered is-title-past">
                     <p class="title"><?php _e('โครงการที่ผ่านมา','elite'); ?></p>
@@ -309,7 +309,7 @@ if(!empty($profile[0])){
                ?>
                 <div class="column <?php echo $css_column;  ?> is-mobile has-text-centered box-content blog-img slide no-padding">
                    <a href="<?php echo get_permalink($post_id); ?>">
-                     <img  src="<?php echo $image ?>" >
+                       <img class="img-responsive"  src="<?php echo $image ?>" >
                      <article class="tile is-child is-dark block-content has-text-centered">
                         <p class="title"><?php echo $pro->post_title; ?></p>
                       </article>
