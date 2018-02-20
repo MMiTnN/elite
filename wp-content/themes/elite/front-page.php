@@ -188,11 +188,13 @@ if(!empty($profile[0])){
                     $image = $image_arr[0];
                 }?>
                   <div class="column is-one-third is-12-mobile has-text-centered box-content blog-img slide">
-                      <a href="<?php echo get_permalink($post_id); ?>">
-                         <img src="<?php echo $image ?>" >
-                         <article class="tile is-child is-dark is-nowpro has-text-centered">
-                            <p class="title"><?php echo $pro->post_title; ?></p>
-                          </article>
+                      <a class="link-blog-pro" href="<?php echo get_permalink($post_id); ?>">
+                          <div class="blog-pro">
+                              <img src="<?php echo $image ?>" >
+                                <article class="tile is-child is-dark is-nowpro has-text-centered">
+                                   <p class="title"><?php echo $pro->post_title; ?></p>
+                                 </article>
+                          </div>
                       </a>
                   </div>
                 <?php 
