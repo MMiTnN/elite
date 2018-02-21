@@ -36,44 +36,40 @@ $events = $posts->posts;
 
 <?php
      if(!empty($events)): ?>
-        <section class="projects-list">
-            <div class="container-fluid">
-                <div class="row">
-                    <?php
-                     $count = 1; 
-                    foreach($events as $pro): 
-                    $post_id = $pro->ID;
-                    /* Get post thumnail */
-                    $image_id = get_post_thumbnail_id($post_id);
-                    $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
-                    if (empty($image_arr)) {
-                        $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
-                    } else {
-                        $image = $image_arr[0];
-                    }
-                    ?>
-                     
-                        <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                            <a class="img-pro" href="<?php echo get_permalink($post_id); ?>">
-                            <div class="block black"  style="background-image: url(<?php echo $image ?>); background-size: cover;
-                                                                                                          background-repeat: no-repeat;
-                                                                                                          background-position: 55% 55%;" >
-                            </div>
-                            <h5> <?php echo $pro->post_title; ?></h5>
-                            </a>
-                        </div>
-                     
-                    <?php
-                    if(($count%3==0)): ?>
-                      <div class="clearfix visible-sm"></div>
-                    <?php endif; ?>
-                    <?php if(($count%4==0)): ?>
-                      <div class="clearfix visible-md visible-lg"></div>
-                    <?php endif; ?>
-                    <?php $count++;
-                    endforeach; ?>
-                </div>
+       <section class="hero section-box is-light margin-t-12 projects-list">
+          <div class="hero-body">
+            <div class="container">
+              <div class="columns is-multiline is-12">
+                   <?php 
+                        $count = 1;
+                        foreach($events as $pro): 
+                        $post_id = $pro->ID;
+                        /* Get post thumnail */
+                        $image_id = get_post_thumbnail_id($post_id);
+                        $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
+                        if (empty($image_arr)) {
+                            $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
+                        } else {
+                            $image = $image_arr[0];
+                        }
+                        ?>
+                        <div class="column is-3 is-mobile has-text-centered box-content blog-img pro">
+                          <a class="img-pro" href="<?php echo get_permalink($post_id); ?>">
+                                <img class="block black"  src='<?php echo $image ?>' >
+                                <h5> <?php echo $pro->post_title; ?></h5>
+                              </a>
+                         </div>
+                     <?php  if(($count%3==0)): ?>
+                              <div class="clearfix visible-sm"></div>
+                            <?php endif; ?>
+                            <?php if(($count%4==0)): ?>
+                              <div class="clearfix visible-md visible-lg"></div>
+                            <?php endif; ?>
+                            <?php $count++;
+                     endforeach; ?>
+              </div>
             </div>
+          </div>
         </section>
    <?php endif; ?>
 <!--END Search filters-->

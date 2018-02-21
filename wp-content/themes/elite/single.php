@@ -20,24 +20,21 @@ if (have_posts()) :
         </div>
     </section>
     <?php if(!empty($projectpic)): ?>
-        <section class="projects-pic-list">
-            <div class="container-fluid">
-                <div class="row">
-                    <?php foreach ($projectpic as $_idx => $data):
+        <section class="hero section-box is-light margin-t-12 projects-list">
+          <div class="hero-body">
+            <div class="container">
+              <div class="columns is-multiline is-12">
+                <?php foreach ($projectpic as $_idx => $data):
                         ?>
-                         <a class="example-image-link img-pro" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="<?php echo wp_get_attachment_url($data) ?>">
-                            <div class="col-md-3 col-sm-4 col-xs-12" style="margin-bottom: 20px;">
-                                
-                                <div class="block black" class="example-image"  style="background-image: url(<?php echo wp_get_attachment_url($data) ?>); background-size: cover;
-                                                                                                              background-repeat: no-repeat;
-                                                                                                              background-position: 55% 55%;" >
-                                </div>
-                            </div>
-                         </a>
-                        <?php
-                    endforeach; ?>
-                </div>
+                          <div class="column is-3 is-mobile has-text-centered box-content blog-img pro">
+                          <a class="example-image-link img-pro" data-lightbox="example-set" data-title="Click the right half of the   image to move forward." href="<?php echo wp_get_attachment_url($data) ?>">
+                                 <img class="block black"  class="example-image" src='<?php echo wp_get_attachment_url($data) ?>'>
+                              </a>
+                         </div>                        
+                     <?php endforeach; ?>
+              </div>
             </div>
+          </div>
         </section>
     <?php endif; ?>
     <!--END wrapper-->

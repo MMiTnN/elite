@@ -51,14 +51,12 @@ if(!empty($profile[0])){
 }
 ?>
 <style type="text/css">
-    @media (max-width: 1023px){
       .main-header{
           background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 55% 55%;
       }
-    }
 </style>
  <!-- Hero content: will be in the middle -->
   <div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg" >
