@@ -159,7 +159,7 @@ function multi_lang_url($slug_eng = '') {
     if (check_msls() == 'th') {
         switch ($slug_eng) {
             case "/events":
-                $slug = '/ข่าวสารและกิจกรรม';
+                $slug = '/กิจกรรม';
                 break;
             case "/projects":
                 $slug = '/โครงการ';
@@ -170,12 +170,12 @@ function multi_lang_url($slug_eng = '') {
 }
 
 function my_msls_output_get($url, $link, $current) {
-    if ($link->alt == 'th_TH') {
-        $url = str_replace('/projects/', '/โครงการ/', $url);
-        $url = str_replace('/events/', '/ข่าวสารและกิจกรรม/', $url);
+    if ($link->alt == 'th') {
+        $url = str_replace('/projects', '/โครงการ', $url);
+        $url = str_replace('/events', '/กิจกรรม', $url);
     } else if ($link->alt == 'us') {
-        $url = str_replace('/โครงการ/', '/projects/', $url);
-        $url = str_replace('/ข่าวสารและกิจกรรม/', '/events/', $url);
+        $url = str_replace('/โครงการ', '/projects', $url);
+        $url = str_replace('/กิจกรรม', '/events', $url);
     }
 
     return sprintf(

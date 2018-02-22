@@ -140,7 +140,7 @@ if(!empty($profile[0])){
                   <article class="tile is-child is-dark is-nowpro has-text-centered" style="position: absolute;top: 20px;">
                      <p class="title"><?php _e('ความสามารถสูง', 'elite'); ?></p>
                        <div class="line-solid"></div>
-                       <p class="subtitle"  style="padding: 20px;"><?php _e('ทีมงานวิศวกรของเรามีความสามารถสูง', 'elite'); ?></p>
+                       <p class="subtitle"  style="padding: 20px; font-size: 16px;"><?php _e('ทีมงานวิศวกรของเรามีความสามารถสูง', 'elite'); ?></p>
                    </article>
             </div>
         </div>
@@ -150,7 +150,7 @@ if(!empty($profile[0])){
                   <article class="tile is-child is-dark is-nowpro has-text-centered" style="position: absolute;top: 20px;">
                      <p class="title"><?php _e('ประเภทธุรกิจ', 'elite'); ?></p>
                     <div class="line-solid"></div>
-                    <p class="subtitle" style="padding: 20px;"><?php _e('การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า', 'elite'); ?></p>
+                    <p class="subtitle" style="padding: 20px; font-size: 16px;"><?php _e('การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า', 'elite'); ?></p>
                    </article>
             </div>
           </div>
@@ -160,7 +160,7 @@ if(!empty($profile[0])){
                   <article class="tile is-child is-dark is-nowpro has-text-centered" style="position: absolute;top: 20px;">
                      <p class="title"><?php _e('ความเชี่ยวชาญ', 'elite'); ?></p>
                        <div class="line-solid"></div>
-                       <p class="subtitle" style="padding: 20px;"><?php _e('เรามีความเชี่ยวชาญในโครงการแบบครบวงจร', 'elite'); ?></p>
+                       <p class="subtitle" style="padding: 20px; font-size: 16px;"><?php _e('เรามีความเชี่ยวชาญในโครงการแบบครบวงจร', 'elite'); ?></p>
                    </article>
             </div>
           </div>

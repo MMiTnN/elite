@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-22 10:53+0700\n"
-"PO-Revision-Date: 2018-02-22 10:53+0700\n"
+"POT-Creation-Date: 2018-02-22 15:10+0700\n"
+"PO-Revision-Date: 2018-02-22 15:11+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -713,81 +713,84 @@ msgstr ""
 msgid "Once a Year"
 msgstr ""
 
-#: themes/elite/archive-events.php:30 themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:15
+#: themes/elite/archive-events.php:30 themes/elite/archive-events.php:40
+#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:28 themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:29
 msgid "ข่าวสารและกิจกรรม"
-msgstr "Events and News"
+msgstr "News and Events"
 
-#: themes/elite/archive-projects.php:46
+#: themes/elite/archive-projects.php:46 themes/elite/archive-projects.php:56
 msgid "โครงการทั้งหมด"
 msgstr "All Projects"
 
-#: themes/elite/footer.php:5 themes/elite/template-contact.php:47
+#: themes/elite/footer.php:5 themes/elite/template-contact.php:57
 msgid "บริษัท เอลีท เอ็นจิเนียร์ส จำกัด"
 msgstr "ELITE  ENGINEERS  "
 
-#: themes/elite/front-page.php:12 themes/elite/front-page.php:189 themes/elite/front-page.php:226 themes/elite/front-page.php:261
+#: themes/elite/front-page.php:12 themes/elite/front-page.php:195 themes/elite/front-page.php:294 themes/elite/front-page.php:331
+#: themes/elite/front-page.php:366
 msgid "โครงการปัจจุบัน"
 msgstr "Current Projects"
 
-#: themes/elite/front-page.php:31 themes/elite/front-page.php:300 themes/elite/front-page.php:302 themes/elite/front-page.php:340
-#: themes/elite/front-page.php:342
+#: themes/elite/front-page.php:31 themes/elite/front-page.php:405 themes/elite/front-page.php:407 themes/elite/front-page.php:445
+#: themes/elite/front-page.php:447
 msgid "โครงการที่ผ่านมา"
 msgstr "Completed Projects"
 
-#: themes/elite/front-page.php:95
+#: themes/elite/front-page.php:95 themes/elite/front-page.php:133
 msgid "เกี่ยวกับเรา"
-msgstr "About us"
+msgstr "About us  fasfasf"
 
-#: themes/elite/front-page.php:103
+#: themes/elite/front-page.php:103 themes/elite/front-page.php:141
 msgid "ความสามารถสูง"
 msgstr "High Capability"
 
-#: themes/elite/front-page.php:105
+#: themes/elite/front-page.php:105 themes/elite/front-page.php:143
 msgid "ทีมงานวิศวกรของเรามีความสามารถสูง"
 msgstr "Our management team consist of engineers with high capability"
 
-#: themes/elite/front-page.php:110
+#: themes/elite/front-page.php:110 themes/elite/front-page.php:151
 msgid "ประเภทธุรกิจ"
 msgstr "Business Nature"
 
-#: themes/elite/front-page.php:112
+#: themes/elite/front-page.php:112 themes/elite/front-page.php:153
 msgid "การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า"
 msgstr "Construction,  Mechanical, Electrical"
 
-#: themes/elite/front-page.php:117
+#: themes/elite/front-page.php:117 themes/elite/front-page.php:161
 msgid "ความเชี่ยวชาญ"
 msgstr "Specialize"
 
-#: themes/elite/front-page.php:119
+#: themes/elite/front-page.php:119 themes/elite/front-page.php:163
 msgid "เรามีความเชี่ยวชาญในโครงการแบบครบวงจร"
 msgstr "We  specialize  in  Mechanical  &  Electrical  turnkey  project"
 
-#: themes/elite/front-page.php:153
+#: themes/elite/front-page.php:258
 msgid "160+ พนักงาน"
 msgstr ""
 
-#: themes/elite/front-page.php:162
+#: themes/elite/front-page.php:267
 msgid "Enginerr : 50"
 msgstr ""
 
-#: themes/elite/front-page.php:168
+#: themes/elite/front-page.php:273
 #, fuzzy
 msgid "Forman: 88"
 msgstr "รูปแบบ"
 
-#: themes/elite/front-page.php:174
+#: themes/elite/front-page.php:279
 msgid "Admin : 40"
 msgstr ""
 
-#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:30
-msgid "Events and News"
-msgstr "ข่าวสารและกิจกรรม"
+#: themes/elite/front-page.php:445 themes/elite/function/project-cpt/project-cpt.php:30
+#: themes/elite/function/project-cpt/project-cpt.php:31 themes/elite/function/project-cpt/project-cpt.php:44
+msgid "โครงการ"
+msgstr "projects"
 
-#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:31
-msgid "Evnts and News"
-msgstr "ข่าวสารและกิจกรรม"
+#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:42
+msgid "กิจกรรม"
+msgstr "events"
 
-#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:64 themes/elite/function/front-page/front-page.php:30
+#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:63 themes/elite/function/front-page/front-page.php:30
 #: themes/elite/function/project-cpt/project-cpt.php:66
 #, fuzzy
 msgid "More Detail"
@@ -807,14 +810,6 @@ msgstr "ตั้งรูป"
 #, fuzzy
 msgid "Remove this image"
 msgstr "ลบรูปภาพ"
-
-#: themes/elite/function/project-cpt/project-cpt.php:14
-msgid "โครงการ"
-msgstr ""
-
-#: themes/elite/function/project-cpt/project-cpt.php:31 themes/elite/function/project-cpt/project-cpt.php:32
-msgid "Projects"
-msgstr ""
 
 #: themes/elite/function/project-cpt/project-cpt.php:89
 msgid "Project Type"
@@ -905,27 +900,27 @@ msgstr "ส่วนล่าง"
 msgid "search results for: %s"
 msgstr "ผลลัพท์การค้นหาสำหรับ %s"
 
-#: themes/elite/template-contact.php:49
+#: themes/elite/template-contact.php:59
 msgid "เลขที่ 184/44 อาคารฟอรั่มทาวเวอร์ ชั้น 14"
 msgstr "184/44-45 Forum Tower 14th floor"
 
-#: themes/elite/template-contact.php:50
+#: themes/elite/template-contact.php:60
 msgid " ถนนรัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง"
 msgstr "Ratchadapisek Rd, Huaykwang"
 
-#: themes/elite/template-contact.php:51
+#: themes/elite/template-contact.php:61
 msgid "เกรุงเทพฯ 10310"
 msgstr "Bangkok.  10320"
 
-#: themes/elite/template-contact.php:53
+#: themes/elite/template-contact.php:63
 msgid "โทร : 0-2645-3671-4"
 msgstr ""
 
-#: themes/elite/template-contact.php:54
+#: themes/elite/template-contact.php:64
 msgid "แฟกซ์ : 0-2645-3670"
 msgstr ""
 
-#: themes/elite/template-contact.php:55
+#: themes/elite/template-contact.php:65
 msgid "อีเมล : eliteength@yahoo.com"
 msgstr ""
 
@@ -1131,6 +1126,12 @@ msgstr "ก่อนหน้า"
 #: themes/twentyfifteen/single.php:37
 msgid "Previous post:"
 msgstr ""
+
+#~ msgid "Events and News"
+#~ msgstr "ข่าวสารและกิจกรรม"
+
+#~ msgid "Evnts and News"
+#~ msgstr "ข่าวสารและกิจกรรม"
 
 #~ msgid "Your messages has been sent."
 #~ msgstr "ส่งข้อความของคุณเรียบร้อยแล้ว"

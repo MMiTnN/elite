@@ -2,7 +2,6 @@
 Class Events_Post_type {
     var $type_name;
     var $flush_option;
-    var $postSlug;
     var $domain;
     var $metabox_id = "events_metabox";
     var $pic_tab;
@@ -11,8 +10,7 @@ Class Events_Post_type {
     function __construct() {
         $this->domain = 'elite';
         $this->type_name = 'events';
-        $this->flush_option = $this->type_name . '_flush_1.0.1';
-        $this->postSlug = __('ข่าวสารและกิจกรรม', $this->domain);
+        $this->flush_option = $this->type_name . '_flush_1.0.2';
         add_action('init', array($this, 'custom_post_type'));
         add_action('init', array($this, 'application_check'));
         if (is_admin()) {            
@@ -27,8 +25,8 @@ Class Events_Post_type {
 
     function custom_post_type() {
         $args = array(
-            'label' => __('Events and News', $this->domain),
-            'description' => __('Evnts and News', $this->domain),
+            'label' => __('ข่าวสารและกิจกรรม', $this->domain),
+            'description' => __('ข่าวสารและกิจกรรม', $this->domain),
             'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
             'hierarchical' => false,
             'public' => true,
@@ -41,10 +39,11 @@ Class Events_Post_type {
             'has_archive' => true,
             'exclude_from_search' => false,
             'publicly_queryable' => true,
-            'rewrite' => array('slug' => $this->postSlug),
+            'rewrite' => array('slug' => __('กิจกรรม', $this->domain)),
         );
         // Registering your Custom Post Type
         register_post_type($this->type_name, $args);
+        flush_rewrite_rules();
     }
     function application_check() {
         if (empty(get_option($this->option_name)) || $this->flush_option != get_option($this->option_name)) {

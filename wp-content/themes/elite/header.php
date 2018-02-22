@@ -10,7 +10,7 @@
         <meta name="msapplication-navbutton-color" content="#DC3536">
         <meta name="apple-mobile-web-app-status-bar-style" content="#DC3536">
 
-        <title><?php wp_title('|', true, 'right'); ?></title>
+        <title><?php wp_title('', true, 'right'); ?></title>
 
         <?php wp_head(); ?>
     </head>
