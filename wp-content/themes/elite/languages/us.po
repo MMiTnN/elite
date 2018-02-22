@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
 "POT-Creation-Date: 2018-02-22 15:12+0700\n"
-"PO-Revision-Date: 2018-02-22 15:13+0700\n"
+"PO-Revision-Date: 2018-02-22 15:49+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -27,7 +27,7 @@ msgstr "News and Events"
 
 #: archive-projects.php:46 archive-projects.php:56
 msgid "โครงการทั้งหมด"
-msgstr "All Projects 123"
+msgstr "All Projects"
 
 #: footer.php:5 template-contact.php:57
 msgid "บริษัท เอลีท เอ็นจิเนียร์ส จำกัด"

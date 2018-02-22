@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-22 15:10+0700\n"
-"PO-Revision-Date: 2018-02-22 15:11+0700\n"
+"POT-Creation-Date: 2018-02-22 15:49+0700\n"
+"PO-Revision-Date: 2018-02-22 15:50+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -726,13 +726,12 @@ msgstr "All Projects"
 msgid "บริษัท เอลีท เอ็นจิเนียร์ส จำกัด"
 msgstr "ELITE  ENGINEERS  "
 
-#: themes/elite/front-page.php:12 themes/elite/front-page.php:195 themes/elite/front-page.php:294 themes/elite/front-page.php:331
-#: themes/elite/front-page.php:366
+#: themes/elite/front-page.php:12 themes/elite/front-page.php:258 themes/elite/front-page.php:295 themes/elite/front-page.php:330
 msgid "โครงการปัจจุบัน"
 msgstr "Current Projects"
 
-#: themes/elite/front-page.php:31 themes/elite/front-page.php:405 themes/elite/front-page.php:407 themes/elite/front-page.php:445
-#: themes/elite/front-page.php:447
+#: themes/elite/front-page.php:31 themes/elite/front-page.php:369 themes/elite/front-page.php:371 themes/elite/front-page.php:409
+#: themes/elite/front-page.php:411
 msgid "โครงการที่ผ่านมา"
 msgstr "Completed Projects"
 
@@ -764,24 +763,24 @@ msgstr "Specialize"
 msgid "เรามีความเชี่ยวชาญในโครงการแบบครบวงจร"
 msgstr "We  specialize  in  Mechanical  &  Electrical  turnkey  project"
 
-#: themes/elite/front-page.php:258
+#: themes/elite/front-page.php:222
 msgid "160+ พนักงาน"
 msgstr ""
 
-#: themes/elite/front-page.php:267
+#: themes/elite/front-page.php:231
 msgid "Enginerr : 50"
 msgstr ""
 
-#: themes/elite/front-page.php:273
+#: themes/elite/front-page.php:237
 #, fuzzy
 msgid "Forman: 88"
 msgstr "รูปแบบ"
 
-#: themes/elite/front-page.php:279
+#: themes/elite/front-page.php:243
 msgid "Admin : 40"
 msgstr ""
 
-#: themes/elite/front-page.php:445 themes/elite/function/project-cpt/project-cpt.php:30
+#: themes/elite/front-page.php:409 themes/elite/function/project-cpt/project-cpt.php:30
 #: themes/elite/function/project-cpt/project-cpt.php:31 themes/elite/function/project-cpt/project-cpt.php:44
 msgid "โครงการ"
 msgstr "projects"
