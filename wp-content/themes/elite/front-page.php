@@ -187,43 +187,7 @@ if(!empty($profile[0])){
     </div>
   </div>
 </section>
-<section class="hero is-content section-box is-dark print-content">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns ">
-          <div class="column  has-text-centered">
-              <h1 class="title"><?php _e('โครงการปัจจุบัน', 'elite') ?></h1>
-          </div>
-      </div>
-      <div class="columns is-12 is-multiline jus-cen">
-         <?php  
-               foreach($projects_now as $key => $pro): 
-                $post_id = $pro->ID;
-                /* Get post thumnail */
-                $image_id = get_post_thumbnail_id($post_id);
-                $image_arr = wp_get_attachment_image_src($image_id, "custom-size-600");
-                if (empty($image_arr)) {
-                    $image = get_stylesheet_directory_uri() . '/images/1000x350.jpg';
-                } else {
-                    $image = $image_arr[0];
-                }?>
-                  <div class="column is-one-third is-12-mobile has-text-centered box-content blog-img slide">
-                      <a class="link-blog-pro" href="<?php echo get_permalink($post_id); ?>">
-                          <div class="blog-pro">
-                              <img class="img-responsive" src="<?php echo $image ?>" >
-                                <article class="tile is-child is-dark is-nowpro has-text-centered">
-                                   <p class="title"><?php echo $pro->post_title; ?></p>
-                                 </article>
-                          </div>
-                      </a>
-                  </div>
-                <?php 
-                endforeach; 
-           ?>
-      </div>
-    </div>
-  </div>
-</section>  
+
   
   
   

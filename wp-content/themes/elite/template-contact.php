@@ -49,8 +49,8 @@ $image = '';
                   <div class="column">
                       <div class="columns">
                           <div class="column">
-                            <a class="example-image-link img-pro" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="<?php echo get_template_directory_uri(); ?>/images/map3.jpg?>">
-                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/map3.jpg" >
+                            <a class="example-image-link img-pro" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="<?php echo get_template_directory_uri(); ?>/images/map4.png?>">
+                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/map4.png" >
                             </a>
                           </div>
                           <div class="column content">

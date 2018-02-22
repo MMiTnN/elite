@@ -796,12 +796,15 @@ span.play-video{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
     position: relative;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    @media (max-width: @screen-md-max) {
+        height: 40vh;
+    }
 }
 
 .search-result{
@@ -1915,12 +1918,13 @@ body{
     padding: 120px;
     .content{
         padding-left: 30px;
+        padding-top: 30px;
         @media (max-width: @screen-sm-max){
              padding-left: 16px;
         }
     }
     h5{
-        line-height: 44px;
+        line-height: 37px;
         @media (max-width: @screen-md){
            line-height: 35px;
         }
@@ -1993,6 +1997,7 @@ body{
         img{
             height: 250px;
             width: 100%;
+            opacity: 0.8;
         }
         .font-main-header{
             position: absolute;
@@ -2000,7 +2005,6 @@ body{
             top: 40%;
             .title{
                 font-size: 40px;
-                color: #fff !important;
             }
         }        
     }
@@ -2064,5 +2068,11 @@ body{
     
     .is-nowpro .title{
         padding: 0px;
+    }
+    .block ul li {
+        font-size: 16px;
+    }
+    .condition .block.content p {
+        font-size: 16px;
     }
 }
