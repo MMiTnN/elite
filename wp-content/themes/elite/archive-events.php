@@ -23,21 +23,30 @@ $events = $posts->posts;
       }
     }
 </style>
-<div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower8.jpeg" >
+<div class="hero-body main-header parallax-window normal" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower8.jpeg" >
     <div class="container has-text-centered">
       <div class="font-main-header white">
         <h1 class="title">
-          <?php _e('ข่าวสารและกิจกรรม', 'elite'); ?>
+          <?php echo __('ข่าวสารและกิจกรรม', 'elite'); ?>
+        </h1>
+      </div>
+    </div>
+  </div>
+<div class="print-header">
+    <div class="container-fulid has-text-centered">
+     <img src="<?php echo get_template_directory_uri(); ?>/images/tower8.jpeg" />
+      <div class="font-main-header white">
+        <h1 class="title">
+           <?php _e('ข่าวสารและกิจกรรม', 'elite'); ?>
         </h1>
       </div>
     </div>
   </div>
 
-
 <?php
      if(!empty($events)): ?>
-       <section class="hero section-box is-light margin-t-12 projects-list">
-          <div class="hero-body">
+       <section class="hero section-box is-light projects-pic-list events">
+          <div class="">
             <div class="container">
               <div class="columns is-multiline is-12">
                    <?php 
@@ -53,7 +62,7 @@ $events = $posts->posts;
                             $image = $image_arr[0];
                         }
                         ?>
-                        <div class="column is-3 is-mobile has-text-centered box-content blog-img pro">
+                        <div class="column is-4 is-4-desktop is-3-widescreen is-mobile has-text-centered box-content blog-img pro">
                           <a class="img-pro" href="<?php echo get_permalink($post_id); ?>">
                                 <img class="block black"  src='<?php echo $image ?>' >
                                 <h5> <?php echo $pro->post_title; ?></h5>
@@ -74,6 +83,11 @@ $events = $posts->posts;
    <?php endif; ?>
 <!--END Search filters-->
 
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        var prefixUrl = "<?php echo multi_lang_url("/events") ?>";
+    });
+</script>
 <?php
 get_footer();
 ?>

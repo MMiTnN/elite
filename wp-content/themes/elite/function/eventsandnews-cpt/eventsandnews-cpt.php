@@ -6,16 +6,17 @@ Class Events_Post_type {
     var $domain;
     var $metabox_id = "events_metabox";
     var $pic_tab;
+    var $option_name = "events_flush";
 
     function __construct() {
-        $this->type_name = 'events';
-        $this->flush_option = $this->type_name . '_flush_1.0.16';
-        $this->postSlug = 'events';
         $this->domain = 'elite';
+        $this->type_name = 'events';
+        $this->flush_option = $this->type_name . '_flush_1.0.1';
+        $this->postSlug = __('ข่าวสารและกิจกรรม', $this->domain);
         add_action('init', array($this, 'custom_post_type'));
         add_action('init', array($this, 'application_check'));
         if (is_admin()) {            
-            require_once FUNC_DIR_FRONT . '/tabs/projectpic.php';
+             require_once FUNC_DIR_FRONT . '/tabs/projectpic.php';
             
             $this->pic_tab = new Projectpic_tab();
         }
@@ -46,9 +47,9 @@ Class Events_Post_type {
         register_post_type($this->type_name, $args);
     }
     function application_check() {
-        if (!get_option($this->flush_option)) {
+        if (empty(get_option($this->option_name)) || $this->flush_option != get_option($this->option_name)) {
             flush_rewrite_rules();
-            update_option($this->flush_option, true);
+            update_option($this->option_name, $this->flush_option);
         }
     }
     /**

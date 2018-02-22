@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-11 19:57+0700\n"
-"PO-Revision-Date: 2018-02-11 19:57+0700\n"
+"POT-Creation-Date: 2018-02-22 10:53+0700\n"
+"PO-Revision-Date: 2018-02-22 10:53+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -12,205 +12,1131 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 1.7.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: archive-events.php:20
+#: plugins/akismet/class.akismet-admin.php:72
+msgid "Comment History"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:88 plugins/akismet/class.akismet-admin.php:220
+msgid "Settings"
+msgstr "ตั้งค่า"
+
+#: plugins/akismet/class.akismet-admin.php:95 plugins/akismet/class.akismet-admin.php:98
+msgid "Akismet Anti-Spam"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:127
+msgid "Remove this URL"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:128
+msgid "Removing..."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:129
+msgid "URL removed"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:130
+msgid "(undo)"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:131
+msgid "Re-adding..."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:158 plugins/akismet/class.akismet-admin.php:196 plugins/akismet/class.akismet-admin.php:209
+msgid "Overview"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:169
+msgid "New to Akismet"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:173
+#, php-format
+msgid "Sign up for an account on %s to get an API Key."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:180
+msgid "Enter an API Key"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:233
+msgid "Account"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:254
+msgid "Cheatin&#8217; uh?"
+msgstr "คุณกำลังตั้งใจโกงอยู่รึ?"
+
+#: plugins/akismet/class.akismet-admin.php:336
+#, php-format
+msgid "<a href=\"%s\">Akismet</a> blocks spam from getting to your blog. "
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:348
+#, php-format
+msgid "There&#8217;s nothing in your <a href='%s'>spam queue</a> at the moment."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:372
+msgid "Checking for Spam"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:373
+msgid "(%1$s%)"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:480
+msgid "Awaiting spam check"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:484
+msgid "Flagged as spam by Akismet"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:486
+msgid "Cleared by Akismet"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:490
+#, php-format
+msgid "Flagged as spam by %s"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:492
+#, php-format
+msgid "Un-spammed by %s"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:556
+msgid "Akismet re-checked and caught this comment as spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:559
+msgid "Akismet caught this comment as spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:562
+msgid "Akismet re-checked and cleared this comment."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:565
+msgid "Akismet cleared this comment."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:568
+msgid "Comment was caught by wp_blacklist_check."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:572
+#, php-format
+msgid "%s reported this comment as spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:575
+msgid "This comment was reported as spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:580
+#, php-format
+msgid "%s reported this comment as not spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:583
+msgid "This comment was reported as not spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:587
+msgid "Akismet caught this comment as spam during an automatic retry."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:590
+msgid "Akismet cleared this comment during an automatic retry."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:594
+#, php-format
+msgid "Akismet was unable to check this comment (response: %s) but will automatically retry later."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:599
+#, php-format
+msgid "Akismet was unable to recheck this comment (response: %s)."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:607
+#, php-format
+msgid "Comment status was changed to %s"
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:613
+#, php-format
+msgid "%1$s changed the comment status to %2$s."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:832
+#, php-format
+msgid "Please check your <a href=\"%s\">Akismet configuration</a> and contact your web host if problems persist."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:939
+msgid "Cleaning up spam takes time."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:1011
+msgid "There were no comments to check. Akismet will only check comments in the Pending queue."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:1018
+msgid "No comments were caught as spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:1122
+msgid ""
+"Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. Your site is "
+"fully configured and being protected, even while you sleep."
+msgstr ""
+
+#: plugins/akismet/class.akismet-admin.php:1125
+msgid ""
+"Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your "
+"site protected even while you sleep. To get started, just go to <a href=\"admin.php?page=akismet-key-config\">your Akismet Settings "
+"page</a> to set up your API key."
+msgstr ""
+
+#: plugins/akismet/class.akismet-cli.php:36
+#, php-format
+msgid "Comment #%d is spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-cli.php:39
+#, php-format
+msgid "Comment #%d is not spam."
+msgstr ""
+
+#: plugins/akismet/class.akismet-cli.php:43
+msgid "Failed to connect to Akismet."
+msgstr ""
+
+#: plugins/akismet/class.akismet-cli.php:46
+#, php-format
+msgid "Comment #%d could not be checked."
+msgstr ""
+
+#: plugins/akismet/class.akismet-rest-api.php:27
+msgid "A 12-character Akismet API key. Available at akismet.com/get/"
+msgstr ""
+
+#: plugins/akismet/class.akismet-rest-api.php:51
+msgid "If true, Akismet will automatically discard the worst spam automatically rather than putting it in the spam folder."
+msgstr ""
+
+#: plugins/akismet/class.akismet-rest-api.php:56
+msgid "If true, show the number of approved comments beside each comment author in the comments list page."
+msgstr ""
+
+#: plugins/akismet/class.akismet-rest-api.php:71 plugins/akismet/class.akismet-rest-api.php:80
+msgid "The time period for which to retrieve stats. Options: 60-days, 6-months, all"
+msgstr ""
+
+#: plugins/akismet/class.akismet-rest-api.php:110
+msgid "This site's API key is hardcoded and cannot be changed via the API."
+msgstr ""
+
+#: plugins/akismet/class.akismet-rest-api.php:116
+msgid "The value provided is not a valid and registered API key."
+msgstr ""
+
+#: plugins/akismet/class.akismet-rest-api.php:132
+msgid "This site's API key is hardcoded and cannot be deleted."
+msgstr ""
+
+#: plugins/akismet/class.akismet-widget.php:12
+msgid "Akismet Widget"
+msgstr ""
+
+#: plugins/akismet/class.akismet-widget.php:13
+msgid "Display the number of spam comments Akismet has caught"
+msgstr ""
+
+#: plugins/akismet/class.akismet-widget.php:69 plugins/akismet/class.akismet-widget.php:90
+msgid "Spam Blocked"
+msgstr ""
+
+#: plugins/akismet/class.akismet.php:210
+msgid "Comment discarded."
+msgstr ""
+
+#: plugins/akismet/class.akismet.php:452
+msgid "Comment not found."
+msgstr ""
+
+#: plugins/akismet/class.akismet.php:1208
+#, php-format
+msgid ""
+"Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet "
+"plugin</a>."
+msgstr ""
+
+#: plugins/akismet/views/config.php:222
+msgid "Upgrade"
+msgstr ""
+
+#: plugins/akismet/views/config.php:222
+msgid "Change"
+msgstr ""
+
+#: plugins/akismet/views/notice.php:11
+msgid "<strong>Almost done</strong> - configure Akismet and say goodbye to spam"
+msgstr ""
+
+#: plugins/akismet/views/notice.php:18
+msgid ""
+"Some comments have not yet been checked for spam by Akismet. They have been temporarily held for moderation and will automatically "
+"be rechecked later."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:45
+#, php-format
+msgid ""
+"Your web host or server administrator has disabled PHP&#8217;s <code>gethostbynamel</code> function.  <strong>Akismet cannot work "
+"correctly until this is fixed.</strong>  Please contact your web host or firewall administrator and give them <a href=\"%s\" target="
+"\"_blank\">this information about Akismet&#8217;s system requirements</a>."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:50
+#, php-format
+msgid ""
+"Your firewall may be blocking Akismet from connecting to its API. Please contact your host and refer to <a href=\"%s\" target="
+"\"_blank\">our guide about firewalls</a>."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:55
+#, php-format
+msgid "We cannot process your payment. Please <a href=\"%s\" target=\"_blank\">update your payment details</a>."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:60
+#, php-format
+msgid "Please visit your <a href=\"%s\" target=\"_blank\">Akismet account page</a> to reactivate your subscription."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:65 plugins/akismet/views/notice.php:75
+#, php-format
+msgid "Please contact <a href=\"%s\" target=\"_blank\">Akismet support</a> for assistance."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:70
+#, php-format
+msgid "You can help us fight spam and upgrade your account by <a href=\"%s\" target=\"_blank\">contributing a token amount</a>."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:81
+#, php-format
+msgid ""
+"In 2012, Akismet began using subscription plans for all accounts (even free ones). A plan has not been assigned to your account, and "
+"we&#8217;d appreciate it if you&#8217;d <a href=\"%s\" target=\"_blank\">sign into your account</a> and choose one."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:83 plugins/akismet/views/notice.php:124 plugins/akismet/views/notice.php:131
+#, php-format
+msgid "Please <a href=\"%s\" target=\"_blank\">contact our support team</a> with any questions."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:101
+#, php-format
+msgid "Would you like to <a href=\"%s\">check pending comments</a>?"
+msgstr ""
+
+#: plugins/akismet/views/notice.php:115
+#, php-format
+msgid ""
+"The connection to akismet.com could not be established. Please refer to <a href=\"%s\" target=\"_blank\">our guide about firewalls</"
+"a> and check your server configuration."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:122
+#, php-format
+msgid ""
+"Your Pro subscription allows the use of Akismet on only one site. Please <a href=\"%s\" target=\"_blank\">purchase additional Pro "
+"subscriptions</a> or upgrade to an Enterprise subscription that allows the use of Akismet on unlimited sites."
+msgstr ""
+
+#: plugins/akismet/views/notice.php:129
+#, php-format
+msgid ""
+"To continue your service, <a href=\"%s\" target=\"_blank\">upgrade to an Enterprise subscription</a>, which covers an unlimited "
+"number of sites."
+msgstr ""
+
+#: plugins/akismet/views/start.php:31 plugins/akismet/views/start.php:63
+#, php-format
+msgid "You are connected as %s."
+msgstr ""
+
+#: plugins/akismet/views/start.php:43
+#, php-format
+msgid "Your subscription for %s is cancelled."
+msgstr ""
+
+#: plugins/akismet/views/start.php:48
+#, php-format
+msgid "Your subscription for %s is suspended."
+msgstr ""
+
+#: plugins/akismet/views/start.php:69
+msgid "Sign up with a different email address"
+msgstr ""
+
+#: plugins/akismet/views/start.php:77
+msgid "Get your API key"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:297 plugins/contact-cpt/contact-cpt.php:328
+msgid "contacts"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:297
+msgid "Contacts"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:298
+msgid "All Contacts"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:299
+msgid "View Contacts"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:300
+msgid "Settting"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:300
+msgid "Setting"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:323
+#, php-format
+msgid "Items deleted: %d"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:380
+msgid "Expert Card View"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:381
+msgid "back to list"
+msgstr ""
+
+#: plugins/contact-cpt/contact-cpt.php:429
+msgid "contact list"
+msgstr ""
+
+#: plugins/multisite-language-switcher/MultisiteLanguageSwitcher.php:160
+#, php-format
+msgid "This post is also available in %s."
+msgstr ""
+
+#: plugins/multisite-language-switcher/MultisiteLanguageSwitcher.php:177
+#, php-format
+msgid "%s and %s"
+msgstr ""
+
+#: plugins/multisite-language-switcher/MultisiteLanguageSwitcher.php:285
+msgid ""
+"The Multisite Language Switcher needs the activation of the multisite-feature for working properly. Please read <a onclick=\"window."
+"open(this.href); return false;\" href=\"http://codex.wordpress.org/Create_A_Network\">this post</a> if you don't know the meaning."
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:34 plugins/multisite-language-switcher/includes/MslsMetaBox.php:97
+#: plugins/multisite-language-switcher/includes/MslsPostTag.php:150
+#: plugins/multisite-language-switcher/includes/MslsPostTagClassic.php:116
+#: plugins/multisite-language-switcher/includes/MslsWidget.php:20
+msgid "Multisite Language Switcher"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:78
+#, php-format
+msgid ""
+"There are no language files installed. You can <a href=\"%s\">manually install some language files</a> or you could use a <a href="
+"\"%s\">plugin</a> to download these files automatically."
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:84
+#, php-format
+msgid "Multisite Language Switcher is almost ready. You must <a href=\"%s\">complete the configuration process</a>."
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:99
+msgid "Multisite Language Switcher Options"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:101
+msgid "To achieve maximum flexibility, you have to configure each blog separately."
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:109
+msgid "Configure"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:109 plugins/multisite-language-switcher/includes/MslsMetaBox.php:207
+#: plugins/multisite-language-switcher/includes/MslsMetaBox.php:267
+msgid "Update"
+msgstr "อัปเดต"
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:148
+msgid "Language Settings"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:152
+msgid "Main Settings"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:156
+msgid "Advanced Settings"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:163
+msgid "Rewrites Settings"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:183
+msgid "Blog Language"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:187
+msgid "Admin Language"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:207
+msgid "Display"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:211
+msgid "Sort output by description"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:215
+msgid "Display link to the current language"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:219
+msgid "Show only links with a translation"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:223
+msgid "Description"
+msgstr "คำขยายความ"
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:227
+msgid "Text/HTML before the list"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:231
+msgid "Text/HTML after the list"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:235
+msgid "Text/HTML before each item"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:239
+msgid "Text/HTML after each item"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:243
+msgid "Add hint for available translations"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:247
+msgid "Hint priority"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:267
+msgid "Activate experimental autocomplete inputs"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:271
+msgid "Custom URL for flag-images"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:275
+msgid "Reference user"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:279
+msgid "Exclude this blog from output"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdmin.php:301
+#, php-format
+msgid "%s Slug"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdminIcon.php:147
+#, php-format
+msgid "Edit the translation in the %s-blog"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsAdminIcon.php:154
+#, php-format
+msgid "Create a new translation in the %s-blog"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsCustomFilter.php:46
+msgid "Show all blogs"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsCustomFilter.php:52
+#, php-format
+msgid "Not translated in the %s-blog"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsLink.php:44
+msgid "Flag and description"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsLinkImageOnly.php:25
+msgid "Flag only"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsLinkTextImage.php:25
+msgid "Description and flag"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsLinkTextOnly.php:25
+msgid "Description only"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsMetaBox.php:213 plugins/multisite-language-switcher/includes/MslsMetaBox.php:292
+msgid "You should define at least another blog in a different language in order to have some benefit from this plugin!"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsOptions.php:341
+msgid "American English"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsWidget.php:54
+msgid "No available translations found"
+msgstr ""
+
+#: plugins/multisite-language-switcher/includes/MslsWidget.php:83
+msgid "Title"
+msgstr "หัวข้อ"
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1699
+msgid "Once Every 1 Minute"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1705
+msgid "Once Every 5 Minutes"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1711
+msgid "Once Every 15 Minutes"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1717
+msgid "Twice an Hour"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1723
+msgid "Once an Hour"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1729
+msgid "Once Every 2 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1735
+msgid "Once Every 3 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1741
+msgid "Once Every 4 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1747
+msgid "Once Every 5 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1753
+msgid "Once Every 6 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1759
+msgid "Once Every 7 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1765
+msgid "Once Every 8 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1771
+msgid "Once Every 9 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1777
+msgid "Once Every 10 Hours"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1783
+msgid "Once a Day"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1789
+msgid "Once Every 3 Days"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1795
+msgid "Once a Week"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1801
+msgid "Once Every 10 Days"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1807
+msgid "Once a Month"
+msgstr ""
+
+#: plugins/wp-fastest-cache/wpFastestCache.php:1813
+msgid "Once a Year"
+msgstr ""
+
+#: themes/elite/archive-events.php:30 themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:15
 msgid "ข่าวสารและกิจกรรม"
 msgstr "Events and News"
 
-#: archive-projects.php:36
+#: themes/elite/archive-projects.php:46
 msgid "โครงการทั้งหมด"
 msgstr "All Projects"
 
-#: footer.php:5 template-contact.php:31
+#: themes/elite/footer.php:5 themes/elite/template-contact.php:47
 msgid "บริษัท เอลีท เอ็นจิเนียร์ส จำกัด"
 msgstr "ELITE  ENGINEERS  "
 
-#: front-page.php:71
-msgid "เกี่ยวกับเรา"
-msgstr "About us"
-
-#: front-page.php:79
-msgid "ความสามารถสูง"
-msgstr "High Capability"
-
-#: front-page.php:81
-msgid "ทีมงานวิศวกรของเรามีความสามารถสูง"
-msgstr "Our management team consist of engineers with high capability"
-
-#: front-page.php:86
-msgid "ประเภทธุรกิจ"
-msgstr "Business Nature"
-
-#: front-page.php:88
-msgid "การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า"
-msgstr "Construction,  Mechanical, Electrical"
-
-#: front-page.php:93
-msgid "ความเชี่ยวชาญ"
-msgstr "Specialize"
-
-#: front-page.php:95
-msgid "เรามีความเชี่ยวชาญในโครงการแบบครบวงจร"
-msgstr "We  specialize  in  Mechanical  &  Electrical  turnkey  project"
-
-#: front-page.php:129
-msgid "160+ พนักงาน"
-msgstr ""
-
-#: front-page.php:138
-msgid "Enginerr : 50"
-msgstr ""
-
-#: front-page.php:144
-#, fuzzy
-#| msgctxt "TinyMCE menu"
-#| msgid "Format"
-msgid "Forman: 88"
-msgstr "รูปแบบ"
-
-#: front-page.php:150
-msgid "Admin : 40"
-msgstr ""
-
-#: front-page.php:165
+#: themes/elite/front-page.php:12 themes/elite/front-page.php:189 themes/elite/front-page.php:226 themes/elite/front-page.php:261
 msgid "โครงการปัจจุบัน"
 msgstr "Current Projects"
 
-#: front-page.php:205
+#: themes/elite/front-page.php:31 themes/elite/front-page.php:300 themes/elite/front-page.php:302 themes/elite/front-page.php:340
+#: themes/elite/front-page.php:342
 msgid "โครงการที่ผ่านมา"
 msgstr "Completed Projects"
 
-#: function/eventsandnews-cpt/eventsandnews-cpt.php:29
+#: themes/elite/front-page.php:95
+msgid "เกี่ยวกับเรา"
+msgstr "About us"
+
+#: themes/elite/front-page.php:103
+msgid "ความสามารถสูง"
+msgstr "High Capability"
+
+#: themes/elite/front-page.php:105
+msgid "ทีมงานวิศวกรของเรามีความสามารถสูง"
+msgstr "Our management team consist of engineers with high capability"
+
+#: themes/elite/front-page.php:110
+msgid "ประเภทธุรกิจ"
+msgstr "Business Nature"
+
+#: themes/elite/front-page.php:112
+msgid "การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า"
+msgstr "Construction,  Mechanical, Electrical"
+
+#: themes/elite/front-page.php:117
+msgid "ความเชี่ยวชาญ"
+msgstr "Specialize"
+
+#: themes/elite/front-page.php:119
+msgid "เรามีความเชี่ยวชาญในโครงการแบบครบวงจร"
+msgstr "We  specialize  in  Mechanical  &  Electrical  turnkey  project"
+
+#: themes/elite/front-page.php:153
+msgid "160+ พนักงาน"
+msgstr ""
+
+#: themes/elite/front-page.php:162
+msgid "Enginerr : 50"
+msgstr ""
+
+#: themes/elite/front-page.php:168
+#, fuzzy
+msgid "Forman: 88"
+msgstr "รูปแบบ"
+
+#: themes/elite/front-page.php:174
+msgid "Admin : 40"
+msgstr ""
+
+#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:30
 msgid "Events and News"
 msgstr "ข่าวสารและกิจกรรม"
 
-#: function/eventsandnews-cpt/eventsandnews-cpt.php:30
+#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:31
 msgid "Evnts and News"
 msgstr "ข่าวสารและกิจกรรม"
 
-#: function/eventsandnews-cpt/eventsandnews-cpt.php:63
-#: function/front-page/front-page.php:30
-#: function/project-cpt/project-cpt.php:64
+#: themes/elite/function/eventsandnews-cpt/eventsandnews-cpt.php:64 themes/elite/function/front-page/front-page.php:30
+#: themes/elite/function/project-cpt/project-cpt.php:66
 #, fuzzy
-#| msgid "Theme Details"
 msgid "More Detail"
 msgstr "รายละเอียดธีม"
 
-#: function/eventsandnews-cpt/tabs/eventspic.php:32
-#: function/project-cpt/tabs/projectpic.php:32
+#: themes/elite/function/eventsandnews-cpt/tabs/eventspic.php:31 themes/elite/function/project-cpt/tabs/projectpic.php:31
 #, fuzzy
-#| msgid "Choose Image"
 msgid "Choose or Upload an Image"
 msgstr "เลือกรูปภาพ"
 
-#: function/front-page/tabs/profile.php:56
+#: themes/elite/function/front-page/tabs/profile.php:56
 #, fuzzy
-#| msgid "Set image"
 msgid "Set custom image"
 msgstr "ตั้งรูป"
 
-#: function/front-page/tabs/profile.php:59
+#: themes/elite/function/front-page/tabs/profile.php:59
 #, fuzzy
-#| msgid "Remove image"
 msgid "Remove this image"
 msgstr "ลบรูปภาพ"
 
-#: function/project-cpt/project-cpt.php:29
-#: function/project-cpt/project-cpt.php:30
+#: themes/elite/function/project-cpt/project-cpt.php:14
+msgid "โครงการ"
+msgstr ""
+
+#: themes/elite/function/project-cpt/project-cpt.php:31 themes/elite/function/project-cpt/project-cpt.php:32
 msgid "Projects"
 msgstr ""
 
-#: function/project-cpt/project-cpt.php:87
+#: themes/elite/function/project-cpt/project-cpt.php:89
 msgid "Project Type"
 msgstr ""
 
-#: function/project-type-taxonomy/project-type-taxonomy.php:40
+#: themes/elite/function/project-type-taxonomy/project-type-taxonomy.php:40
 #, fuzzy
-#| msgid "Add or remove tags"
 msgid "Add or remove Project Type"
 msgstr "เพิ่มหรือลบป้ายกำกับ"
 
-#: function/project-type-taxonomy/project-type-taxonomy.php:41
+#: themes/elite/function/project-type-taxonomy/project-type-taxonomy.php:41
 #, fuzzy
-#| msgid "Choose from the most used tags"
 msgid "Choose from the most Project Type"
 msgstr "เลือกจากป้ายกำกับที่ใช้มากที่สุด"
 
-#: function/project-type-taxonomy/project-type-taxonomy.php:42
+#: themes/elite/function/project-type-taxonomy/project-type-taxonomy.php:42
 msgid "Project Types"
 msgstr ""
 
-#: function/theme/functions.php:160
+#: themes/elite/function/theme/functions.php:160
 msgid "ติดต่อ"
 msgstr "Contact"
 
-#: function/theme/functions.php:165
+#: themes/elite/function/theme/functions.php:165
 msgid "ชื่อจริง"
 msgstr "First name"
 
-#: function/theme/functions.php:173
+#: themes/elite/function/theme/functions.php:173
 msgid "นามสกุล"
 msgstr "Last name"
 
-#: function/theme/functions.php:183
+#: themes/elite/function/theme/functions.php:183
 msgid "อีเมล"
 msgstr "Email"
 
-#: function/theme/functions.php:191
+#: themes/elite/function/theme/functions.php:191
 msgid "เบอร์โทรศัพท์"
 msgstr "Phone"
 
-#: function/theme/functions.php:201
+#: themes/elite/function/theme/functions.php:201
 msgid "ข้อความ"
 msgstr "Message"
 
-#: function/theme/functions.php:209
+#: themes/elite/function/theme/functions.php:209
 msgid "ส่ง"
 msgstr "Submit"
 
-#: function/theme/functions.php:227
-msgid "Your messages has been sent."
-msgstr "ส่งข้อความของคุณเรียบร้อยแล้ว"
+#: themes/elite/function/theme/functions.php:227
+msgid "ขอขอบคุณที่ติดต่อกับเรา"
+msgstr ""
 
-#: function/theme/functions.php:230
-msgid "Thank you for messages us"
-msgstr "ขอขอบคุณที่ติดต่อเรา"
+#: themes/elite/function/theme/functions.php:230
+msgid "ข้อความของคุณถูกส่งเรียบร้อบแล้ว"
+msgstr ""
 
-#: functions.php:82
+#: themes/elite/function/theme/functions.php:254
+msgid "กรุณาใส่ชื่อจริงของคุณ"
+msgstr ""
+
+#: themes/elite/function/theme/functions.php:255
+msgid "กรุณาใส่นามสกุลของคุณ"
+msgstr ""
+
+#: themes/elite/function/theme/functions.php:256
+msgid "กรุณาใส่อีเมลของคุณ"
+msgstr ""
+
+#: themes/elite/function/theme/functions.php:257
+msgid "กรุณาใส่เบอร์โทรศัพท์ของคุณ"
+msgstr ""
+
+#: themes/elite/function/theme/functions.php:258
+msgid "กรุณาใส่ข้อความของคุณ"
+msgstr ""
+
+#: themes/elite/functions.php:82
 #, fuzzy
-#| msgid "Header Media"
 msgid "Header Menu"
 msgstr "ไฟล์สื่อส่วนหัว"
 
-#: functions.php:83
+#: themes/elite/functions.php:83
 #, fuzzy
-#| msgctxt "table footer"
-#| msgid "Footer"
 msgid "Footer Menu"
 msgstr "ส่วนล่าง"
 
-#: search.php:7
+#: themes/elite/search.php:7
 #, php-format
 msgid "search results for: %s"
 msgstr "ผลลัพท์การค้นหาสำหรับ %s"
 
-#: template-contact.php:33
+#: themes/elite/template-contact.php:49
 msgid "เลขที่ 184/44 อาคารฟอรั่มทาวเวอร์ ชั้น 14"
 msgstr "184/44-45 Forum Tower 14th floor"
 
-#: template-contact.php:34
+#: themes/elite/template-contact.php:50
 msgid " ถนนรัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง"
 msgstr "Ratchadapisek Rd, Huaykwang"
 
-#: template-contact.php:35
+#: themes/elite/template-contact.php:51
 msgid "เกรุงเทพฯ 10310"
 msgstr "Bangkok.  10320"
+
+#: themes/elite/template-contact.php:53
+msgid "โทร : 0-2645-3671-4"
+msgstr ""
+
+#: themes/elite/template-contact.php:54
+msgid "แฟกซ์ : 0-2645-3670"
+msgstr ""
+
+#: themes/elite/template-contact.php:55
+msgid "อีเมล : eliteength@yahoo.com"
+msgstr ""
+
+#: themes/twentyfifteen/404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: themes/twentyfifteen/404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: themes/twentyfifteen/archive.php:49 themes/twentyfifteen/index.php:46 themes/twentyfifteen/search.php:38
+msgid "Previous page"
+msgstr "หน้าก่อนหน้า"
+
+#: themes/twentyfifteen/archive.php:50 themes/twentyfifteen/index.php:47 themes/twentyfifteen/search.php:39
+msgid "Next page"
+msgstr "หน้าถัดไป"
+
+#: themes/twentyfifteen/archive.php:51 themes/twentyfifteen/content-link.php:40 themes/twentyfifteen/content-page.php:29
+#: themes/twentyfifteen/content.php:42 themes/twentyfifteen/image.php:63 themes/twentyfifteen/index.php:48
+#: themes/twentyfifteen/search.php:40
+msgid "Page"
+msgstr ""
+
+#: themes/twentyfifteen/author-bio.php:12
+msgid "Published by"
+msgstr ""
+
+#: themes/twentyfifteen/author-bio.php:34
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: themes/twentyfifteen/comments.php:69
+msgid "Comments are closed."
+msgstr "การแสดงความเห็นถูกปิด"
+
+#: themes/twentyfifteen/content-link.php:31 themes/twentyfifteen/content.php:33 themes/twentyfifteen/inc/template-tags.php:238
+#, php-format
+msgid "Continue reading %s"
+msgstr "อ่านเพิ่มเติม %s"
+
+#: themes/twentyfifteen/content-link.php:36 themes/twentyfifteen/content-page.php:25 themes/twentyfifteen/content.php:38
+#: themes/twentyfifteen/image.php:59
+msgid "Pages:"
+msgstr "หน้า:"
+
+#: themes/twentyfifteen/content-link.php:56 themes/twentyfifteen/content-page.php:35 themes/twentyfifteen/content-search.php:28
+#: themes/twentyfifteen/content-search.php:33 themes/twentyfifteen/content.php:57 themes/twentyfifteen/image.php:71
+msgid "Edit"
+msgstr "แก้ไข"
+
+#: themes/twentyfifteen/content-none.php:15
+msgid "Nothing Found"
+msgstr ""
+
+#: themes/twentyfifteen/content-none.php:22
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: themes/twentyfifteen/content-none.php:26
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: themes/twentyfifteen/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: themes/twentyfifteen/footer.php:25
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: themes/twentyfifteen/footer.php:25
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: themes/twentyfifteen/functions.php:85
+msgid "Primary Menu"
+msgstr ""
+
+#: themes/twentyfifteen/functions.php:86
+msgid "Social Links Menu"
+msgstr ""
+
+#: themes/twentyfifteen/functions.php:160
+msgid "Widget Area"
+msgstr ""
+
+#: themes/twentyfifteen/functions.php:162
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: themes/twentyfifteen/functions.php:282
+msgid "expand child menu"
+msgstr ""
+
+#: themes/twentyfifteen/functions.php:283
+msgid "collapse child menu"
+msgstr ""
+
+#: themes/twentyfifteen/header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: themes/twentyfifteen/header.php:45
+msgid "Menu and widgets"
+msgstr ""
+
+#: themes/twentyfifteen/image.php:24
+msgid "Previous Image"
+msgstr ""
+
+#: themes/twentyfifteen/image.php:24
+msgid "Next Image"
+msgstr ""
+
+#: themes/twentyfifteen/inc/back-compat.php:37 themes/twentyfifteen/inc/back-compat.php:47 themes/twentyfifteen/inc/back-compat.php:60
+#, php-format
+msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
+msgstr ""
+
+#: themes/twentyfifteen/inc/customizer.php:44
+msgid "Base Color Scheme"
+msgstr ""
+
+#: themes/twentyfifteen/inc/customizer.php:59
+msgid "Header and Sidebar Text Color"
+msgstr ""
+
+#: themes/twentyfifteen/inc/customizer.php:60 themes/twentyfifteen/inc/customizer.php:76 themes/twentyfifteen/inc/customizer.php:81
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr ""
+
+#: themes/twentyfifteen/inc/customizer.php:75
+msgid "Header and Sidebar Background Color"
+msgstr ""
+
+#: themes/twentyfifteen/inc/customizer.php:150
+msgid "Default"
+msgstr "ค่าหลัก"
+
+#: themes/twentyfifteen/inc/customizer.php:161
+msgid "Dark"
+msgstr "มืด"
+
+#: themes/twentyfifteen/inc/customizer.php:172
+msgid "Yellow"
+msgstr "สีเหลือง"
+
+#: themes/twentyfifteen/inc/customizer.php:183
+msgid "Pink"
+msgstr "สีชมพู"
+
+#: themes/twentyfifteen/inc/customizer.php:194
+msgid "Purple"
+msgstr "สีม่วง"
+
+#: themes/twentyfifteen/inc/customizer.php:205
+msgid "Blue"
+msgstr "สีน้ำเงิน"
+
+#: themes/twentyfifteen/inc/template-tags.php:23
+msgid "Comment navigation"
+msgstr ""
+
+#: themes/twentyfifteen/inc/template-tags.php:26
+msgid "Older Comments"
+msgstr ""
+
+#: themes/twentyfifteen/inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr ""
+
+#: themes/twentyfifteen/inc/template-tags.php:49
+msgid "Featured"
+msgstr ""
+
+#: themes/twentyfifteen/inc/template-tags.php:123
+#, php-format
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: themes/twentyfifteen/search.php:18
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: themes/twentyfifteen/single.php:33
+msgid "Next"
+msgstr "ถัดไป"
+
+#: themes/twentyfifteen/single.php:34
+msgid "Next post:"
+msgstr ""
+
+#: themes/twentyfifteen/single.php:36
+msgid "Previous"
+msgstr "ก่อนหน้า"
+
+#: themes/twentyfifteen/single.php:37
+msgid "Previous post:"
+msgstr ""
+
+#~ msgid "Your messages has been sent."
+#~ msgstr "ส่งข้อความของคุณเรียบร้อยแล้ว"
+
+#~ msgid "Thank you for messages us"
+#~ msgstr "ขอขอบคุณที่ติดต่อเรา"
 
 #~ msgid "html_lang_attribute"
 #~ msgstr "th"
@@ -225,7 +1151,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "number_format_thousands_sep"
 #~ msgstr ","
 
-#~ msgid "%s is already customizing this changeset. Please wait until they are done to try customizing. Your latest changes have been autosaved."
+#~ msgid ""
+#~ "%s is already customizing this changeset. Please wait until they are done to try customizing. Your latest changes have been "
+#~ "autosaved."
 #~ msgstr "%s กำลังปรับแต่งการเปลี่ยนแปลงนี้อยู่ โปรดรอจนกว่าเขาจะทำงานเสร็จสิ้น การเปลี่ยนแปลงล่าสุดของคุณได้รับการบันทึกอัตโนมัติแล้ว"
 
 #~ msgid "%s is already customizing this changeset. Do you want to take over?"
@@ -248,8 +1176,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "%1$s is not a valid property of Object."
 #~ msgstr "%1$s ไม่ใช่ Property ที่ใช้งานของ Object"
 
-#~ msgid "You won&#8217;t be able to install new themes from here yet since your install requires SFTP credentials. For now, please <a href=\"%s\">add themes in the admin</a>."
-#~ msgstr "คุณยังไม่สามารถติดตั้งธีมใหม่จากที่นี่ได้ เนื่องจากการติดตั้งของคุณต้องการ SFTP credentials หากต้องการติดตั้งธีมตอนนี้ กรุณา <a href=\"%s\">เพิ่มธีมผ่านหน้าควบคุม</a>"
+#~ msgid ""
+#~ "You won&#8217;t be able to install new themes from here yet since your install requires SFTP credentials. For now, please <a href="
+#~ "\"%s\">add themes in the admin</a>."
+#~ msgstr ""
+#~ "คุณยังไม่สามารถติดตั้งธีมใหม่จากที่นี่ได้ เนื่องจากการติดตั้งของคุณต้องการ SFTP credentials หากต้องการติดตั้งธีมตอนนี้ กรุณา <a href=\"%s\">เพิ่มธีมผ่านหน้าควบคุม</"
+#~ "a>"
 
 #~ msgctxt "tags"
 #~ msgid "Most Used"
@@ -262,7 +1194,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Click &#8220;Next&#8221; to start adding links to your new menu."
 #~ msgstr "กด &#8220;ถัดไป&#8221; เพื่อเริ่มการเพิ่มลิงก์ที่เมนูใหม่ของคุณ"
 
-#~ msgid "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream (e.g. YouTube and Vimeo)."
+#~ msgid ""
+#~ "Sorry, we can&#8217;t load the video at the supplied URL. Please check that the URL is for a supported video file (%s) or stream "
+#~ "(e.g. YouTube and Vimeo)."
 #~ msgstr "ขออภัย เราไม่สามารถโหลดวิดีโอตาม URL ที่ให้มา โปรดตรวจสอบว่า URL สำหรับไฟล์วิดีโอที่สนับสนุน (%s) หรือสตรีม (เช่น YouTube และ Vimeo) แล้ว"
 
 #~ msgctxt "customizer changeset action/button label"
@@ -300,7 +1234,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 #~ msgstr "ดูเหมือนจะมีบางอย่างไม่ถูกต้อง กรุณารอสักครู่ และลองใหม่อีกครั้ง"
 
-#~ msgid "%s is already customizing this site. Please wait until they are done to try customizing. Your latest changes have been autosaved."
+#~ msgid ""
+#~ "%s is already customizing this site. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 #~ msgstr "%s กำลังปรับแต่งเว็บนี้อยู่ กรุณารอจนกว่าพวกเค้าปรับแต่งเรียบร้อย การเปลี่ยนแปลงล่าสุดของคุณได้ถูกบันทึกอัตโนมัติแล้ว"
 
 #~ msgid "%s is already customizing this site. Do you want to take over?"
@@ -330,8 +1265,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "(If you plan to use a menu <a href=\"%1$s\" %2$s>widget%3$s</a>, skip this step.)"
 #~ msgstr "(ถ้าคุณวางแผนที่จะใช้เมนู <a href=\"%1$s\" %2$s>วิดเจ็ต%3$s</a>, สามารถข้ามขั้นตอนนี้ได้)"
 
-#~ msgid "You&#8217;ll create a menu, assign it a location, and add menu items like links to pages and categories. If your theme has multiple menu areas, you might need to create more than one."
-#~ msgstr "คุณกำลังจะสร้างเมนู เลือกตำแหน่งที่ต้องการ และเพิ่มรายการของเมนู เช่น ลิงก์ของหน้า และลิงก์ของหมวดหมู่ ถ้าธีมของคุณมีเมนูได้หลายตำแหน่ง คุณอาจจะต้องสร้างมากกว่าหนึ่งเมนู"
+#~ msgid ""
+#~ "You&#8217;ll create a menu, assign it a location, and add menu items like links to pages and categories. If your theme has "
+#~ "multiple menu areas, you might need to create more than one."
+#~ msgstr ""
+#~ "คุณกำลังจะสร้างเมนู เลือกตำแหน่งที่ต้องการ และเพิ่มรายการของเมนู เช่น ลิงก์ของหน้า และลิงก์ของหมวดหมู่ ถ้าธีมของคุณมีเมนูได้หลายตำแหน่ง "
+#~ "คุณอาจจะต้องสร้างมากกว่าหนึ่งเมนู"
 
 #~ msgid "It doesn&#8217;t look like your site has any menus yet. Want to build one? Click the button to start."
 #~ msgstr "ดูเหมือนว่าเว็บของคุณยังไม่มีเมนู คุณต้องการสร้างหรือไม่? กดที่ปุ่มเพื่อเริ่มต้นการสร้างเมนู"
@@ -343,10 +1282,14 @@ msgstr "Bangkok.  10320"
 #~ msgid "While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options."
 #~ msgstr "ในขณะที่กำลังดูตัวอย่างธีม คุณสามารถปรับสิ่งอื่นๆเช่น วิดเจ็ต เมนู และตัวเลือกอื่นๆของธีม ตามความเหมาะสมต่อไปได้"
 
-#~ msgid "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here."
+#~ msgid ""
+#~ "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them "
+#~ "right here."
 #~ msgstr "กำลังมองหาธีมอยู่รึเปล่า? คุณสามารถหาหรือดูเพลินๆได้จาก ธีมไดเรกทอรีของ WordPress.org ติดตั้ง ดูตัวอย่างธีม และเปิดใช้งานธีมเหล่านั้นได้จากตรงนี้"
 
-#~ msgid "Something went wrong. Your change may not have been saved. Please try again. There is also a chance that you may need to manually fix and upload the file over FTP."
+#~ msgid ""
+#~ "Something went wrong. Your change may not have been saved. Please try again. There is also a chance that you may need to manually "
+#~ "fix and upload the file over FTP."
 #~ msgstr ""
 #~ "มีบางอย่างผิดพลาด การเปลี่ยนแปลงของคุณอาจไม่ได้ถูกบันทึกไว้ กรุณาลองอีกครั้ง\n"
 #~ " นอกจากนี้ยังมีโอกาสที่คุณอาจต้องแก้ไขและอัปโหลดไฟล์ผ่าน FTP ด้วยตนเอง"
@@ -467,8 +1410,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "Schedule your customization changes to publish (\"go live\") at a future date."
 #~ msgstr "กำหนดวันเผยแพร่การปรับแต่งของคุณ (\"Go live\") เป็นวันที่ล่วงหน้า"
 
-#~ msgid "Sorry, you can&#8217;t preview new themes when you have changes scheduled or saved as a draft. Please publish your changes, or wait until they publish to preview new themes."
-#~ msgstr "ขออภัย คุณจะไม่สามารถดูตัวอย่างธีมใหม่ได้ เมื่อมีการกำหนดวันที่ล่วงหน้าเพื่อเผยแพร่ หรือบันทึกการปรับแต่งไว้เป็นแบบฉบับร่าง กรุณาเผยแพร่การปรับแต่งทันที หรือรอจนกว่าจะถึงวันเผยแพร่นั้นก่อน จึงจะสามารถดูตัวอย่างธีมใหม่ได้"
+#~ msgid ""
+#~ "Sorry, you can&#8217;t preview new themes when you have changes scheduled or saved as a draft. Please publish your changes, or "
+#~ "wait until they publish to preview new themes."
+#~ msgstr ""
+#~ "ขออภัย คุณจะไม่สามารถดูตัวอย่างธีมใหม่ได้ เมื่อมีการกำหนดวันที่ล่วงหน้าเพื่อเผยแพร่ หรือบันทึกการปรับแต่งไว้เป็นแบบฉบับร่าง กรุณาเผยแพร่การปรับแต่งทันที "
+#~ "หรือรอจนกว่าจะถึงวันเผยแพร่นั้นก่อน จึงจะสามารถดูตัวอย่างธีมใหม่ได้"
 
 #~ msgid "There is %d error which must be fixed before you can update this file."
 #~ msgid_plural "There are %d errors which must be fixed before you can update this file."
@@ -690,7 +1637,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Skip in 1 second"
 #~ msgstr "ข้ามไป 1 วินาที"
 
-#~ msgid "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https://get.adobe.com/flashplayer/"
+#~ msgid ""
+#~ "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download "
+#~ "the latest version from https://get.adobe.com/flashplayer/"
 #~ msgstr ""
 #~ "คุณกำลังใช้งานเบราว์เซอร์ที่ไม่ยังไม่ติดตั้งหรือเปิดใช้งาน Flash player\n"
 #~ "กรุณาเปิดการใช้งาน   Flash player หรือดาวน์โหลดเวอร์ชั่นล่าสุดได้ที่ \n"
@@ -844,8 +1793,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "Invalid URL."
 #~ msgstr "URL ไม่ถูกต้อง"
 
-#~ msgid "Time to add some links! Click &#8220;%s&#8221; to start putting pages, categories, and custom links in your menu. Add as many things as you&#8217;d like."
-#~ msgstr "ถึงเวลาที่ควรจะใส่ลิงก์บ้างแล้วนะ! กด &#8220;%s&#8221; เพื่อเริ่มต้นการสร้างเมนู ด้วยการใส่หน้า, หมวดหมู่ และลิงก์แบบกำหนดเอง คุณจะใส่ลิงก์มากแค่ไหนก็ได้ตามที่ต้องการ"
+#~ msgid ""
+#~ "Time to add some links! Click &#8220;%s&#8221; to start putting pages, categories, and custom links in your menu. Add as many "
+#~ "things as you&#8217;d like."
+#~ msgstr ""
+#~ "ถึงเวลาที่ควรจะใส่ลิงก์บ้างแล้วนะ! กด &#8220;%s&#8221; เพื่อเริ่มต้นการสร้างเมนู ด้วยการใส่หน้า, หมวดหมู่ และลิงก์แบบกำหนดเอง "
+#~ "คุณจะใส่ลิงก์มากแค่ไหนก็ได้ตามที่ต้องการ"
 
 #~ msgid "Choose image"
 #~ msgstr "เลือกรูปภาพ"
@@ -859,17 +1812,33 @@ msgstr "Bangkok.  10320"
 #~ msgid "Select audio"
 #~ msgstr "เลือกเสียง"
 
-#~ msgid "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image with a header height of %s pixels &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
-#~ msgstr "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพส่วนหัวที่มีความสูง %s พิกเซล &#8212; เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
+#~ msgid ""
+#~ "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image with a header "
+#~ "height of %s pixels &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
+#~ msgstr ""
+#~ "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพส่วนหัวที่มีความสูง %s พิกเซล &#8212; "
+#~ "เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
 
-#~ msgid "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image with a header width of %s pixels &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
-#~ msgstr "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพส่วนหัวที่มีความกว้าง %s พิกเซล &#8212; เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
+#~ msgid ""
+#~ "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image with a header "
+#~ "width of %s pixels &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
+#~ msgstr ""
+#~ "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพส่วนหัวที่มีความกว้าง %s พิกเซล &#8212; "
+#~ "เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
 
-#~ msgid "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image with a header size of %s pixels &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
-#~ msgstr "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพส่วนหัวที่มีขนาด %s พิกเซล &#8212; เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
+#~ msgid ""
+#~ "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image with a header "
+#~ "size of %s pixels &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
+#~ msgstr ""
+#~ "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพส่วนหัวที่มีขนาด %s พิกเซล &#8212; "
+#~ "เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
 
-#~ msgid "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image that matches the size of your video &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
-#~ msgstr "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพที่มีขนาดเท่ากับไฟล์วีดีโอของคุณ เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
+#~ msgid ""
+#~ "Click &#8220;Add new image&#8221; to upload an image file from your computer. Your theme works best with an image that matches "
+#~ "the size of your video &#8212; you&#8217;ll be able to crop your image once you upload it for a perfect fit."
+#~ msgstr ""
+#~ "กด &#8220;เพิ่มรูปใหม่&#8221; เพื่ออัปโหลดไฟล์รูปภาพ จากเครื่องคอมพิวเตอร์ของคุณ ธีมของคุณทำงานได้ดีที่สุด กับรูปภาพที่มีขนาดเท่ากับไฟล์วีดีโอของคุณ "
+#~ "เมื่อคุณอัปโหลดรูปเรียบร้อยแล้ว คุณสามารถตัดส่วนของภาพออกได้ เพื่อให้มีขนาดที่เหมาะสม"
 
 #~ msgid "Date"
 #~ msgstr "วันที่"
@@ -920,8 +1889,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "Visual"
 #~ msgstr "เสมือนจริง"
 
-#~ msgid "If your theme has widget areas, you can also add menus there. Visit the <a href=\"%s\">Widgets panel</a> and add a &#8220;Navigation Menu widget&#8221; to display a menu in a sidebar or footer."
-#~ msgstr "ถ้าธีมของคุณมีพื้นที่สำหรับวิดเจ็ต คุณสามารถเพิ่มเมนูไว้ที่นั่นได้ด้วย ไปที่ <a href=\"%s\">แถบวิดเจ็ต</a> และกด &#8220;วิดเจ็ตเมนูนำทาง&#8221; เพื่อเพิ่มเมนูที่ด้านข้าง หรือด้านล่างของเว็บไซต์"
+#~ msgid ""
+#~ "If your theme has widget areas, you can also add menus there. Visit the <a href=\"%s\">Widgets panel</a> and add a &#8220;"
+#~ "Navigation Menu widget&#8221; to display a menu in a sidebar or footer."
+#~ msgstr ""
+#~ "ถ้าธีมของคุณมีพื้นที่สำหรับวิดเจ็ต คุณสามารถเพิ่มเมนูไว้ที่นั่นได้ด้วย ไปที่ <a href=\"%s\">แถบวิดเจ็ต</a> และกด &#8220;วิดเจ็ตเมนูนำทาง&#8221; "
+#~ "เพื่อเพิ่มเมนูที่ด้านข้าง หรือด้านล่างของเว็บไซต์"
 
 #~ msgid "CSS code"
 #~ msgstr "โค้ด CSS"
@@ -945,8 +1918,13 @@ msgstr "Bangkok.  10320"
 #~ msgid "If your theme has multiple menus, giving them clear names will help you manage them."
 #~ msgstr "ถ้าธีมที่คุณใช้งานมีเมนูจำนวนมาก การตั้งชื่อเมนูให้ชัดเจนจะช่วยให้คุณจัดการเมนูเหล่านั้นง่ายขึ้น"
 
-#~ msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
-#~ msgstr "คุณสามารถเลือกได้ว่าจะแสดงสิ่งใดบ้างบนหน้าแรกของเว็บไซต์ มันอาจจะเป็นเรื่องต่างๆที่คุณเขียน เรียงลำดับตามการเผยแพร่ (บล็อกแบบคลาสสิก) หรือเป็นหน้าแรกแบบคงที่ โดยก่อนจะการตั้งค่าหน้าแรกแบบคงที่ คุณต้องสร้างหน้า จำนวนสองหน้า หน้าหนึ่งเพื่อเป็นหน้าแรกของเว็บไซต์ และอีกหนึ่งหน้าสำหรับแสดงเรื่องของคุณ"
+#~ msgid ""
+#~ "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic "
+#~ "blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and "
+#~ "the other will be where your posts are displayed."
+#~ msgstr ""
+#~ "คุณสามารถเลือกได้ว่าจะแสดงสิ่งใดบ้างบนหน้าแรกของเว็บไซต์ มันอาจจะเป็นเรื่องต่างๆที่คุณเขียน เรียงลำดับตามการเผยแพร่ (บล็อกแบบคลาสสิก) หรือเป็นหน้าแรกแบบคงที่ "
+#~ "โดยก่อนจะการตั้งค่าหน้าแรกแบบคงที่ คุณต้องสร้างหน้า จำนวนสองหน้า หน้าหนึ่งเพื่อเป็นหน้าแรกของเว็บไซต์ และอีกหนึ่งหน้าสำหรับแสดงเรื่องของคุณ"
 
 #~ msgid "Screen reader users: when in forms mode, you may need to press the Esc key twice."
 #~ msgstr "ผู้ใช้โปรแกรมอ่านจอภาพ: เมื่ออยู่ในรูปแบบตาราง คุณอาจจะต้องกดแป้น Esc สองครั้ง"
@@ -957,8 +1935,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "To move away from this area, press the Esc key followed by the Tab key."
 #~ msgstr "เพื่อย้ายออกจากพื้นที่นี้ กดแป้น Esc ที่คีย์บอร์ด แล้วตามด้วยแป้น Tab"
 
-#~ msgid "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text mode."
-#~ msgstr "การแก้ไข Field จะแสดงการเน้น Syntax ของโค้ดอัตโนมัติ คุณสามารถปิดการทำงานนี้ได้ที่  <a href=\"%1$s\" %2$s>ข้อมูลส่วนตัว%3$s</a> เพื่อเป็นการทำงานในลักษณะ Plain text แทน"
+#~ msgid ""
+#~ "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to "
+#~ "work in plain text mode."
+#~ msgstr ""
+#~ "การแก้ไข Field จะแสดงการเน้น Syntax ของโค้ดอัตโนมัติ คุณสามารถปิดการทำงานนี้ได้ที่  <a href=\"%1$s\" %2$s>ข้อมูลส่วนตัว%3$s</a> "
+#~ "เพื่อเป็นการทำงานในลักษณะ Plain text แทน"
 
 #~ msgid "Homepage Settings"
 #~ msgstr "ตั้งค่าหน้าแรก"
@@ -1021,20 +2003,34 @@ msgstr "Bangkok.  10320"
 #~ msgid "The previous set of changes has already been published. Please try saving your current set of changes again."
 #~ msgstr "การเปลี่ยนแปลงก่อนหน้านี้ได้รับการเผยแพร่แล้ว กรุณาบันทึกการเปลี่ยนแปลงปัจจุบันของคุณดูอีกครั้ง"
 
-#~ msgid "This widget may have contained code that may work better in the &#8220;Custom HTML&#8221; widget. If you haven&#8217;t yet, how about trying that widget instead?"
+#~ msgid ""
+#~ "This widget may have contained code that may work better in the &#8220;Custom HTML&#8221; widget. If you haven&#8217;t yet, how "
+#~ "about trying that widget instead?"
 #~ msgstr "วิดเจ็ตนี้อาจมีโค้ดที่อาจจะทำงานได้ดีกว่าในวิดเจ็ต \"HTML ที่กำหนดเอง\" สนใจใช้วิดเจ็ตนั้นแทนหรือเปล่า?"
 
-#~ msgid "Hey there, looks like you just pasted HTML into the &#8220;Visual&#8221; tab of the Text widget. You may want to paste your code into the &#8220;Text&#8221; tab instead. Alternately, try out the new &#8220;Custom HTML&#8221; widget!"
-#~ msgstr "ดูเหมือนว่าคุณจะเพิ่งวางเนื้อหา HTML ลงในแท็บเสมือนจริงของวิดเจ็ตข้อความ  คุณอาจจะต้องวางโค้ดของคุณในแท็บข้อความแทน  หรือไม่ก็ใช้งานวิดเจ็ต \"เนื้อหา HTML\" แทน"
+#~ msgid ""
+#~ "Hey there, looks like you just pasted HTML into the &#8220;Visual&#8221; tab of the Text widget. You may want to paste your code "
+#~ "into the &#8220;Text&#8221; tab instead. Alternately, try out the new &#8220;Custom HTML&#8221; widget!"
+#~ msgstr ""
+#~ "ดูเหมือนว่าคุณจะเพิ่งวางเนื้อหา HTML ลงในแท็บเสมือนจริงของวิดเจ็ตข้อความ  คุณอาจจะต้องวางโค้ดของคุณในแท็บข้อความแทน  หรือไม่ก็ใช้งานวิดเจ็ต \"เนื้อหา HTML\" "
+#~ "แทน"
 
 #~ msgid "Did you just paste HTML?"
 #~ msgstr "คุณเพิ่งวางเนื้อหา HTML หรือเปล่า?"
 
-#~ msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by scanning the list of available widgets on this screen. Check it out to add some custom code to your site!"
-#~ msgstr "เฮ้! คุณได้ข่าวหรือยังว่าตอนนี้เรามีวิดเจ็ต \"HTML ที่กำหนดเอง\" แล้วนะ! คุณสามารถลองใช้ได้ตอนนี้เลย ลองหาดูในรายการวิดเจ็ตดูสิ ลองใช้งานดูหากต้องการเพิ่มโค้ด HTML ลงในเว็บ!"
+#~ msgid ""
+#~ "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by scanning the list of available widgets on this "
+#~ "screen. Check it out to add some custom code to your site!"
+#~ msgstr ""
+#~ "เฮ้! คุณได้ข่าวหรือยังว่าตอนนี้เรามีวิดเจ็ต \"HTML ที่กำหนดเอง\" แล้วนะ! คุณสามารถลองใช้ได้ตอนนี้เลย ลองหาดูในรายการวิดเจ็ตดูสิ ลองใช้งานดูหากต้องการเพิ่มโค้ด "
+#~ "HTML ลงในเว็บ!"
 
-#~ msgid "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by pressing the &#8220;<a class=\"add-widget\" href=\"#\">Add a Widget</a>&#8221; button and searching for &#8220;HTML&#8221;. Check it out to add some custom code to your site!"
-#~ msgstr "เฮ้! คุณรู้หรือยังว่าตอนนี้เรามีวิดเจ็ต \"HTML แบบกำหนดเอง\" แล้วนะ ลองใช้ได้ทันทีด้วยการกดปุ่ม &#8220;<a class=\"add-widget\" href=\"#\">เพิ่มวิดเจ็ต</a>&#8221; และมองหาคำว่า &#8220;HTML&#8221; ลองใช้งานดู ลองเพิ่มโค้ด HTML ตามที่ต้องการในเว็บไซต์ของคุณ!"
+#~ msgid ""
+#~ "Did you know there is a &#8220;Custom HTML&#8221; widget now? You can find it by pressing the &#8220;<a class=\"add-widget\" href="
+#~ "\"#\">Add a Widget</a>&#8221; button and searching for &#8220;HTML&#8221;. Check it out to add some custom code to your site!"
+#~ msgstr ""
+#~ "เฮ้! คุณรู้หรือยังว่าตอนนี้เรามีวิดเจ็ต \"HTML แบบกำหนดเอง\" แล้วนะ ลองใช้ได้ทันทีด้วยการกดปุ่ม &#8220;<a class=\"add-widget\" href=\"#\">เพิ่มวิดเจ็ต</"
+#~ "a>&#8221; และมองหาคำว่า &#8220;HTML&#8221; ลองใช้งานดู ลองเพิ่มโค้ด HTML ตามที่ต้องการในเว็บไซต์ของคุณ!"
 
 #~ msgid "Arbitrary text."
 #~ msgstr "ข้อความที่ต้องการ"
@@ -1042,7 +2038,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "New Custom HTML Widget"
 #~ msgstr "วิดเจ็ตเนื้อหา HTML ใหม่"
 
-#~ msgid "This widget may contain code that may work better in the &#8220;Custom HTML&#8221; widget. How about trying that widget instead?"
+#~ msgid ""
+#~ "This widget may contain code that may work better in the &#8220;Custom HTML&#8221; widget. How about trying that widget instead?"
 #~ msgstr "วิดเจ็ตนี้อาจมีโค้ด ที่อาจจะทำงานได้ดีกว่าบนวิดเจ็ต \"HTML แบบกำหนดเอง\" สนใจใช้วิดเจ็ตนั้นแทนหรือเปล่า?"
 
 #~ msgid "Some HTML tags are not permitted, including:"
@@ -1422,7 +2419,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "Insert/edit code sample"
 #~ msgstr "แทรกหรือแก้ไขตัวอย่างโค้ด"
 
-#~ msgid "You can navigate to other pages on your site while using the Customizer to view and edit the widgets displayed on those pages."
+#~ msgid ""
+#~ "You can navigate to other pages on your site while using the Customizer to view and edit the widgets displayed on those pages."
 #~ msgstr "คุณสามารถเข้าชมหน้าอื่นบนเวปไซท์ของคุณโดยที่สามารถใช้คัสโตไมเซอร์เพื่อชมและแก้ไขวิดเจ็ตที่แสดงบนหน้าเหล่านั้นไปพร้อมกันได้ "
 
 #~ msgid "Your theme has %s widget area, but this particular page doesn&#8217;t display it."
@@ -1631,7 +2629,9 @@ msgstr "Bangkok.  10320"
 #~ msgstr "คลังเก็บ"
 
 #~ msgctxt "Theme starter content"
-#~ msgid "This is an example of a homepage section. Homepage sections can be any page other than the homepage itself, including the page that shows your latest blog posts."
+#~ msgid ""
+#~ "This is an example of a homepage section. Homepage sections can be any page other than the homepage itself, including the page "
+#~ "that shows your latest blog posts."
 #~ msgstr "นี่คือตัวอย่างของส่วนหน้าแรก  ส่วนหน้าแรกสามารถเป็นหน้าใดก็ได้  รวมถึงหน้าที่ใช้แสดงบล็อกโพสต์ล่าสุดด้วย"
 
 #~ msgctxt "Theme starter content"
@@ -1639,11 +2639,15 @@ msgstr "Bangkok.  10320"
 #~ msgstr "ข่าว"
 
 #~ msgctxt "Theme starter content"
-#~ msgid "You might be an artist who would like to introduce yourself and your work here or maybe you&rsquo;re a business with a mission to describe."
+#~ msgid ""
+#~ "You might be an artist who would like to introduce yourself and your work here or maybe you&rsquo;re a business with a mission to "
+#~ "describe."
 #~ msgstr "คุณอาจจะเป็นศิลปินที่อยากนำเสนอตัวตนและผลงานของคุณ  หรือคุณอาจจะเป็นบริษัทห้างร้านที่อยากแสดงพันธกิจของคุณ"
 
 #~ msgctxt "Theme starter content"
-#~ msgid "This is a page with some basic contact information, such as an address and phone number. You might also try a plugin to add a contact form."
+#~ msgid ""
+#~ "This is a page with some basic contact information, such as an address and phone number. You might also try a plugin to add a "
+#~ "contact form."
 #~ msgstr "นี่คือหน้าที่แสดงข้อมูลการติดต่อสั้นๆ เช่นที่อยู่และเบอร์โทรศัพท์  คุณอาจจะใช้ปลั๊กอินเพื่อเพิ่มฟอร์มติดต่อได้ด้วยเช่นกัน"
 
 #~ msgctxt "Theme starter content"
@@ -1655,7 +2659,8 @@ msgstr "Bangkok.  10320"
 #~ msgstr "ความเห็นล่าสุด"
 
 #~ msgctxt "Theme starter content"
-#~ msgid "Welcome to your site! This is your homepage, which is what most visitors will see when they come to your site for the first time."
+#~ msgid ""
+#~ "Welcome to your site! This is your homepage, which is what most visitors will see when they come to your site for the first time."
 #~ msgstr "ยินดีต้อนรับสู่เว็บของคุณ! นี่คือหน้าแรกของคุณ  ที่ผู้ชมส่วนใหญ่จะเห็นหน้านี้เมื่อเข้ามายังเว็บไซต์ครั้งแรก"
 
 #~ msgctxt "Theme starter content"
@@ -1745,7 +2750,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Reassign the deleted user's posts and links to this user ID."
 #~ msgstr "ย้ายเรื่องและลิงก์ของผู้ใช้ที่ถูกลบมายังผู้ใช้ ID นี้"
 
-#~ msgid "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video headers."
+#~ msgid ""
+#~ "This theme doesn&#8217;t support video headers on this page. Navigate to the front page or another page that supports video "
+#~ "headers."
 #~ msgstr "ธีมนี้ไม่สนับสนุนวีดีโอส่วนหัวบนหน้านี้  ไปยังหน้าแรกหรือหน้าอื่นๆที่สนับสนุนวีดีโอส่วนหัว"
 
 #~ msgid "Select video"
@@ -2412,7 +3419,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Content hash did not match expected."
 #~ msgstr "ค่า hash ไม่ถูกต้อง"
 
-#~ msgid "Invalid Content-Disposition supplied. Content-Disposition needs to be formatted as `attachment; filename=\"image.png\"` or similar."
+#~ msgid ""
+#~ "Invalid Content-Disposition supplied. Content-Disposition needs to be formatted as `attachment; filename=\"image.png\"` or "
+#~ "similar."
 #~ msgstr "โค้ดในส่วน Content-Disposition ที่ใช้มีความผิดพลาด รูปแบบที่ถูกต้องควรเป็น `attachment; filename=\"image.png\"` หรือเขียนคล้ายๆ กัน"
 
 #~ msgid "Whether to bypass trash and force deletion."
@@ -2436,7 +3445,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Alternative text to display when attachment is not displayed."
 #~ msgstr "ข้อความทางเลือกที่จะแสดงเมื่อไฟล์แนบแสดงไม่ได้"
 
-#~ msgid "The REST API can no longer be completely disabled, the rest_authentication_errors filter can be used to restrict access to the API, instead."
+#~ msgid ""
+#~ "The REST API can no longer be completely disabled, the rest_authentication_errors filter can be used to restrict access to the "
+#~ "API, instead."
 #~ msgstr "คุณไม่สามารถปิดการใช้งาน REST API โดยสมบูรณ์ได้อีกต่อไป  อย่างไรก็ดี ฮุค rest_authentication_errors สามารถใช้เพื่อจำกัดการเข้าถึง API ได้"
 
 #~ msgid "Post Attributes"
@@ -2632,11 +3643,19 @@ msgstr "Bangkok.  10320"
 #~ msgid "Number of widgets found: %d"
 #~ msgstr "จำนวนวิดเจ็ตที่พบ: %d"
 
-#~ msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
-#~ msgstr "เฉพาะไฟล์ %1$s หรือ %2$s อาจจะใช้สำหรับวีดีโอส่วนหัว  โปรดแปลงไฟล์วีดีโอของคุณแล้วลองอีกครั้ง  หรืออัปโหลดวีดีโอของคุณไปที่ YouTube แล้วทำลิงก์ไปหาที่ตัวเลือกด้านล่าง"
+#~ msgid ""
+#~ "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to "
+#~ "YouTube and link it with the option below."
+#~ msgstr ""
+#~ "เฉพาะไฟล์ %1$s หรือ %2$s อาจจะใช้สำหรับวีดีโอส่วนหัว  โปรดแปลงไฟล์วีดีโอของคุณแล้วลองอีกครั้ง  หรืออัปโหลดวีดีโอของคุณไปที่ YouTube "
+#~ "แล้วทำลิงก์ไปหาที่ตัวเลือกด้านล่าง"
 
-#~ msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
-#~ msgstr "ไฟล์วีดีโอนี้ใหญ่เกินไปที่จะใช้เป็นไฟล์วีดีโอส่วนหัว  ให้ลองใช้ไฟล์วีดีโอที่สั้นกว่า  หรือตั้งค่าบีบอัดไฟล์หรืออัปโหลดไฟล์ใหม่ที่มีขนาดน้อยกว่า 8MB หรืออัปโหลดวีดีโอของคุณไปที่ YouTube และทำลิงก์ไปหาด้วยตัวเลือกด้านล่าง"
+#~ msgid ""
+#~ "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a "
+#~ "file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
+#~ msgstr ""
+#~ "ไฟล์วีดีโอนี้ใหญ่เกินไปที่จะใช้เป็นไฟล์วีดีโอส่วนหัว  ให้ลองใช้ไฟล์วีดีโอที่สั้นกว่า  หรือตั้งค่าบีบอัดไฟล์หรืออัปโหลดไฟล์ใหม่ที่มีขนาดน้อยกว่า 8MB หรืออัปโหลดวีดีโอของคุณไปที่ "
+#~ "YouTube และทำลิงก์ไปหาด้วยตัวเลือกด้านล่าง"
 
 #~ msgid "Unrecognized background setting."
 #~ msgstr "การตั้งค่าพื้นหลังที่ไม่รู้จัก"
@@ -2711,7 +3730,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "If you add a video, the image will be used as a fallback while the video loads."
 #~ msgstr "ถ้าคุณเพิ่มวีดีโอ   รูปจะถูกนำมาใช้แทนในขณะที่กำลังโหลดวีดีโอ"
 
-#~ msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
+#~ msgid ""
+#~ "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 #~ msgstr "อัปโหลดวีดีโอของคุณในรูปแบบ %1$s และย่อขนาดไฟล์สำหรับผลลัพท์ที่ดีที่สุด ธีมของคุณที่แนะนำควรจะมีขนาด %2$s พิกเซล"
 
 #~ msgid "Search themes&hellip;"
@@ -2878,9 +3898,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "off"
 #~ msgstr "ปิด"
 
-#~ msgid "Dark"
-#~ msgstr "มืด"
-
 #~ msgid "Tan"
 #~ msgstr "สีแทน"
 
@@ -3040,13 +4057,19 @@ msgstr "Bangkok.  10320"
 #~ msgid "Logged in as %s. Edit your profile."
 #~ msgstr "เข้าสู่ระบบในชื่อ %s แก้ไขข้อมูลส่วนตัวของคุณ"
 
-#~ msgid "The constant %1$s <strong>is deprecated</strong>. Use the boolean constant %2$s in %3$s to enable a subdomain configuration. Use %4$s to check whether a subdomain configuration is enabled."
-#~ msgstr "ตัวแปร %1$s <strong>นั้นไม่เข้ากัน</strong>  ให้ใช้ตัวแปรบูลีน (boolean constant) %2$s ใน %3$s เพื่อเปิดใช้การปรับแต่งซับโดเมน  ใช้ %4$s เพื่อเช็คว่าการตั้งค่าซับโดเมนเปิดใช้งานแล้ว"
+#~ msgid ""
+#~ "The constant %1$s <strong>is deprecated</strong>. Use the boolean constant %2$s in %3$s to enable a subdomain configuration. Use "
+#~ "%4$s to check whether a subdomain configuration is enabled."
+#~ msgstr ""
+#~ "ตัวแปร %1$s <strong>นั้นไม่เข้ากัน</strong>  ให้ใช้ตัวแปรบูลีน (boolean constant) %2$s ใน %3$s เพื่อเปิดใช้การปรับแต่งซับโดเมน  ใช้ %4$s "
+#~ "เพื่อเช็คว่าการตั้งค่าซับโดเมนเปิดใช้งานแล้ว"
 
 #~ msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 #~ msgstr "การลบ %1$s ด้วยตัวเองจะทำให้เกิดคำเตือน PHP ให้ใช้ตัวกรอง %2$s แทน"
 
-#~ msgid "The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. Press Escape or the Undo button to undo."
+#~ msgid ""
+#~ "The next group of formatting shortcuts are applied as you type or when you insert them around plain text in the same paragraph. "
+#~ "Press Escape or the Undo button to undo."
 #~ msgstr "กลุ่มถัดไปของรูปแบบทางลัดถูกใช้เป็นประเภทของคุณ หรือเมื่อคุณใส่พวกมันลงในข้อความในย่อหน้าเดียวกัน  กดปุ่ม Escape หรือ Undo เพื่อย้อนกลับ"
 
 #~ msgctxt "user dropdown"
@@ -3177,7 +4200,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Invalid object type"
 #~ msgstr "object type ไม่ถูกต้อง"
 
-#~ msgid "Template is missing. Standalone themes need to have a %1$s template file. <a href=\"%2$s\">Child themes</a> need to have a Template header in the %3$s stylesheet."
+#~ msgid ""
+#~ "Template is missing. Standalone themes need to have a %1$s template file. <a href=\"%2$s\">Child themes</a> need to have a "
+#~ "Template header in the %3$s stylesheet."
 #~ msgstr "เทมเพลตหายไป   ธีมที่ใช้งานเดี่ยวต้องมี %1$s ไฟล์เทมเพลต <a href=\"%2$s\">ธีมลูก</a> ต้องการเทมเพลตส่วนหัวใน %3$s สไตล์ชีท"
 
 #~ msgid "Display Site Title and Tagline"
@@ -3215,7 +4240,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 #~ msgstr "https://codex.wordpress.org/Debugging_a_WordPress_Network"
 
-#~ msgid "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of the guidelines there may help you figure out what went wrong."
+#~ msgid ""
+#~ "Read the <a href=\"%s\" target=\"_blank\">bug report</a> page. Some of the guidelines there may help you figure out what went "
+#~ "wrong."
 #~ msgstr "อ่านหน้า <a href=\"%s\" target=\"_blank\">รายงานข้อผิดพลาด</a>  มีคำแนะนำบางอย่างที่อาจช่วยคุณให้รู้ว่ามีอะไรที่ผิดปกติ"
 
 #~ msgid "https://codex.wordpress.org/Debugging_in_WordPress"
@@ -3339,9 +4366,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "It looks like nothing was found at this location. Maybe try visiting %s directly?"
 #~ msgstr "ดูเหมือนว่าไม่พบสิ่งใดที่นี่  คุณอาจจะลองเยี่ยมชม %s โดยตรงหรือไม่?"
 
-#~ msgid "Continue reading %s"
-#~ msgstr "อ่านเพิ่มเติม %s"
-
 #~ msgid "Oops! That embed can&#8217;t be found."
 #~ msgstr "ขอโทษครับ ไม่พบการเล่นไฟล์นั้น"
 
@@ -3372,17 +4396,29 @@ msgstr "Bangkok.  10320"
 #~ msgid "Are you sure that the database server is not under particularly heavy load?"
 #~ msgstr "คุณแน่ใจหรือไม่ว่าฐานข้อมูลเซิร์ฟเวอร์ไม่ได้ทำงานหนัก?"
 
-#~ msgid "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit the <a href=\"%s\">WordPress Support Forums</a>."
-#~ msgstr "ถ้าคุณไม่แน่ใจว่าเงื่อนไขเหล่านี้หมายถึงอะไร คุณอาจจะติดต่อโฮสท์ของคุณ  ถ้าคุณยังต้องการความช่วยเหลืออีก  คุณสามารถเยี่ยมชม <a href=\"%s\">ฟอรั่มสนับสนุนเวิร์ดเพรส</a> ได้เสมอ"
+#~ msgid ""
+#~ "If you&#8217;re unsure what these terms mean you should probably contact your host. If you still need help you can always visit "
+#~ "the <a href=\"%s\">WordPress Support Forums</a>."
+#~ msgstr ""
+#~ "ถ้าคุณไม่แน่ใจว่าเงื่อนไขเหล่านี้หมายถึงอะไร คุณอาจจะติดต่อโฮสท์ของคุณ  ถ้าคุณยังต้องการความช่วยเหลืออีก  คุณสามารถเยี่ยมชม <a href=\"%s"
+#~ "\">ฟอรั่มสนับสนุนเวิร์ดเพรส</a> ได้เสมอ"
 
 #~ msgid "Are you sure you have the correct username and password?"
 #~ msgstr "คุณแน่ใจหรือไม่ว่ามีชื่อผู้ใช้และรหัสผ่านที่ถูกต้อง?"
 
-#~ msgid "This either means that the username and password information in your %1$s file is incorrect or we can&#8217;t contact the database server at %2$s. This could mean your host&#8217;s database server is down."
-#~ msgstr "นี่อาจหมายถึงชื่อผู้ใช้และรหัสผ่านในไฟล์ %1$s ของคุณไม่ถูกต้องหรือเราไม่สามารถเชื่อมต่อกับฐานข้อมูลเซิร์ฟเวอร์ที่ %2$s  ซึ่งอาจจะหมายถึงฐานข้อมูลเซิร์ฟเวอร์โฮสท์ของคุณใช้งานไม่ได้ตอนนี้ "
+#~ msgid ""
+#~ "This either means that the username and password information in your %1$s file is incorrect or we can&#8217;t contact the "
+#~ "database server at %2$s. This could mean your host&#8217;s database server is down."
+#~ msgstr ""
+#~ "นี่อาจหมายถึงชื่อผู้ใช้และรหัสผ่านในไฟล์ %1$s ของคุณไม่ถูกต้องหรือเราไม่สามารถเชื่อมต่อกับฐานข้อมูลเซิร์ฟเวอร์ที่ %2$s  "
+#~ "ซึ่งอาจจะหมายถึงฐานข้อมูลเซิร์ฟเวอร์โฮสท์ของคุณใช้งานไม่ได้ตอนนี้ "
 
-#~ msgid "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find help at the <a href=\"%s\">WordPress Support Forums</a>."
-#~ msgstr "ถ้าคุณไม่รู้วิธียังค่าฐานข้อมูล คุณควรจะ <strong>ติดต่อโฮสท์ของคุณ</strong> ถ้ามีบางอย่างล้มเหลว คุณอาจจะลองค้นหาความช่วยเหลือที่ <a href=\"%s\">ฟอรั่มสนับสนุนเวิร์ดเพรส</a>"
+#~ msgid ""
+#~ "If you don&#8217;t know how to set up a database you should <strong>contact your host</strong>. If all else fails you may find "
+#~ "help at the <a href=\"%s\">WordPress Support Forums</a>."
+#~ msgstr ""
+#~ "ถ้าคุณไม่รู้วิธียังค่าฐานข้อมูล คุณควรจะ <strong>ติดต่อโฮสท์ของคุณ</strong> ถ้ามีบางอย่างล้มเหลว คุณอาจจะลองค้นหาความช่วยเหลือที่ <a href=\"%s"
+#~ "\">ฟอรั่มสนับสนุนเวิร์ดเพรส</a>"
 
 #~ msgid "Can&#8217;t select database"
 #~ msgstr "ไม่สามารถเลือกฐานข้อมูล"
@@ -3393,10 +4429,14 @@ msgstr "Bangkok.  10320"
 #~ msgid "Does the user %1$s have permission to use the %2$s database?"
 #~ msgstr "ผู้ใช้ %1$s มีสิทธิใช้ฐานข้อมูล %2$s หรือไม่?"
 
-#~ msgid "On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could that be the problem?"
+#~ msgid ""
+#~ "On some systems the name of your database is prefixed with your username, so it would be like <code>username_%1$s</code>. Could "
+#~ "that be the problem?"
 #~ msgstr "บนบางระบบ ชื่อฐานข้อมูลของคุณขึ้นต้นด้วยชื่อผู้ใช้ของคุณ  ดังนั้นชื่อฐานข้อมูลจะเป็น<code>ชื่อผู้ใช้_%1$s</code> สิ่งนี้เป็นปัญหาของคุณหรือเปล่า?"
 
-#~ msgid "We were able to connect to the database server (which means your username and password is okay) but not able to select the %s database."
+#~ msgid ""
+#~ "We were able to connect to the database server (which means your username and password is okay) but not able to select the %s "
+#~ "database."
 #~ msgstr "เราสามารถเชื่อมต่อกับฐานข้อมูลเซิร์ฟเวอร์ (นั่นแสดงว่าชื่อผู้ใช้และรหัสผ่านของคุณถูกต้อง) แต่ไม่สามารถเลือก %s ฐานข้อมูลได้"
 
 #~ msgid "The tag cloud will not be displayed since there are no taxonomies that support the tag cloud widget."
@@ -3642,7 +4682,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "%1$s is deprecated. Use %2$s instead."
 #~ msgstr "%1$s ถูกเลิกใช้ ใช้งาน %2$s แทน"
 
-#~ msgid "The post type %1$s is not registered, so it may not be reliable to check the capability \"%2$s\" against a post of that type."
+#~ msgid ""
+#~ "The post type %1$s is not registered, so it may not be reliable to check the capability \"%2$s\" against a post of that type."
 #~ msgstr "ประเภทเรื่อง %1$s ไม่ได้ลงทะเบียน  ดังนั้นมันจะไม่น่าเชื่อถือเพื่อตรวจสอบความสามารถ \"%2$s\" กับเรื่องของประเภทนั้น"
 
 #~ msgid "Sorry, you are not allowed to edit theme options on this site."
@@ -3743,7 +4784,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Add to menu: %1$s (%2$s)"
 #~ msgstr "เพิ่มไปเมนู: %1$s (%2$s)"
 
-#~ msgid "When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied automatically. Press Backspace or Escape to undo."
+#~ msgid ""
+#~ "When starting a new paragraph with one of these formatting shortcuts followed by a space, the formatting will be applied "
+#~ "automatically. Press Backspace or Escape to undo."
 #~ msgstr "เมื่อเริ่มย่อหน้าใหม่ด้วยหนึ่งในรูปแบบทางลัดเหล่านี้ตามด้วยช่องว่าง  รูปแบบจะถูกใช้อัตโนมัติ  กด Backspace หรือ Escape เพื่อย้อนกลับ"
 
 #~ msgid "Your password reset link has expired. Please request a new link below."
@@ -3805,7 +4848,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Preformatted"
 #~ msgstr "โค้ด (Preformatted)"
 
-#~ msgid "Menus can be displayed in locations defined by your theme or in <a href=\"%s\">widget areas</a> by adding a &#8220;Navigation Menu&#8221; widget."
+#~ msgid ""
+#~ "Menus can be displayed in locations defined by your theme or in <a href=\"%s\">widget areas</a> by adding a &#8220;Navigation "
+#~ "Menu&#8221; widget."
 #~ msgstr "เมนูสามารถแสดงในที่อยู่ที่กำหนดโดยธีมของคุณหรือใน <a href=\"%s\">พื้นที่วิดเจ็ต</a> โดยการเพิ่มวิดเจ็ต &#8220;เมนูนำทาง&#8221; "
 
 #~ msgid "[%s] Notice of Email Change"
@@ -3934,8 +4979,12 @@ msgstr "Bangkok.  10320"
 #~ msgstr "ลบแหล่งที่มาไฟล์เสียง"
 
 #~ msgctxt "Comma-separated list of replacement words in your language"
-#~ msgid "&#8217;tain&#8217;t,&#8217;twere,&#8217;twas,&#8217;tis,&#8217;twill,&#8217;til,&#8217;bout,&#8217;nuff,&#8217;round,&#8217;cause,&#8217;em"
-#~ msgstr "&#8217;tain&#8217;t,&#8217;twere,&#8217;twas,&#8217;tis,&#8217;twill,&#8217;til,&#8217;bout,&#8217;nuff,&#8217;round,&#8217;cause,&#8217;em"
+#~ msgid ""
+#~ "&#8217;tain&#8217;t,&#8217;twere,&#8217;twas,&#8217;tis,&#8217;twill,&#8217;til,&#8217;bout,&#8217;nuff,&#8217;round,&#8217;cause,"
+#~ "&#8217;em"
+#~ msgstr ""
+#~ "&#8217;tain&#8217;t,&#8217;twere,&#8217;twas,&#8217;tis,&#8217;twill,&#8217;til,&#8217;bout,&#8217;nuff,&#8217;round,&#8217;cause,"
+#~ "&#8217;em"
 
 #~ msgctxt "Comma-separated list of words to texturize in your language"
 #~ msgid "'tain't,'twere,'twas,'tis,'twill,'til,'bout,'nuff,'round,'cause,'em"
@@ -4001,8 +5050,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "Move one level down"
 #~ msgstr "เลื่อนลงหนึ่งลำดับ"
 
-#~ msgid "This panel is used for managing navigation menus for content you have already published on your site. You can create menus and add items for existing content such as pages, posts, categories, tags, formats, or custom links."
-#~ msgstr "ส่วนควบคุมนี้ใช้สำหรับจัดการเมนูเรียกดูสำหรับบทความที่คุณได้เผยแพร่บนเว็บของคุณ  คุณสามารถสร้างเมนูและเพิ่มรายการสำหรับบทความที่มีอยู่เช่น หน้า, เรื่อง, หมวดหมู่, ป้ายกำกับ, หรือลิงก์ปรับแต่ง"
+#~ msgid ""
+#~ "This panel is used for managing navigation menus for content you have already published on your site. You can create menus and "
+#~ "add items for existing content such as pages, posts, categories, tags, formats, or custom links."
+#~ msgstr ""
+#~ "ส่วนควบคุมนี้ใช้สำหรับจัดการเมนูเรียกดูสำหรับบทความที่คุณได้เผยแพร่บนเว็บของคุณ  คุณสามารถสร้างเมนูและเพิ่มรายการสำหรับบทความที่มีอยู่เช่น หน้า, เรื่อง, หมวดหมู่, "
+#~ "ป้ายกำกับ, หรือลิงก์ปรับแต่ง"
 
 #~ msgid "Menu Locations"
 #~ msgstr "ตำแหน่งเมนู"
@@ -4132,8 +5185,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "https://codex.wordpress.org/"
 #~ msgstr "https://codex.wordpress.org/"
 
-#~ msgid "No %1$s was set in the arguments array for the \"%2$s\" sidebar. Defaulting to \"%3$s\". Manually set the %1$s to \"%3$s\" to silence this notice and keep existing sidebar content."
-#~ msgstr "ไม่มีการตั้ง %1$s ในค่ากลุ่มตัวตัวแปร (arguments array) สำหรับด้านข้าง \"%2$s\" ค่ามาตราฐานที่ \"%3$s\" ตั้งค่า %1$s ด้วยตัวเองไปที่ \"%3$s\" เพื่อปิดเสียงคำเตือนนี้และยังคงเนื้อหาด้านข้างที่มีอยู่"
+#~ msgid ""
+#~ "No %1$s was set in the arguments array for the \"%2$s\" sidebar. Defaulting to \"%3$s\". Manually set the %1$s to \"%3$s\" to "
+#~ "silence this notice and keep existing sidebar content."
+#~ msgstr ""
+#~ "ไม่มีการตั้ง %1$s ในค่ากลุ่มตัวตัวแปร (arguments array) สำหรับด้านข้าง \"%2$s\" ค่ามาตราฐานที่ \"%3$s\" ตั้งค่า %1$s ด้วยตัวเองไปที่ \"%3$s\" "
+#~ "เพื่อปิดเสียงคำเตือนนี้และยังคงเนื้อหาด้านข้างที่มีอยู่"
 
 #~ msgid "Connection lost or the server is busy. Please try again later."
 #~ msgstr "สูญเสียการเชื่อมต่อหรือเซิร์ฟเวอร์ทำงานหนักในตอนนี้  โปรดลองใหม่อีกครั้งภายหลัง"
@@ -4194,8 +5251,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "Install Now"
 #~ msgstr "ติดตั้งตอนนี้"
 
-#~ msgid "<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or someone deleted %s. You really should look at your database now."
-#~ msgstr "<strong>ตารางฐานข้อมูลหายไป</strong> หมายความว่า MySQL ไม่ทำงาน เวิร์ดเพรสอาจจะติดตั้งไม่สมบูรณ์หรือมีบางคนลบ %s คุณควรจะดูที่ฐานข้อมูลของคุณตอนนี้ You really should look at your database now."
+#~ msgid ""
+#~ "<strong>Database tables are missing.</strong> This means that MySQL is not running, WordPress was not installed properly, or "
+#~ "someone deleted %s. You really should look at your database now."
+#~ msgstr ""
+#~ "<strong>ตารางฐานข้อมูลหายไป</strong> หมายความว่า MySQL ไม่ทำงาน เวิร์ดเพรสอาจจะติดตั้งไม่สมบูรณ์หรือมีบางคนลบ %s คุณควรจะดูที่ฐานข้อมูลของคุณตอนนี้ You "
+#~ "really should look at your database now."
 
 #~ msgid ""
 #~ "Howdy USERNAME,\n"
@@ -4323,7 +5384,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "Widget moved up"
 #~ msgstr "เลื่อนวิดเจ็ตขึ้น"
 
-#~ msgid "To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons."
+#~ msgid ""
+#~ "To move focus to other buttons use Tab or the arrow keys. To return focus to the editor press Escape or use one of the buttons."
 #~ msgstr "เพื่อย้ายไปยังปุ่มอื่นให้ใช้ปุ่ม Tab หรือเครื่องหมายลูกศร  กลับไปยังตัวแก้ไขให้กดปุ่ม Escape หรือใช้ปุ่มใดปุ่มหนึ่ง"
 
 #~ msgid "Editor toolbar"
@@ -4386,9 +5448,6 @@ msgstr "Bangkok.  10320"
 
 #~ msgid "Edit Selection"
 #~ msgstr "แก้ไขไฟล์ที่ถูกเลือก"
-
-#~ msgid "Previous"
-#~ msgstr "ก่อนหน้า"
 
 #~ msgid "Newer posts"
 #~ msgstr "เรื่องที่ใหม่กว่า"
@@ -4660,7 +5719,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Maximum upload file size: %s."
 #~ msgstr "ขนาดไฟล์อัปโหลดใหญ่สุด: %s."
 
-#~ msgid "Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser&#8217;s edit menu instead."
+#~ msgid ""
+#~ "Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser&#8217;s edit menu "
+#~ "instead."
 #~ msgstr "เบราว์เซอร์ของคุณไม่สนับสนุนการทำงานโดยตรงไปยัง clipboard (การคัดลอก) กรุณาใช้ปุ่มลัดคีย์บอร์ดหรือ เมนูแก้ไขของเบราว์เซอร์คุณแทน"
 
 #~ msgid "No plugins found. Try a different search."
@@ -4672,7 +5733,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "You are customizing %s"
 #~ msgstr "คุณกำลังปรับแต่ง %s"
 
-#~ msgid "Widgets are independent sections of content that can be placed into widgetized areas provided by your theme (commonly called sidebars)."
+#~ msgid ""
+#~ "Widgets are independent sections of content that can be placed into widgetized areas provided by your theme (commonly called "
+#~ "sidebars)."
 #~ msgstr "วิดเจ็ตเป็นส่วนอิสระของข้อความที่สามารถวางลงในพื้นที่วิดเจ็ต ที่จัดหาโดยธีมของคุณ (ปกติเรียกว่าด้านข้าง)"
 
 #~ msgid "(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)"
@@ -4685,17 +5748,28 @@ msgstr "Bangkok.  10320"
 #~ msgid "Address"
 #~ msgstr "ที่อยู่"
 
-#~ msgid "If you&#8217;re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically."
-#~ msgstr "ถ้าคุณกำลังมองหาการคัดลอกมาวางแบบ rich content จากไมโครซอฟท์เวิร์ด  ให้ลองปิดใช้งานตัวเลือกนี้  แล้วตัวแก้ไขจะทำการล้างค่าตัวอักษรที่คัดลอกมาจากเวิร์ดโดยอัตโนมัติ"
+#~ msgid ""
+#~ "If you&#8217;re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text "
+#~ "pasted from Word automatically."
+#~ msgstr ""
+#~ "ถ้าคุณกำลังมองหาการคัดลอกมาวางแบบ rich content จากไมโครซอฟท์เวิร์ด  ให้ลองปิดใช้งานตัวเลือกนี้  "
+#~ "แล้วตัวแก้ไขจะทำการล้างค่าตัวอักษรที่คัดลอกมาจากเวิร์ดโดยอัตโนมัติ"
 
 #~ msgid "Keyboard Shortcuts"
 #~ msgstr "ปุ่มลัดคีย์บอร์ด"
 
-#~ msgid "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use WordPress."
-#~ msgstr "<strong>ผิดพลาด</strong>:  Cookies ถูกปิดกั้นหรือเบราว์เซอร์ของคุณไม่สนับสนุน  คุณต้อง <a href=\"%s\">เปิดใช้งาน cookies</a> เพื่อใช้งานเวิร์ดเพรส"
+#~ msgid ""
+#~ "<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href=\"%s\">enable cookies</a> to use "
+#~ "WordPress."
+#~ msgstr ""
+#~ "<strong>ผิดพลาด</strong>:  Cookies ถูกปิดกั้นหรือเบราว์เซอร์ของคุณไม่สนับสนุน  คุณต้อง <a href=\"%s\">เปิดใช้งาน cookies</a> เพื่อใช้งานเวิร์ดเพรส"
 
-#~ msgid "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</a> or try the <a href=\"%2$s\">support forums</a>."
-#~ msgstr "<strong>ผิดพลาด</strong>: Cookies ถูกปิดกั้นเนื่องจากผลลัพธ์ที่ไม่คาดคิด  สำหรับความช่วยเหลือในเรื่องนี้  โปรดดูที่ <a href=\"%1$s\">คู่มือเรื่องนี้</a> หรือพยายามลองใช้งาน <a href=\"%2$s\">ฟอรั่มสนับสนุน</a>"
+#~ msgid ""
+#~ "<strong>ERROR</strong>: Cookies are blocked due to unexpected output. For help, please see <a href=\"%1$s\">this documentation</"
+#~ "a> or try the <a href=\"%2$s\">support forums</a>."
+#~ msgstr ""
+#~ "<strong>ผิดพลาด</strong>: Cookies ถูกปิดกั้นเนื่องจากผลลัพธ์ที่ไม่คาดคิด  สำหรับความช่วยเหลือในเรื่องนี้  โปรดดูที่ <a href=\"%1$s\">คู่มือเรื่องนี้</a> "
+#~ "หรือพยายามลองใช้งาน <a href=\"%2$s\">ฟอรั่มสนับสนุน</a>"
 
 #~ msgid "&#8592; Cancel Audio Playlist"
 #~ msgstr "&#8592; ยกเลิกรายชื่อเล่นไฟล์เสียง"
@@ -5106,11 +6180,18 @@ msgstr "Bangkok.  10320"
 #~ msgid "Select Poster Image"
 #~ msgstr "เลือกรูปใบปิด"
 
-#~ msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
-#~ msgstr "มีความผิดพลาดเกิดขึ้น  อาจมีบางสิ่งผิดปกติกับ WordPress.org หรือการตั้งค่าเซิรฟ์เวอร์นี้  ถ้าคุณยังมีปัญหาในอนาคตอีก  โปรดลองติดต่อที่  <a href=\"https://wordpress.org/support/\">ฟอรั่มสนับสนุน</a>"
+#~ msgid ""
+#~ "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to "
+#~ "have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
+#~ msgstr ""
+#~ "มีความผิดพลาดเกิดขึ้น  อาจมีบางสิ่งผิดปกติกับ WordPress.org หรือการตั้งค่าเซิรฟ์เวอร์นี้  ถ้าคุณยังมีปัญหาในอนาคตอีก  โปรดลองติดต่อที่  <a href=\"https://"
+#~ "wordpress.org/support/\">ฟอรั่มสนับสนุน</a>"
 
-#~ msgid "Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ &amp; )."
-#~ msgstr "เบาะแส: รหัสผ่านควรจะมีตัวอักษรอย่างน้อยสิบสองตัวอักษร  เพื่อให้มันปลอดภัยขึ้น  ใช้ตัวอักษรตัวเล็กและตัวใหญ่  ตัวเลข และสัญลักษณ์อย่าง ! \" ? $ % ^ &amp; )"
+#~ msgid ""
+#~ "Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and "
+#~ "symbols like ! \" ? $ % ^ &amp; )."
+#~ msgstr ""
+#~ "เบาะแส: รหัสผ่านควรจะมีตัวอักษรอย่างน้อยสิบสองตัวอักษร  เพื่อให้มันปลอดภัยขึ้น  ใช้ตัวอักษรตัวเล็กและตัวใหญ่  ตัวเลข และสัญลักษณ์อย่าง ! \" ? $ % ^ &amp; )"
 
 #~ msgid "The query argument of %s must have a placeholder."
 #~ msgstr "อาร์กิวเมนต์การสืบค้นของ %s ต้องมีข้อความตัวอย่าง"
@@ -5197,9 +6278,6 @@ msgstr "Bangkok.  10320"
 
 #~ msgid "Move up"
 #~ msgstr "เลื่อนขึ้น"
-
-#~ msgid "https://wordpress.org/"
-#~ msgstr "https://wordpress.org/"
 
 #~ msgid "https://wordpress.org/support/"
 #~ msgstr "https://wordpress.org/support/"
@@ -5390,8 +6468,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "no-subset"
 #~ msgstr "no-subset"
 
-#~ msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"%s\">support forums</a>."
-#~ msgstr "มีความผิดพลาดที่ไม่คาดคิดเกิดขึ้น  สิ่งเหล่านี้อาจเกิดจากความผิดพลาดของ WordPress.org เองหรือการตั้งค่าเซิร์ฟเวอร์นี้  ถ้าคุณยังมีปัญหาอยู่  โปรดลองใช้ <a href=\"%s\">ฟอรั่มสนับสนุน</a>"
+#~ msgid ""
+#~ "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to "
+#~ "have problems, please try the <a href=\"%s\">support forums</a>."
+#~ msgstr ""
+#~ "มีความผิดพลาดที่ไม่คาดคิดเกิดขึ้น  สิ่งเหล่านี้อาจเกิดจากความผิดพลาดของ WordPress.org เองหรือการตั้งค่าเซิร์ฟเวอร์นี้  ถ้าคุณยังมีปัญหาอยู่  โปรดลองใช้ <a href="
+#~ "\"%s\">ฟอรั่มสนับสนุน</a>"
 
 #~ msgid "Menu"
 #~ msgstr "เมนู"
@@ -5487,7 +6569,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "The URL to the admin area"
 #~ msgstr "URL ไปพื้นที่ส่วนควบคุม"
 
-#~ msgid "The web browser on your device cannot be used to upload files. You may be able to use the <a href=\"%s\">native app for your device</a> instead."
+#~ msgid ""
+#~ "The web browser on your device cannot be used to upload files. You may be able to use the <a href=\"%s\">native app for your "
+#~ "device</a> instead."
 #~ msgstr "เว็บเบราว์เซอร์บนอุปกรณ์ของคุณไม่สามารถใช้สำหรับการอัปโหลดไฟล์  คุณอาจจะใช้ <a href=\"%s\">แอพพื้นฐานที่ติดตั้งมากับอุปกรณ์ของคุณ</a> แทน"
 
 #~ msgid "(more&hellip;)"
@@ -6107,20 +7191,35 @@ msgstr "Bangkok.  10320"
 #~ msgid "Create a Configuration File"
 #~ msgstr "สร้างไฟล์สำหรับกำหนดค่า (Configuration file)"
 
-#~ msgid "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file."
+#~ msgid ""
+#~ "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually "
+#~ "create the file."
 #~ msgstr "คุณสามารถสร้างไฟล์ %s ผ่านทางหน้าเว็บ  แต่วิธีนี้ไม่สามารถใช้ได้กับเซิร์ฟเวอร์ทุกประเภท  วิธีที่ดีที่สุดคือการสร้างไฟล์ด้วยตัวเอง"
 
 #~ msgid "https://codex.wordpress.org/CSS"
 #~ msgstr "https://codex.wordpress.org/CSS"
 
-#~ msgid "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
-#~ msgstr "บัญชีของคุณได้เปิดใช้แล้ว  คุณอาจจะ <a href=\"%1$s\">เข้าสู่ระบบ</a> เว็บนี้โดยใช้ชื่อผู้ใช้ &#8220;%2$s&#8221; ที่คุณเลือก  โปรดตรวจสอบกล่องเข้าอีเมลของคุณที่ %3$s สำหรับรหัสผ่านของคุณและคำแนะนำเข้าสู่ระบบ  ถ้าคุณไม่ได้รับอีกเมล  โปรดตรวจสอบโฟลเดอร์ขยะหรือโฟลเดอร์สแปม  ถ้าคุณยังไม่ได้รับอีเมลอีกภายในหนึ่งชั่วโมง  คุณสามารถ <a href=\"%4$s\">ล้างค่ารหัสผ่านของคุณ</a>"
+#~ msgid ""
+#~ "Your account has been activated. You may now <a href=\"%1$s\">log in</a> to the site using your chosen username of &#8220;"
+#~ "%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, "
+#~ "please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your "
+#~ "password</a>."
+#~ msgstr ""
+#~ "บัญชีของคุณได้เปิดใช้แล้ว  คุณอาจจะ <a href=\"%1$s\">เข้าสู่ระบบ</a> เว็บนี้โดยใช้ชื่อผู้ใช้ &#8220;%2$s&#8221; ที่คุณเลือก  โปรดตรวจสอบกล่องเข้าอีเมลของคุณที่ "
+#~ "%3$s สำหรับรหัสผ่านของคุณและคำแนะนำเข้าสู่ระบบ  ถ้าคุณไม่ได้รับอีกเมล  โปรดตรวจสอบโฟลเดอร์ขยะหรือโฟลเดอร์สแปม  ถ้าคุณยังไม่ได้รับอีเมลอีกภายในหนึ่งชั่วโมง  "
+#~ "คุณสามารถ <a href=\"%4$s\">ล้างค่ารหัสผ่านของคุณ</a>"
 
 #~ msgid "%1$s is your new site. <a href=\"%2$s\">Log in</a> as &#8220;%3$s&#8221; using your existing password."
 #~ msgstr "%1$s คือเว็บไซต์ใหม่ของคุณ <a href=\"%2$s\">เข้าสู่ระบบ</a> ด้วย &#8220;%3$s&#8221; และใช้รหัสผ่านของคุณที่มีอยู่"
 
-#~ msgid "Your site at %1$s is active. You may now log in to your site using your chosen username of &#8220;%2$s&#8221;. Please check your email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
-#~ msgstr "เว็บไซต์ของคุณที่ %1$s เปิดใช้งานแล้ว คุณสามารถเข้าสู่ระบบได้แล้ว โดยใช้ชื่อผู้ใช้งาน คือ &#8220;%2$s&#8221; โปรดตรวจสอบกล่องจดหมายของคุณที่อีเมล %3$s สำหรับรหัสผ่าน และคำแนะนำในการเข้าสู่ระบบ หากคุณไม่ได้รับอีเมล กรุณาตรวจสอบที่โฟลเดอร์ถังขยะ หรือสแปม และหากคุณยังไม่ได้รับอีเมลภายในหนึ่งชั่วโมง คุณสามารถ <a href=\"%4$s\">ล้างค่ารหัสผ่านของคุณ</a>"
+#~ msgid ""
+#~ "Your site at %1$s is active. You may now log in to your site using your chosen username of &#8220;%2$s&#8221;. Please check your "
+#~ "email inbox at %3$s for your password and login instructions. If you do not receive an email, please check your junk or spam "
+#~ "folder. If you still do not receive an email within an hour, you can <a href=\"%4$s\">reset your password</a>."
+#~ msgstr ""
+#~ "เว็บไซต์ของคุณที่ %1$s เปิดใช้งานแล้ว คุณสามารถเข้าสู่ระบบได้แล้ว โดยใช้ชื่อผู้ใช้งาน คือ &#8220;%2$s&#8221; โปรดตรวจสอบกล่องจดหมายของคุณที่อีเมล %3$s "
+#~ "สำหรับรหัสผ่าน และคำแนะนำในการเข้าสู่ระบบ หากคุณไม่ได้รับอีเมล กรุณาตรวจสอบที่โฟลเดอร์ถังขยะ หรือสแปม และหากคุณยังไม่ได้รับอีเมลภายในหนึ่งชั่วโมง คุณสามารถ "
+#~ "<a href=\"%4$s\">ล้างค่ารหัสผ่านของคุณ</a>"
 
 #~ msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
 #~ msgstr "ตารางฐานข้อมูลหนึ่งหรือมากกว่าไม่สามารถใช้งานได้ ฐานข้อมูลอาจจะจำเป็นต้องได้รับการ <a href=\"%s\">ซ่อมแซม</a>"
@@ -6223,7 +7322,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Scripts and styles should not be registered or enqueued until the %1$s, %2$s, or %3$s hooks."
 #~ msgstr "Scripts และ styles ไม่ควรที่จะลงทะเบียนหรืออยู่ในคิวจนกว่า %1$s, %2$s, หรือ %3$s hooks."
 
-#~ msgid "You have been added to this site. Please visit the <a href=\"%s\">homepage</a> or <a href=\"%s\">log in</a> using your username and password."
+#~ msgid ""
+#~ "You have been added to this site. Please visit the <a href=\"%s\">homepage</a> or <a href=\"%s\">log in</a> using your username "
+#~ "and password."
 #~ msgstr "คุณได้ถูกเพิ่มชื่อไปที่เว็บนี้ โปรดเยี่ยมชม  <a href=\"%s\">หน้าแรก</a> หรือ <a href=\"%s\">เข้าสู่ระบบ</a> โดยใช้ชื่อผู้ใช้และรหัสผ่านของคุณ"
 
 #~ msgid "Memory exceeded. Please try another smaller file."
@@ -6513,8 +7614,11 @@ msgstr "Bangkok.  10320"
 #~ msgid "This post is password protected. Enter the password to view comments."
 #~ msgstr "เรื่องนี้มีรหัสผ่านป้องกัน  ใส่รหัสผ่านเพื่อดูความเห็น:"
 
-#~ msgid "You have searched the %1$s blog archives for <strong>&#8216;%2$s&#8217;</strong>. If you are unable to find anything in these search results, you can try one of these links."
-#~ msgstr "คุณกำลังดูคลังเก็บบล็อก%1$s สำหรับ <strong>&#8216;%2$s&#8217;</strong> ถ้าคุณไม่สามารถหาสิ่งใดในผลลัพธ์การค้นหาเหล่านี้  คุณสามารถลองลิงก์ใดลิงก์หนึ่งเหล่านี้"
+#~ msgid ""
+#~ "You have searched the %1$s blog archives for <strong>&#8216;%2$s&#8217;</strong>. If you are unable to find anything in these "
+#~ "search results, you can try one of these links."
+#~ msgstr ""
+#~ "คุณกำลังดูคลังเก็บบล็อก%1$s สำหรับ <strong>&#8216;%2$s&#8217;</strong> ถ้าคุณไม่สามารถหาสิ่งใดในผลลัพธ์การค้นหาเหล่านี้  คุณสามารถลองลิงก์ใดลิงก์หนึ่งเหล่านี้"
 
 #~ msgctxt "taxonomy singular name"
 #~ msgid "Category"
@@ -6600,7 +7704,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Post"
 #~ msgstr "เรื่อง"
 
-#~ msgid "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</strong> The value of SUBDOMAIN_INSTALL will be assumed to be your subdomain configuration setting."
+#~ msgid ""
+#~ "<strong>Conflicting values for the constants VHOST and SUBDOMAIN_INSTALL.</strong> The value of SUBDOMAIN_INSTALL will be assumed "
+#~ "to be your subdomain configuration setting."
 #~ msgstr "<strong>ค่าขัดแย้งกันสำหรับค่าคงที่ VHOST และ SUBDOMAIN_INSTALL</strong> ค่าของ SUBDOMAIN_INSTALL จะถูกสมมุติเป็นการตั้งค่า subdomain ของคุณ"
 
 #~ msgid "<strong>ERROR</strong>: This username is invalid because it uses illegal characters. Please enter a valid username."
@@ -6738,8 +7844,12 @@ msgstr "Bangkok.  10320"
 #~ msgid "If you&#8217;re still stuck with this message, then check that your database contains the following tables:"
 #~ msgstr "ถ้าคุณยังติดอยู่กับข้อความนี้  ให้ตรวจสอบฐานข้อมูลของคุณว่าประกอบด้วยตารางต่อไปนี้"
 
-#~ msgid "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
-#~ msgstr "ยินดีต้อนรับกลับ  %s  โดยการกรอกฟอร์มด้านล่าง  คุณจะสามารถ <strong>เพิ่มเว็บอื่นเข้าในบัญชีของคุณ</strong>  ไม่มีการจำกัดจำนวนเว็บที่คุณสามารถมีได้  ดังนั้นสร้างเนื้อหาตามที่ใจคุณต้องการ  แต่เขียนด้วยความรับผิดชอบ"
+#~ msgid ""
+#~ "Welcome back, %s. By filling out the form below, you can <strong>add another site to your account</strong>. There is no limit to "
+#~ "the number of sites you can have, so create to your heart&#8217;s content, but write responsibly!"
+#~ msgstr ""
+#~ "ยินดีต้อนรับกลับ  %s  โดยการกรอกฟอร์มด้านล่าง  คุณจะสามารถ <strong>เพิ่มเว็บอื่นเข้าในบัญชีของคุณ</strong>  ไม่มีการจำกัดจำนวนเว็บที่คุณสามารถมีได้  "
+#~ "ดังนั้นสร้างเนื้อหาตามที่ใจคุณต้องการ  แต่เขียนด้วยความรับผิดชอบ"
 
 #~ msgid "Must be at least 4 characters, letters and numbers only. It cannot be changed, so choose carefully!"
 #~ msgstr "ต้องมีอย่างน้อย 4 ตัวอักษร และเป็นพยัญชนะและตัวเลขเท่านั้น ไม่สามารถเปลี่ยนค่าได้ ดังนั้นกรุณาเลือกอย่างระมัดระวัง"
@@ -6951,7 +8061,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "Pingback from %1$s to %2$s registered. Keep the web talking! :-)"
 #~ msgstr "Pingback จาก %1$s เพื่อ %2$s ลงทะเบียน   ปล่อยให้เว็บทั้งสองได้สื่อสารกันก่อน! :-)"
 
-#~ msgid "The specified target URL cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
+#~ msgid ""
+#~ "The specified target URL cannot be used as a target. It either doesn&#8217;t exist, or it is not a pingback-enabled resource."
 #~ msgstr "URL ที่กำหนดไม่สามารถใช้เป็นเป้าหมายได้    มันอาจจะไม่มีอยู่จริง หรือไม่สามารถใช้ pingback กลับได้"
 
 #~ msgid "We cannot find a title on that page."
@@ -7432,9 +8543,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "Private: %s"
 #~ msgstr "ส่วนตัว: %s"
 
-#~ msgid "Previous page"
-#~ msgstr "หน้าก่อนหน้า"
-
 #~ msgid "Home"
 #~ msgstr "หน้าแรก"
 
@@ -7820,7 +8928,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "User registration has been disabled."
 #~ msgstr "การลงทะเบียนผู้ใช้ยังไม่เปิดใช้งาน"
 
-#~ msgid "That email address has already been used. Please check your inbox for an activation email. It will become available in a couple of days if you do nothing."
+#~ msgid ""
+#~ "That email address has already been used. Please check your inbox for an activation email. It will become available in a couple "
+#~ "of days if you do nothing."
 #~ msgstr "ที่อยู่อีเมลดังกล่าวได้ถูกใช้งานไปแล้ว กรุณาตรวจสอบกล่องจดหมายเข้าของคุณสำหรับอีเมลยืนยัน และจะสามารถใช้งานได้ในอีกสองสามวัน หากคุณไม่ได้ทำอะไรเพิ่มเติม"
 
 #~ msgid "Sorry, usernames must have letters too!"
@@ -7856,7 +8966,9 @@ msgstr "Bangkok.  10320"
 #~ msgid "Still waiting for your email?"
 #~ msgstr "กำลังรออีเมลที่ส่งหาคุณ?"
 
-#~ msgid "You cannot use that email address to signup. We are having problems with them blocking some of our email. Please use another email provider."
+#~ msgid ""
+#~ "You cannot use that email address to signup. We are having problems with them blocking some of our email. Please use another "
+#~ "email provider."
 #~ msgstr "คุณไม่สามารถใช้งานอีเมลนี้เพื่อลงทะเบียน  เรามีปัญหากับการบล็อคอีเมลของเว็บเหล่านั้นในบางครั้ง  โปรดใช้อีเมลเจ้าอื่นในการลงทะเบียน"
 
 #~ msgid "Sorry, that email address is not allowed!"
@@ -7988,9 +9100,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "The URL you entered seems to be an external link. Do you want to add the required http:// prefix?"
 #~ msgstr "URL ที่คุณใส่เหมือนจะเป็นลิงก์ออกนอกเว็บ  คุณต้องการใส่คำนำหน้า \"http://\" หรือไม่?"
 
-#~ msgid "Next page"
-#~ msgstr "หน้าถัดไป"
-
 #~ msgid "Next Post"
 #~ msgstr "เรื่องถัดไป"
 
@@ -7999,9 +9108,6 @@ msgstr "Bangkok.  10320"
 
 #~ msgid "Next &gt;"
 #~ msgstr "ถัดไป &gt;"
-
-#~ msgid "Next"
-#~ msgstr "ถัดไป"
 
 #~ msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
 #~ msgstr "คำสั่ง %1$s นี้<strong>ถูกเลิกใช้</strong>ตั้งแต่รุ่น %2$s! เป็นต้นมา กรุณาเปลี่ยนไปใช้ %3$s แทน"
@@ -8039,9 +9145,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "Yes"
 #~ msgstr "ใช่"
 
-#~ msgid "Settings"
-#~ msgstr "ตั้งค่า"
-
 #~ msgid "Date Format"
 #~ msgstr "รูปแบบวันที่"
 
@@ -8053,9 +9156,6 @@ msgstr "Bangkok.  10320"
 
 #~ msgid "Height"
 #~ msgstr "ความสูง"
-
-#~ msgid "Default"
-#~ msgstr "ค่าหลัก"
 
 #~ msgid "Strength indicator"
 #~ msgstr "Strength indicator"
@@ -8093,9 +9193,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 #~ msgstr "คุณต้อง<a href=\"%s\">เข้าสู่ระบบ</a> เพื่อจะพิมพ์ความเห็น"
 
-#~ msgid "Pages:"
-#~ msgstr "หน้า:"
-
 #~ msgid "Posts by %s"
 #~ msgstr "เขียนโดย %s"
 
@@ -8125,9 +9222,6 @@ msgstr "Bangkok.  10320"
 
 #~ msgid "Black"
 #~ msgstr "สีดำ"
-
-#~ msgid "Blue"
-#~ msgstr "สีน้ำเงิน"
 
 #~ msgid "Brown"
 #~ msgstr "สีน้ำตาล"
@@ -8159,12 +9253,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "Orange"
 #~ msgstr "สีส้ม"
 
-#~ msgid "Pink"
-#~ msgstr "สีชมพู"
-
-#~ msgid "Purple"
-#~ msgstr "สีม่วง"
-
 #~ msgid "Red"
 #~ msgstr "สีแดง"
 
@@ -8185,9 +9273,6 @@ msgstr "Bangkok.  10320"
 
 #~ msgid "White"
 #~ msgstr "สีขาว"
-
-#~ msgid "Yellow"
-#~ msgstr "สีเหลือง"
 
 #~ msgctxt "page"
 #~ msgid "Add New"
@@ -8226,9 +9311,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 #~ msgstr "<abbr title=\"Really Simple Syndication\">RSS</abbr> ของความคิดเห็น"
 
-#~ msgid "Comments are closed."
-#~ msgstr "การแสดงความเห็นถูกปิด"
-
 #~ msgid "Themes"
 #~ msgstr "ธีม"
 
@@ -8256,9 +9338,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "None"
 #~ msgstr "ไม่มี"
 
-#~ msgid "Description"
-#~ msgstr "คำขยายความ"
-
 #~ msgid "No"
 #~ msgstr "ไม่"
 
@@ -8267,9 +9346,6 @@ msgstr "Bangkok.  10320"
 
 #~ msgid "URL"
 #~ msgstr "URL"
-
-#~ msgid "Edit"
-#~ msgstr "แก้ไข"
 
 #~ msgid "Comments"
 #~ msgstr "ความเห็น"
@@ -8484,9 +9560,6 @@ msgstr "Bangkok.  10320"
 #~ msgid "Tags"
 #~ msgstr "ป้ายกำกับ"
 
-#~ msgid "Update"
-#~ msgstr "อัปเดต"
-
 #~ msgid "Update Category"
 #~ msgstr "อัปเดตหมวดหมู่"
 
@@ -8519,14 +9592,8 @@ msgstr "Bangkok.  10320"
 #~ msgid "Excerpt"
 #~ msgstr "เกริ่นนำ"
 
-#~ msgid "Cheatin&#8217; uh?"
-#~ msgstr "คุณกำลังตั้งใจโกงอยู่รึ?"
-
 #~ msgid "No posts found."
 #~ msgstr "ไม่พบเรื่อง"
-
-#~ msgid "Title"
-#~ msgstr "หัวข้อ"
 
 #~ msgid "Published"
 #~ msgstr "เผยแพร่"

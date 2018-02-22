@@ -5,12 +5,14 @@ class Project_Functions {
 
     var $metabox_id = "projec_metabox";
     var $pic_tab;
+    var $option_name = "project_flush";
 
     function __construct() {
-        $this->type_name = 'projects';
-        $this->flush_option = $this->type_name . '_flush_1.0.5';
-        $this->postSlug = 'projects';
         $this->domain = 'elite';
+        $this->type_name = 'projects';
+        $this->flush_option = $this->type_name . '_flush_1.0.2';
+        $this->postSlug = __('โครงการ', $this->domain);
+        
         add_action('init', array($this, 'custom_post_type'));
         add_action('init', array($this, 'application_check'));
 
@@ -46,9 +48,9 @@ class Project_Functions {
         register_post_type($this->type_name, $args);
     }
     function application_check() {
-        if (!get_option($this->flush_option)) {
+        if (empty(get_option($this->option_name)) || $this->flush_option != get_option($this->option_name)) {
             flush_rewrite_rules();
-            update_option($this->flush_option, true);
+            update_option($this->option_name, $this->flush_option);
         }
     }
 

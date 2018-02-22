@@ -23,11 +23,21 @@ $image = '';
       }
     }
 </style>
-<div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower6.jpeg" >
+<div class="hero-body main-header parallax-window normal" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower6.jpeg" >
     <div class="container has-text-centered">
       <div class="font-main-header white">
         <h1 class="title">
           <?php echo get_the_title(); ?>
+        </h1>
+      </div>
+    </div>
+  </div>
+<div class="print-header">
+    <div class="container-fulid has-text-centered">
+     <img src="<?php echo get_template_directory_uri(); ?>/images/tower6.jpeg" />
+      <div class="font-main-header white">
+        <h1 class="title">
+           <?php echo get_the_title(); ?>
         </h1>
       </div>
     </div>

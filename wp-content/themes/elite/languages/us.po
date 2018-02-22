@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-20 22:06+0700\n"
-"PO-Revision-Date: 2018-02-20 22:06+0700\n"
+"POT-Creation-Date: 2018-02-22 10:52+0700\n"
+"PO-Revision-Date: 2018-02-22 10:53+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 1.7.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: archive-events.php:30
+#: archive-events.php:30 function/eventsandnews-cpt/eventsandnews-cpt.php:14
 msgid "ข่าวสารและกิจกรรม"
 msgstr "Events and News"
 
@@ -31,59 +31,57 @@ msgstr "All Projects"
 msgid "บริษัท เอลีท เอ็นจิเนียร์ส จำกัด"
 msgstr "Elite Engineers Co., Ltd."
 
-#: front-page.php:12 front-page.php:175 front-page.php:212 front-page.php:247
+#: front-page.php:12 front-page.php:189 front-page.php:226 front-page.php:261
 msgid "โครงการปัจจุบัน"
 msgstr "Current Projects"
 
-#: front-page.php:31 front-page.php:286 front-page.php:288 front-page.php:326
-#: front-page.php:328
+#: front-page.php:31 front-page.php:300 front-page.php:302 front-page.php:340
+#: front-page.php:342
 msgid "โครงการที่ผ่านมา"
 msgstr "Completed Projects"
 
-#: front-page.php:81
+#: front-page.php:95
 msgid "เกี่ยวกับเรา"
 msgstr "About us"
 
-#: front-page.php:89
+#: front-page.php:103
 msgid "ความสามารถสูง"
 msgstr "High Capability"
 
-#: front-page.php:91
+#: front-page.php:105
 msgid "ทีมงานวิศวกรของเรามีความสามารถสูง"
 msgstr "Our management team consist of engineers with high capability"
 
-#: front-page.php:96
+#: front-page.php:110
 msgid "ประเภทธุรกิจ"
 msgstr "Business Nature"
 
-#: front-page.php:98
+#: front-page.php:112
 msgid "การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า"
 msgstr "Construction,  Mechanical, Electrical"
 
-#: front-page.php:103
+#: front-page.php:117
 msgid "ความเชี่ยวชาญ"
 msgstr "Specialize"
 
-#: front-page.php:105
+#: front-page.php:119
 msgid "เรามีความเชี่ยวชาญในโครงการแบบครบวงจร"
 msgstr "We  specialize  in  Mechanical  &  Electrical  turnkey  project"
 
-#: front-page.php:139
+#: front-page.php:153
 msgid "160+ พนักงาน"
 msgstr ""
 
-#: front-page.php:148
+#: front-page.php:162
 msgid "Enginerr : 50"
 msgstr ""
 
-#: front-page.php:154
+#: front-page.php:168
 #, fuzzy
-#| msgctxt "TinyMCE menu"
-#| msgid "Format"
 msgid "Forman: 88"
 msgstr "รูปแบบ"
 
-#: front-page.php:160
+#: front-page.php:174
 msgid "Admin : 40"
 msgstr ""
 
@@ -97,55 +95,53 @@ msgstr "ข่าวสารและกิจกรรม"
 
 #: function/eventsandnews-cpt/eventsandnews-cpt.php:63
 #: function/front-page/front-page.php:30
-#: function/project-cpt/project-cpt.php:64
+#: function/project-cpt/project-cpt.php:66
 #, fuzzy
-#| msgid "Theme Details"
 msgid "More Detail"
 msgstr "รายละเอียดธีม"
 
 #: function/eventsandnews-cpt/tabs/eventspic.php:31
 #: function/project-cpt/tabs/projectpic.php:31
 #, fuzzy
-#| msgid "Choose Image"
 msgid "Choose or Upload an Image"
 msgstr "เลือกรูปภาพ"
 
 #: function/front-page/tabs/profile.php:56
 #, fuzzy
-#| msgid "Set image"
 msgid "Set custom image"
 msgstr "ตั้งรูป"
 
 #: function/front-page/tabs/profile.php:59
 #, fuzzy
-#| msgid "Remove image"
 msgid "Remove this image"
 msgstr "ลบรูปภาพ"
 
-#: function/project-cpt/project-cpt.php:29
-#: function/project-cpt/project-cpt.php:30
-msgid "Projects"
-msgstr ""
+#: function/project-cpt/project-cpt.php:14
+msgid "โครงการ"
+msgstr "projects"
 
-#: function/project-cpt/project-cpt.php:87
+#: function/project-cpt/project-cpt.php:31
+#: function/project-cpt/project-cpt.php:32
+msgid "Projects"
+msgstr "โครงการ"
+
+#: function/project-cpt/project-cpt.php:89
 msgid "Project Type"
-msgstr ""
+msgstr "ประเภทของโครงการ"
 
 #: function/project-type-taxonomy/project-type-taxonomy.php:40
 #, fuzzy
-#| msgid "Add or remove tags"
 msgid "Add or remove Project Type"
 msgstr "เพิ่มหรือลบป้ายกำกับ"
 
 #: function/project-type-taxonomy/project-type-taxonomy.php:41
 #, fuzzy
-#| msgid "Choose from the most used tags"
 msgid "Choose from the most Project Type"
 msgstr "เลือกจากป้ายกำกับที่ใช้มากที่สุด"
 
 #: function/project-type-taxonomy/project-type-taxonomy.php:42
 msgid "Project Types"
-msgstr ""
+msgstr "ประเภขของโครงการ"
 
 #: function/theme/functions.php:160
 msgid "ติดต่อ"
@@ -205,14 +201,11 @@ msgstr "Please enter your question"
 
 #: functions.php:82
 #, fuzzy
-#| msgid "Header Media"
 msgid "Header Menu"
 msgstr "ไฟล์สื่อส่วนหัว"
 
 #: functions.php:83
 #, fuzzy
-#| msgctxt "table footer"
-#| msgid "Footer"
 msgid "Footer Menu"
 msgstr "ส่วนล่าง"
 
@@ -244,6 +237,12 @@ msgstr "Fax : 0-2645-3670"
 #: template-contact.php:55
 msgid "อีเมล : eliteength@yahoo.com"
 msgstr "Email : eliteength@yahoo.com"
+
+#~ msgid "projects"
+#~ msgstr "โครงการ"
+
+#~ msgid "events"
+#~ msgstr "ข่าวสารและกิจกรรม"
 
 #~ msgid "Your messages has been sent."
 #~ msgstr "ส่งข้อความของคุณเรียบร้อยแล้ว"

@@ -51,15 +51,17 @@ if(!empty($profile[0])){
 }
 ?>
 <style type="text/css">
+    @media (max-width: 1023px){
       .main-header{
           background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: 55% 55%;
       }
+    }
 </style>
  <!-- Hero content: will be in the middle -->
-  <div class="hero-body main-header parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg" >
+  <div class="hero-body main-header parallax-window normal" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg" >
     <div class="container has-text-centered">
       <div class="font-main-header white">
         <h1 class="title">
@@ -71,7 +73,21 @@ if(!empty($profile[0])){
       </div>
     </div>
   </div>
- <section class="hero is-content section-box is-dark">
+  <!-- Hero content: will be in the middle -->
+  <div class="print-header">
+    <div class="container-fulid has-text-centered">
+     <img src="<?php echo get_template_directory_uri(); ?>/images/tower5.jpeg" />
+      <div class="font-main-header white">
+        <h1 class="title">
+          ELITE 
+        </h1>
+        <h2 class="subtitle">
+          ENGINEERS
+        </h2>
+      </div>
+    </div>
+  </div>
+ <section class="hero is-content section-box is-dark normal">
   <div class="hero-body">
     <div class="container">
       <div class="columns">
@@ -109,10 +125,57 @@ if(!empty($profile[0])){
     </div>
   </div>
 </section>
-  <section class="block-about">
+<section class="hero is-content section-box is-dark print">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns ">
+          <div class="column  has-text-centered">
+              <h1 class="title"><?php _e('เกี่ยวกับเรา', 'elite') ?></h1>
+          </div>
+      </div>
+      <div class="columns is-12 jus-cen">
+        <div class="column is-one-third is-12-mobile has-text-centered box-content blog-img slide" style="position: relative;">
+            <div class="blog-pro">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/bg-blue.png" >
+                  <article class="tile is-child is-dark is-nowpro has-text-centered" style="position: absolute;top: 20px;">
+                     <p class="title"><?php _e('ความสามารถสูง', 'elite'); ?></p>
+                       <div class="line-solid"></div>
+                       <p class="subtitle"  style="padding: 20px;"><?php _e('ทีมงานวิศวกรของเรามีความสามารถสูง', 'elite'); ?></p>
+                   </article>
+            </div>
+        </div>
+          <div class="column is-one-third is-12-mobile has-text-centered box-content blog-img slide" style="position: relative;">
+            <div class="blog-pro">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/bg-blue.png" >
+                  <article class="tile is-child is-dark is-nowpro has-text-centered" style="position: absolute;top: 20px;">
+                     <p class="title"><?php _e('ประเภทธุรกิจ', 'elite'); ?></p>
+                    <div class="line-solid"></div>
+                    <p class="subtitle" style="padding: 20px;"><?php _e('การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า', 'elite'); ?></p>
+                   </article>
+            </div>
+          </div>
+          <div class="column is-one-third is-12-mobile has-text-centered box-content blog-img slide" style="position: relative;">
+            <div class="blog-pro">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/bg-blue.png" >
+                  <article class="tile is-child is-dark is-nowpro has-text-centered" style="position: absolute;top: 20px;">
+                     <p class="title"><?php _e('ความเชี่ยวชาญ', 'elite'); ?></p>
+                       <div class="line-solid"></div>
+                       <p class="subtitle" style="padding: 20px;"><?php _e('เรามีความเชี่ยวชาญในโครงการแบบครบวงจร', 'elite'); ?></p>
+                   </article>
+            </div>
+              
+        </div>
+    </div>
+  </div>
+</section>  
+  
+  <section class="block-about normal">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 col-xs-12 img-about" style="<?php echo trim($profile_img_src[0]) ? "background-image:url($profile_img_src[0])" : "" ?>">
+                <div class="col-sm-6 col-xs-12 img-about normal" style="<?php echo trim($profile_img_src[0]) ? "background-image:url($profile_img_src[0])" : "" ?>">
+                </div>
+                <div class="print-header">
+                    <img src="<?php echo trim($profile_img_src[0]) ? "$profile_img_src[0]" : "" ?>" />
                 </div>
                 <div class="col-sm-6 col-xs-12 <?php echo $css_pull; ?> ">
                     <div class="block-about-content">
@@ -316,12 +379,12 @@ if(!empty($profile[0])){
     </div>
   </div>
 </section>
-<section class="hero section-box is-light margin-t-8  is-hidden-desktop">
+<section class="hero section-box is-light margin-t-8  is-hidden-desktop is-projects-past">
   <div class="hero-body ">
     <div class="container">
-      <div class="columns is-multiline is-12">
-             <div class="column is-2 has-text-centered box-content blog-img slide"> 
-               <a href="<?php echo get_site_url().'/projects/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
+      <div class="columns is-multiline">
+             <div class="column is-3 has-text-centered box-content blog-img slide"> 
+               <a href="<?php echo get_site_url().'/'.__('โครงการ','elite').'/?pjt='.__('โครงการที่ผ่านมา','elite') ?>" style="width:100%;">
                  <article class="tile is-child is-dark has-text-centered">
                     <p class="title"><?php _e('โครงการที่ผ่านมา','elite'); ?></p>
                   </article>
@@ -337,15 +400,7 @@ if(!empty($profile[0])){
               } else {
                   $image = $image_arr[0];
               }?>
-              <?php if($key == 0 || $key == 4){
-                 $css_column = 'is-4';
-              }else if($key == 6) {
-                $css_column = 'is-2';
-              }else{
-                $css_column = 'is-3';
-              }
-               ?>
-                <div class="column <?php echo $css_column;  ?> is-mobile has-text-centered box-content blog-img slide no-padding">
+                <div class="column is-12 is-mobile has-text-centered box-content blog-img slide no-padding">
                    <a href="<?php echo get_permalink($post_id); ?>">
                      <img  src="<?php echo $image ?>" >
                      <article class="tile is-dark block-content-touch has-text-centered">

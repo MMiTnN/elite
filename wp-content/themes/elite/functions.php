@@ -153,3 +153,34 @@ function check_msls() {
     }
     return substr($language, 0, 2);
 }
+
+function multi_lang_url($slug_eng = '') {
+    $slug = $slug_eng;
+    if (check_msls() == 'th') {
+        switch ($slug_eng) {
+            case "/events":
+                $slug = '/ข่าวสารและกิจกรรม';
+                break;
+            case "/projects":
+                $slug = '/โครงการ';
+                break;
+        }
+    }
+    return site_url($slug);
+}
+
+function my_msls_output_get($url, $link, $current) {
+    if ($link->alt == 'th_TH') {
+        $url = str_replace('/projects/', '/โครงการ/', $url);
+        $url = str_replace('/events/', '/ข่าวสารและกิจกรรม/', $url);
+    } else if ($link->alt == 'us') {
+        $url = str_replace('/โครงการ/', '/projects/', $url);
+        $url = str_replace('/ข่าวสารและกิจกรรม/', '/events/', $url);
+    }
+
+    return sprintf(
+            '<a href="%s" title="%s">%s</a>', $url, $link->txt, $link->txt, ( $current ? ' class="current"' : '')
+    );
+}
+
+add_filter('msls_output_get', 'my_msls_output_get', 10, 3);
