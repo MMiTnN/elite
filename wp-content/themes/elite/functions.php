@@ -184,3 +184,18 @@ function my_msls_output_get($url, $link, $current) {
 }
 
 add_filter('msls_output_get', 'my_msls_output_get', 10, 3);
+
+function add_theme_favicon() {
+    $favicon_16_path = get_template_directory_uri() . '/images/icon-tab/favicon-16x16.png';
+    $favicon_32_path = get_template_directory_uri() . '/images/icon-tab/favicon-32x32.png';
+    $favicon_64_path = get_template_directory_uri() . '/images/icon-tab/favicon-64x64.png';
+    $favicon_96_path = get_template_directory_uri() . '/images/icon-tab/favicon-96x96.png';
+
+    echo '<link rel="icon" type="image/png" href="' . $favicon_16_path . '" sizes="16x16">';
+    echo '<link rel="icon" type="image/png" href="' . $favicon_32_path . '" sizes="32x32">';
+    echo '<link rel="icon" type="image/png" href="' . $favicon_64_path . '" sizes="64x64">';
+    echo '<link rel="icon" type="image/png" href="' . $favicon_96_path . '" sizes="96x96">';
+}
+
+add_action('wp_head', 'add_theme_favicon'); //front end
+add_action('admin_head', 'add_theme_favicon'); //admin end
