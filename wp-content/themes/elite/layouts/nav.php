@@ -9,6 +9,21 @@
             $(".nav li#lang-switcher").on("click", function () {
                 window.location.replace(href);
             });
+            
+            $("#navbarMenuHeroA .navbar-end #lang-switcher").on('mouseover', function(){
+                <?php if(check_msls() == 'us'): ?> 
+                        $(this).find('p').html('TH');
+                <?php else: ?> 
+                        $(this).find('p').html('EN');
+                <?php endif; ?> 
+            });
+            $('#navbarMenuHeroA .navbar-end #lang-switcher').mouseout(function(){
+                <?php if(check_msls() == 'us'): ?> 
+                        $(this).find('p').html('EN');
+                <?php else: ?> 
+                        $(this).find('p').html('TH');
+                <?php endif; ?> 
+              });
             // console.log(href );
             <?php if (check_msls() === 'th'): ?>
                 $("#xs-eng-lang").attr("href", href);
