@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-23 15:20+0700\n"
-"PO-Revision-Date: 2018-02-23 15:20+0700\n"
+"POT-Creation-Date: 2018-02-23 16:01+0700\n"
+"PO-Revision-Date: 2018-02-23 16:02+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -242,8 +242,11 @@ msgid "อีเมล : eliteength@yahoo.com"
 msgstr "Email : eliteength@yahoo.com"
 
 #: template-contact.php:66
-msgid "เว็บไซค์ : www.eliteengineers.co.th"
-msgstr "website :  www.eliteengineers.co.th"
+msgid "เว็บไซต์ : www.eliteengineers.co.th"
+msgstr "website : www.eliteengineers.co.th"
+
+#~ msgid "เว็บไซค์ : www.eliteengineers.co.th"
+#~ msgstr "website :  www.eliteengineers.co.th"
 
 #~ msgid "โครงการทั้งหมด"
 #~ msgstr "All Projects"

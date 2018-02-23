@@ -63,7 +63,7 @@ $image = '';
                                 <h5><?php _e('โทร : 0-2645-3671-4', 'elite') ?> </h5>
                                 <h5><?php _e('แฟกซ์ : 0-2645-3670', 'elite') ?> </h5>
                                 <h5><?php _e('อีเมล : eliteength@yahoo.com', 'elite') ?> </h5>
-                                <h5><?php _e('เว็บไซค์ : www.eliteengineers.co.th', 'elite') ?> </h5>
+                                <h5><?php _e('เว็บไซต์ : www.eliteengineers.co.th', 'elite') ?> </h5>
                           </div>
                       </div>
                   </div>
