@@ -43,7 +43,7 @@ $projects = $posts->posts;
     <div class="container has-text-centered">
       <div class="font-main-header white">
         <h1 class="title">
-          <?php echo empty($get_pjt)? _e('โครงการทั้งหมด'): $get_pjt; ?>
+          <?php echo empty($get_pjt)? _e('ผลงานทั้งหมดของบริษัท','elite'): $get_pjt; ?>
         </h1>
       </div>
     </div>
@@ -53,7 +53,7 @@ $projects = $posts->posts;
      <img src="<?php echo get_template_directory_uri(); ?>/images/tower8.jpeg" />
       <div class="font-main-header white">
         <h1 class="title">
-           <?php echo empty($get_pjt)? _e('โครงการทั้งหมด'): $get_pjt; ?> 
+           <?php echo empty($get_pjt)? _e('ผลงานทั้งหมดของบริษัท','elite'): $get_pjt; ?> 
         </h1>
       </div>
     </div>

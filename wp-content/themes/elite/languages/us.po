@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-23 15:12+0700\n"
-"PO-Revision-Date: 2018-02-23 15:13+0700\n"
+"POT-Creation-Date: 2018-02-23 15:20+0700\n"
+"PO-Revision-Date: 2018-02-23 15:20+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -26,7 +26,7 @@ msgid "ข่าวสารและกิจกรรม"
 msgstr "News and Events"
 
 #: archive-projects.php:46 archive-projects.php:56
-msgid "โครงการทั้งหมด"
+msgid "ผลงานทั้งหมดของบริษัท"
 msgstr "All Projects"
 
 #: footer.php:5 template-contact.php:57
@@ -101,7 +101,7 @@ msgstr "events"
 
 #: function/eventsandnews-cpt/eventsandnews-cpt.php:63
 #: function/front-page/front-page.php:30
-#: function/project-cpt/project-cpt.php:69
+#: function/project-cpt/project-cpt.php:66
 #, fuzzy
 msgid "More Detail"
 msgstr "รายละเอียดธีม"
@@ -125,11 +125,10 @@ msgstr "ลบรูปภาพ"
 #: function/project-cpt/project-cpt.php:30
 #: function/project-cpt/project-cpt.php:31
 #: function/project-cpt/project-cpt.php:44
-#: function/project-cpt/project-cpt.php:47
 msgid "ผลงานบริษัท"
 msgstr "projects"
 
-#: function/project-cpt/project-cpt.php:92
+#: function/project-cpt/project-cpt.php:89
 msgid "Project Type"
 msgstr "ประเภทของโครงการ"
 
@@ -245,6 +244,9 @@ msgstr "Email : eliteength@yahoo.com"
 #: template-contact.php:66
 msgid "เว็บไซค์ : www.eliteengineers.co.th"
 msgstr "website :  www.eliteengineers.co.th"
+
+#~ msgid "โครงการทั้งหมด"
+#~ msgstr "All Projects"
 
 #~ msgid " ถนนรัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง"
 #~ msgstr "Ratchadapisek Rd, Huaykwang"
