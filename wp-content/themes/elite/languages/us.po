@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: elite\n"
-"POT-Creation-Date: 2018-02-23 16:01+0700\n"
-"PO-Revision-Date: 2018-02-23 16:02+0700\n"
+"POT-Creation-Date: 2018-02-23 22:18+0700\n"
+"PO-Revision-Date: 2018-02-23 22:18+0700\n"
 "Last-Translator: \n"
 "Language-Team: elite\n"
 "Language: en\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.7.7\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -26,7 +26,7 @@ msgid "ข่าวสารและกิจกรรม"
 msgstr "News and Events"
 
 #: archive-projects.php:46 archive-projects.php:56
-msgid "ผลงานทั้งหมดของบริษัท"
+msgid "ผลงานของบริษัท"
 msgstr "All Projects"
 
 #: footer.php:5 template-contact.php:57
@@ -244,6 +244,9 @@ msgstr "Email : eliteength@yahoo.com"
 #: template-contact.php:66
 msgid "เว็บไซต์ : www.eliteengineers.co.th"
 msgstr "website : www.eliteengineers.co.th"
+
+#~ msgid "ผลงานทั้งหมดของบริษัท"
+#~ msgstr "All Projects"
 
 #~ msgid "เว็บไซค์ : www.eliteengineers.co.th"
 #~ msgstr "website :  www.eliteengineers.co.th"
