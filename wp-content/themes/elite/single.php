@@ -19,7 +19,7 @@ if (have_posts()) :
             <p class='text-white header-title text-center'><?php echo get_the_title(); ?></p>
         </div>
     </section>
-    <div class="print-header">
+    <div class="print-header sin-pro">
     <div class="container-fulid has-text-centered">
      <img src="<?php echo $image ?>" />
       <div class="font-main-header white">
@@ -30,7 +30,7 @@ if (have_posts()) :
     </div>
   </div>
     <?php if(!empty($projectpic)): ?>
-        <section class="hero section-box is-light projects-list">
+        <section class="hero section-box is-light projects-pic-list events">
           <div class="">
             <div class="container">
               <div class="columns is-multiline is-12">

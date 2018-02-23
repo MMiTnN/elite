@@ -20,7 +20,7 @@ if (have_posts()) :
             <p class='text-white header-title text-center'><?php echo get_the_title(); ?></p>
         </div>
     </section>
-    <div class="print-header">
+    <div class="print-header sin-pro">
         <div class="container-fulid has-text-centered">
          <img src="<?php echo $image ?>" />
           <div class="font-main-header white">

@@ -162,7 +162,7 @@ function multi_lang_url($slug_eng = '') {
                 $slug = '/กิจกรรม';
                 break;
             case "/projects":
-                $slug = '/โครงการ';
+                $slug = '/ผลงานบริษัท';
                 break;
         }
     }
@@ -171,10 +171,10 @@ function multi_lang_url($slug_eng = '') {
 
 function my_msls_output_get($url, $link, $current) {
     if ($link->alt == 'th') {
-        $url = str_replace('/projects', '/โครงการ', $url);
+        $url = str_replace('/projects', '/ผลงานบริษัท', $url);
         $url = str_replace('/events', '/กิจกรรม', $url);
     } else if ($link->alt == 'us') {
-        $url = str_replace('/โครงการ', '/projects', $url);
+        $url = str_replace('/ผลงานบริษัท', '/projects', $url);
         $url = str_replace('/กิจกรรม', '/events', $url);
     }
 

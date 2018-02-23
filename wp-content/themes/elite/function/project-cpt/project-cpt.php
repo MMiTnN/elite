@@ -10,7 +10,7 @@ class Project_Functions {
     function __construct() {
         $this->domain = 'elite';
         $this->type_name = 'projects';
-        $this->flush_option = $this->type_name . '_flush_1.0.5';
+        $this->flush_option = $this->type_name . '_flush_1.0.7';
         
         add_action('init', array($this, 'custom_post_type'));
         add_action('init', array($this, 'application_check'));
@@ -27,8 +27,8 @@ class Project_Functions {
 
     function custom_post_type() {
         $args = array(
-            'label' => __('โครงการ', $this->domain),
-            'description' => __('โครงการ', $this->domain),
+            'label' => __('ผลงานบริษัท', $this->domain),
+            'description' => __('ผลงานบริษัท', $this->domain),
             'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
             'hierarchical' => false,
             'public' => true,
@@ -41,16 +41,16 @@ class Project_Functions {
             'has_archive' => true,
             'exclude_from_search' => false,
             'publicly_queryable' => true,
-            'rewrite' => array('slug' => __('โครงการ', $this->domain)),
+            'rewrite' => array('slug' => __('ผลงานบริษัท', $this->domain)),
         );
+
         // Registering your Custom Post Type
         register_post_type($this->type_name, $args);
-        flush_rewrite_rules();
     }
     function application_check() {
         if (empty(get_option($this->option_name)) || $this->flush_option != get_option($this->option_name)) {
             flush_rewrite_rules();
-//            update_option($this->option_name, $this->flush_option);
+            update_option($this->option_name, $this->flush_option);
         }
     }
 

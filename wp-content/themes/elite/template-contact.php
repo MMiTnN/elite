@@ -49,20 +49,21 @@ $image = '';
                   <div class="column">
                       <div class="columns">
                           <div class="column">
-                            <a class="example-image-link img-pro" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="<?php echo get_template_directory_uri(); ?>/images/map4.png?>">
-                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/map4.png" >
+                            <a class="example-image-link img-pro" data-lightbox="example-set" data-title="Click the right half of the image to move forward." href="<?php echo get_template_directory_uri(); ?>/images/map4.PNG">
+                             <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/images/map4.PNG" >
                             </a>
                           </div>
                           <div class="column content">
                             <h3><strong style="color: #337ab7"><?php _e('บริษัท เอลีท เอ็นจิเนียร์ส จำกัด', 'elite') ?></strong></h3>
                                 <br/>
                                 <h5><?php _e('เลขที่ 184/44 อาคารฟอรั่มทาวเวอร์ ชั้น 14', 'elite') ?> </h5>
-                                <h5><?php _e(' ถนนรัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง', 'elite') ?> </h5>
-                                <h5><?php _e('เกรุงเทพฯ 10310', 'elite') ?> </h5>
+                                <h5><?php _e('ถนนรัชดาภิเษก แขวงห้วยขวาง เขตห้วยขวาง', 'elite') ?> </h5>
+                                <h5><?php _e('กรุงเทพฯ 10310', 'elite') ?> </h5>
                                 <br/>
                                 <h5><?php _e('โทร : 0-2645-3671-4', 'elite') ?> </h5>
                                 <h5><?php _e('แฟกซ์ : 0-2645-3670', 'elite') ?> </h5>
                                 <h5><?php _e('อีเมล : eliteength@yahoo.com', 'elite') ?> </h5>
+                                <h5><?php _e('เว็บไซค์ : www.eliteengineers.co.th', 'elite') ?> </h5>
                           </div>
                       </div>
                   </div>

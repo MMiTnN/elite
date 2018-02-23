@@ -109,7 +109,7 @@ if(!empty($profile[0])){
                   <article class="tile is-child notification is-primary block-content has-text-centered">
                     <p class="title"><?php _e('ประเภทธุรกิจ', 'elite'); ?></p>
                     <div class="line-solid"></div>
-                    <p class="subtitle"><?php _e('การก่อสร้าง, เครื่องจักรกล, ระบบไฟฟ้า', 'elite'); ?></p>
+                    <p class="subtitle"><?php _e('การก่อสร้าง, ระบบเครื่องกล, ระบบไฟฟ้า', 'elite'); ?></p>
                   </article>
                 </div>
                 <div class="column  has-text-centered">
