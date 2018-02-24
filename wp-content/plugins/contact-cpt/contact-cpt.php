@@ -377,7 +377,7 @@ function contact_page_view_handler() {
     <div class="wrap">
         <div class="icon32 icon32-posts-post" id="icon-edit"><br></div>
         <h2>
-    <?php _e('Expert Card View') ?>
+    <?php _e('Contact View') ?>
             <a class="add-new-h2" href="<?php echo get_admin_url(get_current_blog_id(), 'admin.php?page=contact'); ?>"><?php _e('back to list') ?></a>
         </h2>
 
