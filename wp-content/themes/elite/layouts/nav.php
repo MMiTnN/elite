@@ -5,19 +5,19 @@
         var currentUrl = '<?php echo !is_home()? get_permalink($post->ID) : get_home_url(); ?>';
         $('document').ready(function () {
             var href = $(msls).attr("href");
-            $("#navbarMenuHeroA .navbar-end #lang-switcher").attr("href", href);
-            $(".nav li#lang-switcher").on("click", function () {
+            $("#navbarMenuHeroA .navbar-end #lang-switchers").attr("href", href);
+            $(".nav li#lang-switchers").on("click", function () {
                 window.location.replace(href);
             });
             
-            $("#navbarMenuHeroA .navbar-end #lang-switcher").on('mouseover', function(){
+            $("#navbarMenuHeroA .navbar-end #lang-switchers").on('mouseover', function(){
                 <?php if(check_msls() == 'us'): ?> 
                         $(this).find('p').html('TH');
                 <?php else: ?> 
                         $(this).find('p').html('EN');
                 <?php endif; ?> 
             });
-            $('#navbarMenuHeroA .navbar-end #lang-switcher').mouseout(function(){
+            $('#navbarMenuHeroA .navbar-end #lang-switchers').mouseout(function(){
                 <?php if(check_msls() == 'us'): ?> 
                         $(this).find('p').html('EN');
                 <?php else: ?> 
@@ -26,11 +26,11 @@
               });
             // console.log(href );
             <?php if (check_msls() === 'th'): ?>
-                $("#xs-eng-lang").attr("href", href);
-                $("#xs-th-lang").attr("href", currentUrl);
+                $(".eng-lang").attr("href", href);
+                $(".th-lang").attr("href", currentUrl);
             <?php else: ?>
-                $("#xs-eng-lang").attr("href", currentUrl);
-                $("#xs-th-lang").attr("href", href);
+                $(".eng-lang").attr("href", currentUrl);
+                $(".th-lang").attr("href", href);
             <?php endif; ?>
         });
       })(jQuery);
@@ -72,7 +72,11 @@
               </a>
             <?php endif; 
             endforeach; ?>
-            <a href="" id="lang-switcher"  style="cursor: pointer; cursor: hand;" class="navbar-item lang hidden-xs hidden-sm"><p><?php echo check_msls() == 'us' ? 'EN' : 'TH'; ?></p></a>
+              <a  class="navbar-item lang hidden-xs hidden-sm th-lang" href="" style="padding-right: 0px">
+             <img class="img-responsive flag-img"  src="<?php echo get_template_directory_uri() ?>/images/thailand.png" alt=""></a>
+              <a  class="navbar-item lang hidden-xs hidden-sm eng-lang" href="">
+              <img class="img-responsive flag-img" src="<?php echo get_template_directory_uri() ?>/images/eng.jpg" alt="">
+            </a>
           </div>
           <div class="navbar-end is-hidden-desktop">
             <?php $header_menu = wp_get_menu_array('Footer Menu');?>
@@ -98,8 +102,8 @@
             <?php endif; 
             endforeach; ?>
             <div class="line-solid"></div>
-            <a id="xs-eng-lang" class="visible-xs visible-sm navbar-item" href="">English</a>
-            <a id="xs-th-lang" class="visible-xs visible-sm navbar-item" href="">ภาษาไทย</a>
+            <a  class="visible-xs visible-sm navbar-item eng-lang" href="">English</a>
+            <a  class="visible-xs visible-sm navbar-item th-lang" href="">ภาษาไทย</a>
           </div>
         </div>
         
